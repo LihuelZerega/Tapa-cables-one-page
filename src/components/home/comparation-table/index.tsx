@@ -6,7 +6,7 @@ function index() {
       <section>
         <div className="lg:text-center mb-10 lg:mb-20">
           <h3 className="text-3xl font-bold text-gray-800">
-            Comparativa de Canaletas Tapa Cables
+            <span className="text-blue-500">Comparativa</span> de Canaletas <span className="text-blue-500">Tapa Cables</span> 
           </h3>
           <p className="mt-2 text-base text-gray-600 max-w-2xl text-center mx-auto">
             Nuestra canaleta es la única con apertura superior, un detalle que
@@ -2019,7 +2019,7 @@ function index() {
       <section>
         <div className="lg:text-center mb-10 lg:mb-10 lg:mt-32">
           <h3 className="text-3xl font-bold text-gray-800">
-            Comparativa de Costos para Fachada de 10 Metros
+            <span className="text-blue-500">Comparativa</span> de Costos para <span className="text-blue-500">Fachada de 10 Metros</span>
           </h3>
           <p className="mt-2 text-base text-gray-600 max-w-3xl text-center mx-auto">
             Maximiza tu inversión con materiales de alta calidad. Utilizar
@@ -3834,7 +3834,7 @@ function index() {
           </table>
         </div>
 
-        <p className="text-xs text-gray-600 text-center my-4 lg:my-6">
+        <p className="text-xs text-gray-600 text-center my-4 lg:my-6 lg:mb-12">
           Esos precios son solo por la <br />{" "}
           <strong>Compra de material</strong> e{" "}
           <strong>Instalación propia</strong>.

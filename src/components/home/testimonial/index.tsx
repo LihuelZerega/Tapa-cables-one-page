@@ -2,11 +2,11 @@ import React from "react";
 
 function index() {
   return (
-    <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
+    <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-bold text-3xl lg:text-4xl text-gray-800">
-            ¿Que opinan nuestros clientes de nuestro producto y servicio?
+            ¿Que opinan <span className="text-blue-600">nuestros clientes</span> de nuestros <span className="text-blue-600">productos</span> y <span className="text-blue-600">servicios</span>?
           </h2>
         </div>
 
@@ -31,17 +31,15 @@ function index() {
                 </div>
               </div>
               <blockquote className="mt-7">
-                <p className="text-lg text-black">
-                  “Amet minim mollit non deserunt ullam co est sit aliqua dolor
-                  do amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat”
+                <p className="text-base text-gray-800">
+                  “Las canaletas de Tapacables son mucho más fáciles de usar que otras marcas. La apertura superior ahorra tiempo. Una opción claramente mejor.”
                 </p>
               </blockquote>
               <p className="text-base font-semibold tex-tblack mt-9">
-                Jenny Wilson
+              Carlos Martín López
               </p>
               <p className="mt-1 text-base text-gray-600">
-                Project Manager at Microsoft
+              Calle Serrano, Madrid
               </p>
             </div>
           </div>
@@ -66,17 +64,15 @@ function index() {
                 </div>
               </div>
               <blockquote className="mt-7">
-                <p className="text-lg text-black">
-                  “Amet minim mollit non deserunt ullam co est sit aliqua dolor
-                  do amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat”
+                <p className="text-base text-gray-800">
+                  “Estoy muy contenta con la calidad de las canaletas. Son resistentes y estéticamente perfectas para mi fachada. Sin duda, una gran compra.”
                 </p>
               </blockquote>
               <p className="text-base font-semibold tex-tblack mt-9">
-                Robert Fox
+              Laura Sánchez Fernández
               </p>
               <p className="mt-1 text-base text-gray-600">
-                Founder at Brain.co
+              Calle Larios, Málaga
               </p>
             </div>
           </div>
@@ -101,17 +97,15 @@ function index() {
                 </div>
               </div>
               <blockquote className="mt-7">
-                <p className="text-lg text-black">
-                  “Amet minim mollit non deserunt ullam co est sit aliqua dolor
-                  do amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat”
+                <p className="text-base text-gray-800">
+                  “El servicio fue excelente. Me mostraron un render antes de empezar y la instalación fue rápida y limpia. Todo quedó perfecto.”
                 </p>
               </blockquote>
               <p className="text-base font-semibold tex-tblack mt-9">
-                Kristin Watson
+              Javier Gutiérrez Muñoz
               </p>
               <p className="mt-1 text-base text-gray-600">
-                UX Designer at Google
+              Calle Mayor, Valencia
               </p>
             </div>
           </div>

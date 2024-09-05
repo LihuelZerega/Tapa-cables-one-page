@@ -1,16 +1,9 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import {
-  Facebook02Icon,
-  InstagramIcon,
-  NewTwitterIcon,
-  Mail01Icon,
-  Call02Icon,
-} from "@/lib/icons";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import HeroBanner2 from "@/images/HeroBanner2.png";
+import HeroBanner3 from "@/images/HeroBanner3.png";
 
 const navigation = [
   { name: "Inicio", href: "/" },
@@ -24,7 +17,7 @@ function index() {
 
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50 fixed">
+      <header className="inset-x-0 top-0 z-50 fixed">
         <div className="fixed w-full">
           <nav
             aria-label="Global"
@@ -39,7 +32,7 @@ function index() {
                 className="h-8 w-auto"
               /> */}
                 <h1 className="text-2xl font-bold text-blue-600">
-                  TAPA CABLES
+                  TAPACABLES
                 </h1>
               </a>
             </div>
@@ -162,16 +155,26 @@ function index() {
       </header>
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-44 2xl:py-48">
-          <div className="text-center relative z-10">
+        <div className="mx-auto  py-32 sm:py-48 lg:py-44 2xl:py-48">
+          <div className="text-left relative z-10 ">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Oculta y Protege Tus Cables con Elegancia
+              <span className="bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500 text-transparent">
+                Oculta
+              </span>{" "}
+              y{" "}
+              <span className="bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500 text-transparent">
+                Protege
+              </span>{" "}
+              <br /> Tus Cables con{" "}
+              <span className="bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500 text-transparent">
+                Tapacables
+              </span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-neutral-200">
+            <p className="mt-6 text-lg leading-8 text-neutral-200 max-w-xl">
               Mejora la estética y funcionalidad de tu hogar con nuestras
               canaletas especializadas para un cableado ordenado y discreto.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex items-start justify-start gap-x-6">
               <a
                 href="#"
                 className="rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
@@ -189,7 +192,7 @@ function index() {
           <div className="absolute inset-0 bg-white z-0">
             <Image
               className="absolute inset-0 w-full h-screen object-cover object-top select-none"
-              src={HeroBanner2}
+              src={HeroBanner3}
               width={1920}
               height={1103}
               alt="hero background image"

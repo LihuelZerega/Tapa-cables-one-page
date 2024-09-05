@@ -6,6 +6,7 @@ import ComparationTable from "@/components/home/comparation-table";
 import ProductAndServices from "@/components/home/product-and-services";
 import CallToAction from "@/components/home/call-to-action";
 import Testimonial from "@/components/home/testimonial";
+import Faq from "@/components/home/faq";
 import ContactForm from "@/components/home/contact-form";
 import Footer from "@/components/home/footer"
 
@@ -20,9 +21,11 @@ export default function Home() {
       <OurProduct />
       <ComparationTable />
       <CallToAction />
-      {/* <Testimonial /> */}
-      {/* <ContactForm /> */}
-      {/* <Footer /> */}
+      <Testimonial />
+      <Faq />
+      <hr />
+      <ContactForm />
+      <Footer />
     </main>
   );
 }

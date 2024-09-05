@@ -40,10 +40,10 @@ function index() {
         <div className="mt-5 sm:mt-10 lg:mt-0 lg:w-1/2">
           <div className="space-y-6 sm:space-y-8 pl-12">
             <div className="space-y-2 md:space-y-4">
-              <h2 className="font-bold text-3xl lg:text-4xl text-gray-800">
-                ¿Por qué Elegir Canaletas con Apertura Superior?
+              <h2 className="font-bold text-2xl lg:text-3xl text-gray-800">
+                ¿Por qué Elegir Canaletas con <span className="decoration-blue-500 underline">Apertura Superior</span>?
               </h2>
-              <p className="text-gray-500">
+              <p className="text-gray-500 text-sm">
                 En Tapacables, ofrecemos canaletas diseñadas específicamente
                 para ocultar cables en fachadas de manera eficiente y estética.
                 Es fundamental optar por canaletas con apertura superior, ya que
@@ -52,7 +52,7 @@ function index() {
                 cables, sino que también asegura una instalación más ordenada y
                 profesional.
               </p>
-              <p className="text-gray-500 mt-2">
+              <p className="text-gray-500 text-sm mt-2">
                 Cualquier otra opción de canaleta sin este tipo de apertura
                 podría resultar en una instalación más compleja y poco práctica,
                 lo que puede afectar tanto la durabilidad como la funcionalidad

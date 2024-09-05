@@ -1,19 +1,22 @@
 import React from "react";
+import Image from "next/image";
+import AboutUs1 from "@/images/AboutUs1.png"
+import AboutUs2 from "@/images/AboutUs3.png"
 
 function index() {
   return (
     <div className="">
-      <div className=" mx-auto">
-        <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row md:items-center md:gap-12 xl:gap-32">
+      <div className="mx-auto">
+        <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row md:items-center md:gap-12 xl:gap-32 px-12">
           <div className="lg:w-1/2 p-12">
-            <img
+            <Image
               className="rounded-xl"
-              src="https://images.unsplash.com/photo-1648737963503-1a26da876aca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=900&q=80"
+              src={AboutUs1}
               alt="Features Image"
             />
           </div>
 
-          <div className="mt-5 sm:mt-10 lg:mt-0 lg:w-1/2 pr-6">
+          <div className="mt-5 sm:mt-10 lg:mt-0 lg:w-1/2">
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <h2 className="font-bold text-2xl lg:text-3xl text-gray-800">
@@ -53,7 +56,7 @@ function index() {
           </div>
         </div>
 
-        <div className="grid gap-12 w-full bg-neutral-50 my-12">
+        <div className="grid gap-12 w-full bg-neutral-50 my-12 px-12">
           <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-12 mx-auto">
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 items-center gap-12">
               <div className="text-center">
@@ -254,11 +257,11 @@ function index() {
           </div>
         </div>
 
-        <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 lg:pt-14">
+        <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 lg:pt-14  px-12">
           <div className="lg:w-1/2 p-6">
-            <img
+          <Image
               className="rounded-xl"
-              src="https://images.unsplash.com/photo-1648737963503-1a26da876aca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=900&q=80"
+              src={AboutUs2}
               alt="Features Image"
             />
           </div>

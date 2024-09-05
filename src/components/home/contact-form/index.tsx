@@ -10,9 +10,9 @@ export default function Example() {
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
+        <h2 className="text-3xl font-bold tracking-tight bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700 text-transparent sm:text-4xl">Contáctanos</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+        Si tienes alguna duda o inquietud, no dudes en contactarnos. Nos pondremos en contacto a la brevedad.
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
