@@ -1,6 +1,7 @@
 import NavBar from "@/components/home/nav-bar"
 import HeroSection from "@/components/home/hero-section"
 import AboutUs from "@/components/home/about-us"
+import TheSecret from "@/components/home/the-secret";
 import OurProduct from "@/components/home/our-product";
 import ComparationTable from "@/components/home/comparation-table";
 import ProductAndServices from "@/components/home/product-and-services";
@@ -16,16 +17,17 @@ export default function Home() {
       {/* <NavBar /> */}
       <HeroSection />
       <AboutUs />
+      <TheSecret />
       <hr className="my-12"/>
       <ProductAndServices />
       <OurProduct />
       <ComparationTable />
-      <CallToAction />
-      <Testimonial />
-      <Faq />
-      <hr />
-      <ContactForm />
-      <Footer />
+      {/* <CallToAction /> */}
+      {/* <Testimonial /> */}
+      {/* <Faq /> */}
+      {/* <hr /> */}
+      {/* <ContactForm /> */}
+      {/* <Footer /> */}
     </main>
   );
 }

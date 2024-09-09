@@ -10,14 +10,14 @@ function Index() {
               <h1 className="text-center text-4xl font-bold text-gray-800 md:text-4xl">
                 <span>
                   ¿Te interesa contar con una{" "}
-                  <span className="bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700 text-transparent">
+                  <span className="text-blue-500">
                     instalación profesional
                   </span>
                   ?
                 </span>{" "}
                 <br />
                 ¡Aprovecha
-                <span className="bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700 text-transparent">
+                <span className="text-blue-500">
                   {" "}
                   20% de Descuento{" "}
                 </span>

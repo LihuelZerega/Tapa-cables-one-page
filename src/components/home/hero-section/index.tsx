@@ -31,9 +31,7 @@ function index() {
                 src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
                 className="h-8 w-auto"
               /> */}
-                <h1 className="text-2xl font-bold text-blue-600">
-                  TAPACABLES
-                </h1>
+                <h1 className="text-2xl font-bold text-blue-600">TAPACABLES</h1>
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -46,7 +44,7 @@ function index() {
                 <Bars3Icon aria-hidden="true" className="h-6 w-6" />
               </button>
             </div>
-            <div className="hidden lg:flex items-center space-x-6 lg:flex-1 lg:justify-end">
+            <div className="hidden lg:flex items-center space-x-6 lg:justify-end">
               <div className="hidden lg:flex lg:gap-x-12">
                 {navigation.map((item) => (
                   <a
@@ -60,9 +58,9 @@ function index() {
               </div>
               <a
                 href="#contacto"
-                className="rounded-sm bg-blue-600 px-3 py-2 text-base text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
+                className="w-fit rounded-sm bg-blue-600 px-3 py-3 text-base text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
               >
-                Contactar <span aria-hidden="true">&rarr;</span>
+                Solicitar información <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </nav>
@@ -158,21 +156,10 @@ function index() {
         <div className="mx-auto  py-32 sm:py-48 lg:py-44 2xl:py-48">
           <div className="text-left relative z-10 ">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              <span className="bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500 text-transparent">
-                Oculta
-              </span>{" "}
-              y{" "}
-              <span className="bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500 text-transparent">
-                Protege
-              </span>{" "}
-              <br /> Tus Cables con{" "}
-              <span className="bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500 text-transparent">
-                Tapacables
-              </span>
+              ¿Cables en tu fachada?
             </h1>
             <p className="mt-6 text-lg leading-8 text-neutral-200 max-w-xl">
-              Mejora la estética y funcionalidad de tu hogar con nuestras
-              canaletas especializadas para un cableado ordenado y discreto.
+              Soluciones integrales para la ocultación de cableado en fachadas
             </p>
             <div className="mt-10 flex items-start justify-start gap-x-6">
               <a
@@ -181,20 +168,14 @@ function index() {
               >
                 Solicitar Presupuesto
               </a>
-              <a
-                href="#"
-                className="text-sm font-semibold leading-6 text-white transition"
-              >
-                Conocenos <span aria-hidden="true">→</span>
-              </a>
             </div>
           </div>
           <div className="absolute inset-0 bg-white z-0">
             <Image
-              className="absolute inset-0 w-full h-screen object-cover object-top select-none"
+              className="absolute inset-0 w-full h-[40rem] object-cover object-top select-none"
               src={HeroBanner3}
               width={1920}
-              height={1103}
+              height={700}
               alt="hero background image"
             />
           </div>

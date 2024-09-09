@@ -1,48 +1,71 @@
 import React from "react";
 import Image from "next/image";
-import AboutUs1 from "@/images/AboutUs1.png"
-import AboutUs2 from "@/images/AboutUs3.png"
+import AboutUs1 from "@/images/AboutUs1.png";
+import Adria from "@/images/Adria.png";
 
 function index() {
   return (
     <div className="">
       <div className="mx-auto">
-        <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row md:items-center md:gap-12 xl:gap-32 px-12">
-          <div className="lg:w-1/2 p-12">
-            <Image
-              className="rounded-xl"
-              src={AboutUs1}
-              alt="Features Image"
-            />
+        <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row md:items-center md:gap-12 xl:gap-32 px-12 my-10">
+          <div className="lg:w-1/2 flex flex-col items-center justify-center">
+            <div className="flex items-center justify-center w-[400px] h-[400px] bg-gray-100 rounded-md">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="36"
+                height="36"
+                color="#9b9b9b"
+                fill="none"
+              >
+                <path
+                  d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <circle
+                  cx="16.5"
+                  cy="7.5"
+                  r="1.5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M16 22C15.3805 19.7749 13.9345 17.7821 11.8765 16.3342C9.65761 14.7729 6.87163 13.9466 4.01569 14.0027C3.67658 14.0019 3.33776 14.0127 3 14.0351"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13 18C14.7015 16.6733 16.5345 15.9928 18.3862 16.0001C19.4362 15.999 20.4812 16.2216 21.5 16.6617"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
           </div>
 
           <div className="mt-5 sm:mt-10 lg:mt-0 lg:w-1/2">
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <h2 className="font-bold text-2xl lg:text-3xl text-gray-800">
-                  Innovación y Excelencia en la Ocultación de Cables
+                  ¿Que es Tapacables?
                 </h2>
-                <p className="text-gray-500 text-sm">
-                  Tapacables nace para ofrecer soluciones integrales y estéticas
-                  en la ocultación de cables eléctricos y de telecomunicaciones
-                  en fachadas, cubriendo una necesidad técnica y estética en
-                  entornos urbanos. Con un enfoque en la funcionalidad, el
-                  diseño y la calidad, nuestra propuesta de valor se basa en la
-                  creación de <strong>canaletas con apertura superior</strong>{" "}
-                  que facilitan la instalación, el mantenimiento, y evitan
-                  acumulación de agua gracias a sus salidas invisibles.
+                <p className="text-gray-500">
+                  Tapacables surge con el objetivo de ofrecer soluciones
+                  eficientes a un mercado con escasas alternativas para la
+                  ocultación de cableado en fachadas. Impulsados por nuestra
+                  ambición de brindar la mejor solución posible, hemos diseñado,
+                  creado y patentado nuestras propias canaletas.
                 </p>
-                <p className="text-gray-500 text-sm mt-3">
-                  Nuestra misión es{" "}
-                  <strong>proveer soluciones innovadoras</strong> que mejoren la
-                  estética y seguridad de edificios, asegurando una
-                  infraestructura limpia y funcional. Nos distinguimos por
-                  nuestro <strong>compromiso con la calidad</strong>, lo que nos
-                  permite reducir la cantidad de soportes necesarios en cada
-                  instalación, proporcionando un ahorro significativo a nuestros
-                  clientes.
+                <p className="text-gray-500 mt-3">
+                  Nuestro enfoque se centra en dos objetivos fundamentales:
+                  ofrecer un servicio de instalación integral que nadie más está
+                  proporcionando y desarrollar el mejor producto disponible en
+                  el mercado. Estamos convencidos de que hemos alcanzado ambos.
                 </p>
-                <p className="text-gray-500 text-sm mt-3">
+                <p className="text-gray-500 mt-3">
                   <strong>Nuestros productos</strong> se componen de perfiles de
                   aluminio y soportes de hierro con un acabado en zinc,
                   garantizando durabilidad y resistencia a las inclemencias del
@@ -56,9 +79,12 @@ function index() {
           </div>
         </div>
 
-        <div className="grid gap-12 w-full bg-neutral-50 my-12 px-12">
+        <div className="grid gap-12 w-full bg-neutral-50 my-24 px-12">
           <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-12 mx-auto">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-5 items-center gap-12">
+            <h3 className="text-2xl font-semibold text-gray-800 text-center mb-12">
+              ¿Te ayudamos a encontrar la solución ideal para tus necesidades?
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-12 gap-x-32">
               <div className="text-center">
                 <div className="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
                   <svg
@@ -89,49 +115,7 @@ function index() {
                     Calidad
                   </h3>
                   <p className="text-sm mt-1 text-gray-600">
-                    Productos y servicios que superan las expectativas.
-                  </p>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <div className="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                    color="#3b82f6"
-                    fill="none"
-                  >
-                    <path
-                      d="M12 14L17.5 18.5M12 14L6.5 18.5M12 14V7"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    />
-                    <path
-                      d="M10.3914 3.69046C11.1054 2.56349 11.4624 2 12 2C12.5376 2 12.8946 2.56349 13.6086 3.69046L14.1215 4.49995C14.8259 5.6118 15.1781 6.16772 14.9104 6.58386C14.6426 7 13.9327 7 12.5129 7H11.4871C10.0673 7 9.35739 7 9.08963 6.58386C8.82188 6.16772 9.17409 5.6118 9.87852 4.49995L10.3914 3.69046Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    />
-                    <path
-                      d="M21.2324 19.1408C21.8559 20.3502 22.1676 20.9548 21.9085 21.4249C21.6494 21.8949 20.9936 21.9144 19.6819 21.9536L18.7398 21.9817C17.4457 22.0203 16.7987 22.0396 16.5705 21.5895C16.3422 21.1393 16.6843 20.5186 17.3686 19.2773L17.8629 18.3805C18.5471 17.1391 18.8893 16.5184 19.3756 16.5004C19.8619 16.4824 20.1694 17.0789 20.7846 18.2721L21.2324 19.1408Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    />
-                    <path
-                      d="M2.76761 19.1408C2.14414 20.3502 1.8324 20.9548 2.09148 21.4249C2.35055 21.8949 3.00639 21.9144 4.31805 21.9536L5.26021 21.9817C6.55427 22.0203 7.20131 22.0396 7.42955 21.5895C7.65779 21.1393 7.31567 20.5186 6.63143 19.2773L6.13711 18.3805C5.45286 17.1391 5.11074 16.5184 4.62443 16.5004C4.13811 16.4824 3.83055 17.0789 3.21545 18.2721L2.76761 19.1408Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    />
-                  </svg>
-                </div>
-                <div className="mt-3">
-                  <h3 className="text-md font-semibold text-gray-700">
-                    Innovación
-                  </h3>
-                  <p className="text-sm mt-1 text-gray-600">
-                    Desarrollo de soluciones avanzadas.
+                    Productos y servicios <br /> que superan las expectativas.
                   </p>
                 </div>
               </div>
@@ -173,50 +157,10 @@ function index() {
                 </div>
                 <div className="mt-3">
                   <h3 className="text-md font-semibold text-gray-700">
-                    Satisfacción del cliente
+                    Confianza
                   </h3>
                   <p className="text-sm mt-1 text-gray-600">
-                    Garantizamos una experiencia sobresaliente.
-                  </p>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <div className="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                    color="#3b82f6"
-                    fill="none"
-                  >
-                    <path
-                      d="M10.3371 10.38C9.25714 10.38 8.71714 11.16 8.59714 11.64C8.47714 12.12 8.47714 13.86 8.54914 14.58C8.78914 15.48 9.38914 15.852 9.97714 15.972C10.5171 16.02 12.7971 16.002 13.4571 16.002C14.4171 16.02 15.1371 15.66 15.4371 14.58C15.4971 14.22 15.5571 12.24 15.4071 11.64C15.0891 10.68 14.2971 10.38 13.6971 10.38H10.3371Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M10.25 9.95854C10.25 9.89854 10.2582 9.55312 10.2596 9.11854C10.2609 8.72145 10.226 8.33854 10.4156 7.98814C11.126 6.57454 13.166 6.71854 13.67 8.15854C13.7573 8.39562 13.7626 8.77146 13.76 9.11854C13.7567 9.56203 13.766 9.95854 13.766 9.95854"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M21 11.1833V8.28029C21 6.64029 21 5.82028 20.5959 5.28529C20.1918 4.75029 19.2781 4.49056 17.4507 3.9711C16.2022 3.6162 15.1016 3.18863 14.2223 2.79829C13.0234 2.2661 12.424 2 12 2C11.576 2 10.9766 2.2661 9.77771 2.79829C8.89839 3.18863 7.79784 3.61619 6.54933 3.9711C4.72193 4.49056 3.80822 4.75029 3.40411 5.28529C3 5.82028 3 6.64029 3 8.28029V11.1833C3 16.8085 8.06277 20.1835 10.594 21.5194C11.2011 21.8398 11.5046 22 12 22C12.4954 22 12.7989 21.8398 13.406 21.5194C15.9372 20.1835 21 16.8085 21 11.1833Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </div>
-                <div className="mt-3">
-                  <h3 className="text-md font-semibold text-gray-700">
-                    Seguridad
-                  </h3>
-                  <p className="text-sm mt-1 text-gray-600">
-                    Protección en los productos y en el lugar de trabajo.
+                    Garantizamos <br /> una experiencia sobresaliente.
                   </p>
                 </div>
               </div>
@@ -249,7 +193,7 @@ function index() {
                     Profesionalismo
                   </h3>
                   <p className="text-sm mt-1 text-gray-600">
-                    Compromiso con la excelencia y responsabilidad.
+                    Compromiso con <br /> la excelencia y responsabilidad.
                   </p>
                 </div>
               </div>
@@ -257,22 +201,55 @@ function index() {
           </div>
         </div>
 
-        <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 lg:pt-14  px-12">
-          <div className="lg:w-1/2 p-6">
-          <Image
-              className="rounded-xl"
-              src={AboutUs2}
-              alt="Features Image"
-            />
+        <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-12 my-12">
+          <div className="lg:w-1/2 flex flex-col items-center justify-center">
+            <div className="flex items-center justify-center w-[400px] h-[400px] bg-gray-100 rounded-md">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="36"
+                height="36"
+                color="#9b9b9b"
+                fill="none"
+              >
+                <path
+                  d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <circle
+                  cx="16.5"
+                  cy="7.5"
+                  r="1.5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M16 22C15.3805 19.7749 13.9345 17.7821 11.8765 16.3342C9.65761 14.7729 6.87163 13.9466 4.01569 14.0027C3.67658 14.0019 3.33776 14.0127 3 14.0351"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13 18C14.7015 16.6733 16.5345 15.9928 18.3862 16.0001C19.4362 15.999 20.4812 16.2216 21.5 16.6617"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <p className="text-gray-500 text-sm mt-3 text-center">
+              Adrià Salamanca Barberà, Fundador de Tapacables
+            </p>
           </div>
 
           <div className="mt-5 sm:mt-10 lg:mt-0 lg:w-1/2 pl-12">
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <h2 className="font-bold text-2xl lg:text-3xl text-gray-800">
-                  Nuestra Trayectoria
+                  Tapacables y su nacimiento
                 </h2>
-                <p className="text-gray-500 text-sm">
+                <p className="text-gray-500">
                   Adrià Salamanca Barberà, fundador de Tapacables, con una
                   sólida experiencia en el sector de telecomunicaciones, detectó
                   la falta de soluciones eficientes para la ocultación de cables
@@ -280,7 +257,7 @@ function index() {
                   necesidad, ofreciendo productos y servicios de alta calidad
                   que faciliten el ordenamiento de infraestructuras exteriores.
                 </p>
-                <p className="text-gray-500 text-sm mt-3">
+                <p className="text-gray-500 mt-3">
                   Con una participación destacada en programas como Yuzz
                   “Jóvenes con ideas” y una red de contactos estratégicos,
                   Tapacables se ha posicionado como un referente en innovación
@@ -292,8 +269,6 @@ function index() {
           </div>
         </div>
       </div>
-
-      <section></section>
     </div>
   );
 }
