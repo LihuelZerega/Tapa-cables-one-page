@@ -7,9 +7,9 @@ import OurProduct4 from "@/images/OurProduct4.png";
 
 function index() {
   return (
-    <div className="max-w-5xl px-4 py-10 sm:px-6 lg:px-0 lg:py-14 mx-auto my-12">
+    <div className="max-w-[85rem] gap-12 px-12 lg:py-16 mx-auto my-12 shadow-sm">
       <div className="flex flex-row items-center justify-between">
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 flex flex-col items-center justify-center">
           <div className="grid grid-cols grid-cols-12 gap-2 sm:gap-6 items-center">
             <div className="col-span-6">
               <Image
@@ -37,7 +37,7 @@ function index() {
           </div>
         </div>
 
-        <div className="mt-5 sm:mt-10 lg:mt-0 lg:w-1/2">
+        <div className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0 ">
           <div className="space-y-6 sm:space-y-8 pl-12">
             <div className="space-y-2 md:space-y-4">
               <h2 className="font-bold text-2xl lg:text-3xl text-gray-800">
@@ -64,7 +64,8 @@ function index() {
 
       <div className="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
         <div className="lg:col-span-3">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 md:gap-12">
+            
             <div className="flex items-start gap-x-5 lg:col-span-1">
               <div>
                 <svg
@@ -160,7 +161,7 @@ function index() {
               </div>
             </div>
 
-            <div className="flex items-start gap-x-5 lg:col-span-2">
+            <div className="flex items-start gap-x-5 lg:col-span-1">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

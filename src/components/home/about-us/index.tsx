@@ -5,11 +5,11 @@ import Adria from "@/images/Adria.png";
 
 function index() {
   return (
-    <div className="">
+    <div className="mt-32">
       <div className="mx-auto">
         <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row md:items-center md:gap-12 xl:gap-32 px-12 my-10">
           <div className="lg:w-1/2 flex flex-col items-center justify-center">
-            <div className="flex items-center justify-center w-[400px] h-[400px] bg-gray-100 rounded-md">
+            <div className="flex items-center justify-center w-[500px] h-[500px] bg-gray-100 rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -46,7 +46,7 @@ function index() {
             </div>
           </div>
 
-          <div className="mt-5 sm:mt-10 lg:mt-0 lg:w-1/2">
+          <div className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0">
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <h2 className="font-bold text-2xl lg:text-3xl text-gray-800">
@@ -65,7 +65,7 @@ function index() {
                   proporcionando y desarrollar el mejor producto disponible en
                   el mercado. Estamos convencidos de que hemos alcanzado ambos.
                 </p>
-                <p className="text-gray-500 mt-3">
+                {/* <p className="text-gray-500 mt-3">
                   <strong>Nuestros productos</strong> se componen de perfiles de
                   aluminio y soportes de hierro con un acabado en zinc,
                   garantizando durabilidad y resistencia a las inclemencias del
@@ -73,7 +73,7 @@ function index() {
                   hemos realizado pruebas piloto con éxito, y planeamos
                   expandirnos a otros mercados nacionales, apoyados en alianzas
                   estratégicas con profesionales locales.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -190,7 +190,7 @@ function index() {
                 </div>
                 <div className="mt-3">
                   <h3 className="text-md font-semibold text-gray-700">
-                    Profesionalismo
+                    Profesionalidad
                   </h3>
                   <p className="text-sm mt-1 text-gray-600">
                     Compromiso con <br /> la excelencia y responsabilidad.
@@ -203,7 +203,7 @@ function index() {
 
         <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-12 my-12">
           <div className="lg:w-1/2 flex flex-col items-center justify-center">
-            <div className="flex items-center justify-center w-[400px] h-[400px] bg-gray-100 rounded-md">
+            <div className="flex items-center justify-center w-[500px] h-[500px] bg-gray-100 rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -243,7 +243,7 @@ function index() {
             </p>
           </div>
 
-          <div className="mt-5 sm:mt-10 lg:mt-0 lg:w-1/2 pl-12">
+          <div className="lg:w-1/2 mt-5 sm:mt-10 lg:mt-0  pl-12">
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <h2 className="font-bold text-2xl lg:text-3xl text-gray-800">
@@ -258,11 +258,9 @@ function index() {
                   que faciliten el ordenamiento de infraestructuras exteriores.
                 </p>
                 <p className="text-gray-500 mt-3">
-                  Con una participación destacada en programas como Yuzz
-                  “Jóvenes con ideas” y una red de contactos estratégicos,
-                  Tapacables se ha posicionado como un referente en innovación
-                  para la ocultación de cables, transformando la forma en que
-                  las ciudades gestionan su cableado exterior.
+                  Durante su trayectoria como técnico de telecomunicaciones
+                  descubrió un problema que nadie estaba viendo, al que llamo <br />
+                  <strong>“El secreto"</strong>, ¿Te lo cuento?
                 </p>
               </div>
             </div>

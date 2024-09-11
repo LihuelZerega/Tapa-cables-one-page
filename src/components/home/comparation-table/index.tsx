@@ -2,7 +2,7 @@ import React from "react";
 
 function index() {
   return (
-    <div className="mt-20 lg:mt-12 max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
+    <div className="mt-20 max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
       <section>
         <div className="lg:text-center mb-10 lg:mb-20">
           <h3 className="text-3xl font-bold text-gray-800">
@@ -1729,7 +1729,7 @@ function index() {
                   className="w-1/4 py-4 px-6 text-lg leading-6 font-medium text-gray-800 text-center"
                   scope="col"
                 >
-                  Legrand (PVC)
+                  Legrand
                 </th>
               </tr>
             </thead>
@@ -1744,7 +1744,7 @@ function index() {
 
                 <td className="py-5 px-6">
                   <p className="ps-6 pe-6 text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                    Aluminio Lacado
+                    Aluminio
                   </p>
                 </td>
 
@@ -1765,7 +1765,7 @@ function index() {
 
                 <td className="py-5 px-6">
                   <p className="ps-6 pe-6 text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                    Arcelar
+                    Arcelor
                   </p>
                 </td>
 
@@ -1855,7 +1855,7 @@ function index() {
 
                 <td className="py-5 px-6">
                   <p className="ps-6 pe-6 text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                    Media
+                    Alta
                   </p>
                 </td>
               </tr>
@@ -3618,7 +3618,7 @@ function index() {
                   className="w-1/4 py-4 px-6 text-lg leading-6 font-medium text-gray-800 text-center"
                   scope="col"
                 >
-                  Legrand (PVC)
+                  Legrand
                 </th>
               </tr>
             </thead>
@@ -5493,7 +5493,7 @@ function index() {
                   className="w-1/4 py-4 px-6 text-lg leading-6 font-medium text-gray-800 text-center"
                   scope="col"
                 >
-                  Legrand (PVC)
+                  Legrand
                 </th>
               </tr>
             </thead>
@@ -5585,13 +5585,9 @@ function index() {
           </table>
         </div>
 
-        <div className="grid grid-cols-2 items-start justify-center my-4 lg:my-6 lg:mb-12 text-left text-sm text-gray-600  mx-auto">
-          <p>
-          Para entender en su totalidad lo que incluye el  “servicio de instalación” hay que entender  que intervienen varios factores clave, tales como la mano de obra, recursos técnicos, plus de peligrosidad por trabajos en altura, seguro de responsabilidad civil, y los costos de desplazamiento.
-          </p>
-          <p>
-          Los precios ofrecidos son orientativos y no deben considerarse fijos, ya que cada proyecto requiere un presupuesto personalizado según las necesidades específicas de cada cliente, por poner un  ejemplo practico si hablamos de una fachada de 20m el precio no sería el doble del ejemplo anterior, se vería algo reducido.
-          </p>
+        <div className="grid grid-cols-1 items-center justify-center my-4 lg:my-6 lg:mb-12 text-left text-sm text-gray-600 mx-auto">
+          <p className="text-center max-w-4xl mx-auto">
+          Los precios ofrecidos son de carácter orientativo y pueden variar, cada presupuesto se debe estudiar en función a las necesidades específicas de cada cliente.</p>
         </div>
       </section>
     </div>

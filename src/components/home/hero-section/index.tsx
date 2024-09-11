@@ -159,14 +159,14 @@ function index() {
               ¿Cables en tu fachada?
             </h1>
             <p className="mt-6 text-lg leading-8 text-neutral-200 max-w-xl">
-              Soluciones integrales para la ocultación de cableado en fachadas
+            Alegre su mirada sin cables por su fachada
             </p>
             <div className="mt-10 flex items-start justify-start gap-x-6">
               <a
                 href="#"
                 className="rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
               >
-                Solicitar Presupuesto
+                ¿Te ayudamos?
               </a>
             </div>
           </div>
