@@ -3,12 +3,14 @@ import Image from "next/image";
 import AboutUs1 from "@/images/AboutUs1.png";
 import Adria from "@/images/Adria.png";
 
+import BlurFade from "@/components/magicui/blur-fade";
+
 function index() {
   return (
     <div className="mt-32">
       <div className="mx-auto">
         <div className="max-w-[85rem] gap-12 mx-auto flex flex-col-reverse lg:flex-row md:items-center md:gap-12 xl:gap-32 px-6 my-10">
-          <div className="lg:w-1/2 flex flex-col items-center justify-center">
+          <BlurFade inView delay={0.25} className="lg:w-1/2 flex flex-col items-center justify-center">
             <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,14 +46,14 @@ function index() {
                 />
               </svg>
             </div>
-          </div>
+          </BlurFade>
 
-          <div className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0">
+          <BlurFade inView delay={0.50} className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0">
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
-                <h2 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
+                <h3 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
                   ¿Que es Tapacables?
-                </h2>
+                </h3>
                 <p className="text-gray-500">
                   Tapacables surge con el objetivo de ofrecer soluciones
                   eficientes a un mercado con escasas alternativas para la
@@ -76,16 +78,16 @@ function index() {
                 </p> */}
               </div>
             </div>
-          </div>
+          </BlurFade>
         </div>
 
         <div className="grid gap-12 w-full bg-neutral-50 my-24 px-6">
           <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-12 mx-auto">
-            <h3 className="text-2xl font-semibold text-gray-800 text-center mb-12">
+            <BlurFade inView delay={0.25} className="text-2xl font-semibold text-gray-800 text-center mb-12">
               ¿Te ayudamos a encontrar la solución ideal para tus necesidades?
-            </h3>
+            </BlurFade>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-12 gap-x-32">
-              <div className="text-center">
+              <BlurFade inView delay={0.50} className="text-center">
                 <div className="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -118,9 +120,9 @@ function index() {
                     Productos y servicios <br /> que superan las expectativas.
                   </p>
                 </div>
-              </div>
+              </BlurFade>
 
-              <div className="text-center">
+              <BlurFade inView delay={0.75} className="text-center">
                 <div className="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -163,9 +165,9 @@ function index() {
                     Garantizamos <br /> una experiencia sobresaliente.
                   </p>
                 </div>
-              </div>
+              </BlurFade>
 
-              <div className="text-center">
+              <BlurFade inView delay={1.00} className="text-center">
                 <div className="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -196,13 +198,13 @@ function index() {
                     Compromiso con <br /> la excelencia y responsabilidad.
                   </p>
                 </div>
-              </div>
+              </BlurFade>
             </div>
           </div>
         </div>
 
         <div className="max-w-[85rem] gap-12 mx-auto flex flex-col-reverse lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-6 my-12">
-          <div className="lg:w-1/2 flex flex-col items-center justify-center">
+          <BlurFade inView delay={0.25} className="lg:w-1/2 flex flex-col items-center justify-center">
             <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -241,9 +243,9 @@ function index() {
             <p className="text-gray-500 text-sm mt-3 text-center">
               Adrià Salamanca Barberà, Fundador de Tapacables
             </p>
-          </div>
+          </BlurFade>
 
-          <div className="lg:w-1/2 mt-5 sm:mt-10 lg:mt-0 md:pl-12">
+          <BlurFade inView delay={0.50} className="lg:w-1/2 mt-5 sm:mt-10 lg:mt-0 md:pl-12">
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <h2 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
@@ -264,7 +266,7 @@ function index() {
                 </p>
               </div>
             </div>
-          </div>
+          </BlurFade>
         </div>
       </div>
     </div>

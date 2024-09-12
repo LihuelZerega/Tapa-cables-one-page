@@ -1,19 +1,20 @@
 import React from "react";
+import BlurFade from "@/components/magicui/blur-fade";
 
 function index() {
   return (
     <div className="mt-20 max-w-[85rem] px-3 lg:px-8 mx-auto">
       <section>
-        <div className="text-center mb-12 max-w-5xl mx-auto px-3">
+        <BlurFade inView  className="text-center mb-12 max-w-5xl mx-auto px-3">
           <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">
             <span className="text-blue-500">Comparativa</span> de Canaletas con <span className="text-blue-500">Apertura superior</span> 
           </h3>
           <p className="mt-2 text-base text-gray-600 max-w-4xl text-center mx-auto">
           La comparativa se ha realizado con otra marca que, al igual que nosotros, ofrece una canaleta con apertura superior. Todas las demás opciones se han descartado, ya que no cumplen con los requisitos necesarios para satisfacer las demandas del mercado.
           </p>
-        </div>
+        </BlurFade>
 
-        <div className="block">
+        <BlurFade inView className="block">
           <table className="w-full px-2 lg:h-px max-w-[85rem] mx-auto">
             <caption className="sr-only">Comparacion de Productos</caption>
             <thead className="sticky top-0 inset-x-0 bg-white">
@@ -189,7 +190,7 @@ function index() {
               </tr>
             </tbody>
           </table>
-        </div>
+        </BlurFade>
 
         <p className="text-xs font-medium text-center mt-6 text-gray-600">
           Los datos recogidos son puramente <br /> objetivos y recogidos de
@@ -200,7 +201,7 @@ function index() {
       </section>
 
       <section>
-      <div className="text-center mb-12 max-w-5xl mx-auto">
+      <BlurFade inView className="text-center mb-12 max-w-5xl mx-auto">
       <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">
             Ejemplo de <span className="text-blue-500">Costes en material</span> para una <span className="text-blue-500">Fachada de 10 Metros</span>
           </h3>
@@ -210,9 +211,9 @@ function index() {
             que compensa el mayor costo unitario y optimiza el presupuesto
             total.
           </p>
-        </div>
+        </BlurFade>
 
-        <div className="block">
+        <BlurFade inView className="block">
           <table className="w-full px-2 lg:h-px max-w-[85rem] mx-auto">
             <caption className="sr-only">Comparacion de Productos</caption>
             <thead className="sticky top-0 inset-x-0 bg-white">
@@ -367,7 +368,7 @@ function index() {
               </tr>
             </tbody>
           </table>
-        </div>
+        </BlurFade>
 
         <div className="grid grid-cols-2 md:grid-cols-3 items-start sm:items-center justify-center gap-y-6 sm:divide-x divide-gray-200 my-4 lg:my-6 lg:mb-12 text-center text-xs text-gray-600 max-w-4xl mx-auto">
           <p>
@@ -388,16 +389,16 @@ function index() {
       </section>
 
       <section>
-        <div className="text-center mb-12 max-w-5xl mx-auto">
+        <BlurFade inView className="text-center mb-12 max-w-5xl mx-auto">
           <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">
          Ejemplo de <span className="text-blue-500">Servicio de instalación</span> para una <span className="text-blue-500">Fachada de 10 Metros</span>
           </h3>
           <p className="mt-2 text-base text-gray-600 max-w-4xl text-center mx-auto">
           Se aplica un <span className="underline decoration-2 decoration-solid decoration-blue-500">descuento del 20%</span> en material por contratar servicio de instalación.
           </p>
-        </div>
+        </BlurFade>
 
-        <div className="block">
+        <BlurFade inView className="block">
           <table className="w-full px-2 lg:h-px max-w-[85rem] mx-auto">
             <caption className="sr-only">Comparacion de Productos</caption>
             <thead className="sticky top-0 inset-x-0 bg-white">
@@ -510,7 +511,7 @@ function index() {
               </tr>
             </tbody>
           </table>
-        </div>
+        </BlurFade>
 
         <div className="grid grid-cols-1 items-center justify-center my-4 lg:my-6 lg:mb-12 text-left text-sm text-gray-600 mx-auto">
           <p className="text-center max-w-4xl mx-auto">

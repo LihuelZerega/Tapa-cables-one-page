@@ -2,6 +2,8 @@
 import React from "react";
 import { useState } from "react";
 
+import BlurFade from "@/components/magicui/blur-fade";
+
 interface FAQItem {
   question: string;
   answer: string;
@@ -72,7 +74,7 @@ const FAQ: React.FC = () => {
   return (
     <div className="max-w-[85rem] py-10 px-6 lg:px-12 lg:py-14 mx-auto">
       <div className="grid md:grid-cols-6 gap-10">
-        <div className="md:col-span-3">
+        <BlurFade inView delay={0.25} className="md:col-span-3">
           <div className="max-w-md">
             <h2 className="text-center sm:text-left text-3xl font-semibold lg:text-4xl text-gray-800 md:leading-tight">
               Preguntas Frecuentes sobre Tapacables
@@ -82,9 +84,9 @@ const FAQ: React.FC = () => {
               generar muchas preguntas...
             </p>
           </div>
-        </div>
+        </BlurFade>
 
-        <div className="md:col-span-3">
+        <BlurFade inView delay={0.50} className="md:col-span-3">
           <div className="divide-y divide-gray-200">
             {faqData.map((faq, index) => (
               <div
@@ -142,7 +144,7 @@ const FAQ: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </BlurFade>
       </div>
     </div>
   );

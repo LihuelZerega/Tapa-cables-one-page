@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { Compare } from "@/components/ui/compare";
 import { motion } from "framer-motion";
 
+import BlurFade from "@/components/magicui/blur-fade";
+
 import ComparationProduct1 from "@/images/ComparationProduct.png";
 import ComparationProduct2 from "@/images/ComparationProduct2.png";
 
@@ -79,7 +81,7 @@ function Carousel() {
   );
 
   return (
-    <div className="max-w-[85rem] px-6 py-10 lg:px-8 lg:py-14 mx-auto">
+    <BlurFade inView className="max-w-[85rem] px-6 py-10 lg:px-8 lg:py-14 mx-auto">
       {currentTestimonials.map((testimonial) => (
         <motion.div
           key={testimonial.id}
@@ -163,7 +165,7 @@ function Carousel() {
           </div>
         </motion.div>
       ))}
-    </div>
+    </BlurFade>
   );
 }
 

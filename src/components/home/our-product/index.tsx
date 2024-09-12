@@ -5,39 +5,41 @@ import OurProduct2 from "@/images/OurProduct2.png";
 import OurProduct3 from "@/images/OurProduct3.png";
 import OurProduct4 from "@/images/OurProduct4.png";
 
+import BlurFade from "@/components/magicui/blur-fade";
+
 function index() {
   return (
-    <div className="max-w-[85rem] gap-12 px-6 lg:px-12 lg:py-16 mx-auto my-12 shadow-sm">
+    <div className="max-w-[85rem] gap-12 px-6 lg:px-12 lg:py-16 mx-auto my-12">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
         <div className="lg:w-1/2 flex flex-col items-center justify-center my-12 lg:my-0">
           <div className="grid grid-cols grid-cols-12 gap-2 sm:gap-6 items-center">
-            <div className="col-span-6">
+            <BlurFade inView delay={0.20} className="col-span-6">
               <Image
                 className="rounded-xl"
                 src={OurProduct1}
                 alt="Features Image"
               />
-            </div>
+            </BlurFade>
 
-            <div className="col-span-6">
+            <BlurFade inView delay={0.40} className="col-span-6">
               <Image
                 className="rounded-xl"
                 src={OurProduct2}
                 alt="Features Image"
               />
-            </div>
+            </BlurFade>
 
-            <div className="col-span-12">
+            <BlurFade inView delay={0.60} className="col-span-12">
               <Image
                 className="rounded-xl"
                 src={OurProduct3}
                 alt="Features Image"
               />
-            </div>
+            </BlurFade>
           </div>
         </div>
 
-        <div className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0 ">
+        <BlurFade inView delay={0.80} className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0 ">
           <div className="space-y-6 sm:space-y-8 lg:pl-12">
             <div className="space-y-2 md:space-y-4">
               <h2 className="font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
@@ -59,14 +61,14 @@ function index() {
               </p>
             </div>
           </div>
-        </div>
+        </BlurFade>
       </div>
 
       <div className="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
         <div className="lg:col-span-3">
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 md:gap-12">
             
-            <div className="flex items-start gap-x-5 lg:col-span-1">
+            <BlurFade inView delay={0.20} className="flex items-start gap-x-5 lg:col-span-1">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,9 +122,9 @@ function index() {
                   errores y tiempos de montaje.
                 </p>
               </div>
-            </div>
+            </BlurFade>
 
-            <div className="flex items-start gap-x-5 lg:col-span-1">
+            <BlurFade inView delay={0.40} className="flex items-start gap-x-5 lg:col-span-1">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -159,9 +161,9 @@ function index() {
                   minimizando costes y tiempos de instalación.
                 </p>
               </div>
-            </div>
+            </BlurFade>
 
-            <div className="flex items-start gap-x-5 lg:col-span-1">
+            <BlurFade inView delay={0.60} className="flex items-start gap-x-5 lg:col-span-1">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +199,7 @@ function index() {
                   durabilidad y funcionalidad.
                 </p>
               </div>
-            </div>
+            </BlurFade>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import BlurFade from "@/components/magicui/blur-fade";
 import RadioYaLogo from "@/images/RadioYaLogo.png";
 import OkDiarioLogo from "@/images/OkDiarioLogo.png";
 import ElMundioFinancieroLogo from "@/images/ElMundoFinancieroLogo.png";
@@ -9,40 +10,41 @@ function index() {
   return (
     <div className="max-w-[85rem] py-10 px-6 lg:px-8 lg:py-14 mx-auto">
       <div className="pb-10 text-center mx-auto">
-        <h2 className="text-3xl font-bold md:text-4xl md:leading-tight text-gray-800">
+        <BlurFade inView delay={0.20} className="text-3xl font-bold md:text-4xl md:leading-tight text-gray-800">
           ¿Que dicen de nosotros?
-        </h2>
+        </BlurFade>
+
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 max-w-5xl mt-8 mx-auto select-none">
-          <div className="flex items-center justify-center mx-auto">
+          <BlurFade  delay={0.40} inView className="flex items-center justify-center mx-auto">
             <Image
               src={RadioYaLogo}
               alt="RadioYaLogo"
               width={120}
               height={120}
             />
-          </div>
+          </BlurFade>
 
-          <div className="flex items-center justify-center mx-auto">
+          <BlurFade  delay={0.60} inView className="flex items-center justify-center mx-auto">
             <Image
               src={OkDiarioLogo}
               alt="RadioYaLogo"
               width={110}
               height={110}
             />
-          </div>
+          </BlurFade>
 
-          <div className="flex items-center justify-center mx-auto">
+          <BlurFade  delay={0.80} inView className="flex items-center justify-center mx-auto">
             <Image
               src={ElMundioFinancieroLogo}
               alt="RadioYaLogo"
               width={130}
               height={130}
             />
-          </div>
+          </BlurFade>
 
-          <div className="flex items-center justify-center mx-auto">
+          <BlurFade  delay={1.00} inView className="flex items-center justify-center mx-auto">
             <Image src={LaSextaLogo} alt="RadioYaLogo" width={30} height={30} />
-          </div>
+          </BlurFade>
         </div>
       </div>
       {/* <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
