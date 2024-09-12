@@ -1,4 +1,3 @@
-import NavBar from "@/components/home/nav-bar";
 import HeroSection from "@/components/home/hero-section";
 import AboutUs from "@/components/home/about-us";
 import TheSecret from "@/components/home/the-secret";
