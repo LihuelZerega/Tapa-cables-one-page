@@ -376,7 +376,7 @@ function index() {
           </p>
           <p>
             Esos precios son solo por la <br />
-            Compra de material eInstalación propia.
+            Compra de material e Instalación propia.
           </p>
           <p>
             06/12/2024 <br /> Ultima actualizacion de precios

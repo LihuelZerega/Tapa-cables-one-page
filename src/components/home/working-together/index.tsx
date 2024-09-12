@@ -83,7 +83,7 @@ function index() {
 
               <div className="grow pt-0.5 pb-8 sm:pb-12">
                 <span className="text-gray-800 font-medium">
-                  Estudio Personalizado: {""}
+                  Estudio de Presupuesto Gratuito: {""}
                 </span>
                 <p className="text-sm text-gray-600">
                   Después de recibir la información requerida, realizaremos un

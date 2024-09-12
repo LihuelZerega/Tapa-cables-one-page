@@ -19,12 +19,12 @@ const FAQ: React.FC = () => {
     {
       question: "¿Tapacables realiza todo tipo de trabajos?",
       answer:
-        "No, no podemos ayudar a todos los posibles clientes con una solución universal. Antes de que realices tu pedido de canaletas o contrates nuestro servicio de instalación, nuestro equipo se pondrá en contacto contigo para evaluar si nuestro producto se ajusta a tus necesidades. Nuestro lema es: Ayudar a los clientes a quienes realmente podemos ayudar. Si nuestra solución no es adecuada para ti, intentaremos asesorarte de la mejor manera posible y ayudarte a resolver tu problema.",
+        "Nos enfocamos en ofrecer soluciones donde sabemos que podemos aportar verdadero valor. Si nuestra propuesta no es la más adecuada para ti, te guiaremos con honestidad para que encuentres la mejor alternativa. Porque más que vender, nos importa ayudarte a lograr lo que necesitas.",
     },
     {
       question: "¿Qué garantías me ofrece tapacables?",
       answer:
-        "A nivel de instalación todos nuestros  trabajos pasan estándares de calidad muy exigentes una vez finaliza la instalación y donde el cliente certifica que el trabajo está perfectamente acabado. A nivel de producto todas nuestras canaletas cuentan con una garantía de 10 años, siempre que el daño no esté ocasionado por terceros.",
+        "En cuanto a la instalación, todos nuestros trabajos cumplen con los más altos estándares de calidad, verificándose minuciosamente al finalizar, con la aprobación del cliente, quien confirma que el trabajo ha sido concluido a la perfección. En lo que respecta a nuestros productos, todas las canaletas cuentan con una garantía de 10 años, siempre que los daños no sean causados por factores externos o terceros.",
     },
     {
       question: "¿Puedo comprar solo el material e instalarlo yo mismo?",
