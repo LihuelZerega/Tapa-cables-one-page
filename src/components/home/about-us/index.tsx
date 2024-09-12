@@ -260,7 +260,7 @@ function index() {
                 <p className="text-gray-500 mt-3">
                   Durante su trayectoria como técnico de telecomunicaciones
                   descubrió un problema que nadie estaba viendo, al que llamo <br />
-                  <strong>“El secreto"</strong>, ¿Te lo cuento?
+                  <strong>{"“"}El secreto{"”"}</strong>, ¿Te lo cuento?
                 </p>
               </div>
             </div>
