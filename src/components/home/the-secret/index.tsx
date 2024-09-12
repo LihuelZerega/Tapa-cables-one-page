@@ -46,13 +46,13 @@ function index() {
                 telecomunicaciones me ha permitido observar este problema de
                 cerca. Durante años, instalé miles de metros de cableado en
                 diversas fachadas y me di cuenta de un hecho importante al que
-                llame “El secreto”:
+                llame {"“"}El secreto{"”"}:
               </p>
             </div>
             <div className="bg-white p-6 sm:py-12 w-full text-center rounded-md text-blue-600 my-10">
               <strong className="italic text-lg">
-                "La mayoría de las personas no son conscientes de la cantidad de
-                técnicos que manipulan sus fachadas a diario."
+              {"“"}La mayoría de las personas no son conscientes de la cantidad de
+                técnicos que manipulan sus fachadas a diario.{"”"}
               </strong>
             </div>
           </div>
