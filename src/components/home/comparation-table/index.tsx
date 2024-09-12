@@ -2,21 +2,18 @@ import React from "react";
 
 function index() {
   return (
-    <div className="mt-20 max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
+    <div className="mt-20 max-w-[85rem] px-6 lg:px-8 mx-auto">
       <section>
-        <div className="lg:text-center mb-10 lg:mb-20">
-          <h3 className="text-3xl font-bold text-gray-800">
+        <div className="text-center mb-12 max-w-5xl mx-auto">
+          <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">
             <span className="text-blue-500">Comparativa</span> de Canaletas con <span className="text-blue-500">Apertura superior</span> 
           </h3>
           <p className="mt-2 text-base text-gray-600 max-w-4xl text-center mx-auto">
-            La comparativa se realiza junto a Legrand dado que es la única
-            canaleta junto a nosotros con apertura superior, todas las demás se
-            descartan porque no cumplen con los requisitos para satisfacer las
-            necesidades del mercado.
+          La comparativa se ha realizado con otra marca que, al igual que nosotros, ofrece una canaleta con apertura superior. Todas las demás opciones se han descartado, ya que no cumplen con los requisitos necesarios para satisfacer las demandas del mercado.
           </p>
         </div>
 
-        <div className="space-y-24 lg:hidden">
+        {/* <div className="space-y-24 lg:hidden">
           <section>
             <div className="px-4 mb-4">
               <h2 className="text-lg leading-6 font-medium text-gray-800">
@@ -1704,10 +1701,10 @@ function index() {
               </tbody>
             </table>
           </section>
-        </div>
+        </div> */}
 
         <div className="hidden lg:block">
-          <table className="w-full h-px">
+          <table className="w-full h-px max-w-[85rem] mx-auto">
             <caption className="sr-only">Comparacion de Productos</caption>
             <thead className="sticky top-0 inset-x-0 bg-white">
               <tr>
@@ -1729,7 +1726,7 @@ function index() {
                   className="w-1/4 py-4 px-6 text-lg leading-6 font-medium text-gray-800 text-center"
                   scope="col"
                 >
-                  Legrand
+                  Marca Similar
                 </th>
               </tr>
             </thead>
@@ -1893,8 +1890,8 @@ function index() {
       </section>
 
       <section>
-        <div className="lg:text-center mb-10 lg:mb-10 lg:mt-12">
-          <h3 className="text-3xl font-bold text-gray-800">
+      <div className="text-center mb-12 max-w-5xl mx-auto">
+      <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">
             Ejemplo de <span className="text-blue-500">Costes en material</span> para una <span className="text-blue-500">Fachada de 10 Metros</span>
           </h3>
           <p className="mt-2 text-base text-gray-600 max-w-4xl text-center mx-auto">
@@ -1905,7 +1902,7 @@ function index() {
           </p>
         </div>
 
-        <div className="space-y-24 lg:hidden">
+        {/* <div className="space-y-24 lg:hidden">
           <section>
             <div className="px-4 mb-4">
               <h2 className="text-lg leading-6 font-medium text-gray-800">
@@ -3593,7 +3590,7 @@ function index() {
               </tbody>
             </table>
           </section>
-        </div>
+        </div> */}
 
         <div className="hidden lg:block">
           <table className="w-full h-px">
@@ -3618,7 +3615,7 @@ function index() {
                   className="w-1/4 py-4 px-6 text-lg leading-6 font-medium text-gray-800 text-center"
                   scope="col"
                 >
-                  Legrand
+                  Marca Similar
                 </th>
               </tr>
             </thead>
@@ -3752,7 +3749,7 @@ function index() {
           </table>
         </div>
 
-        <div className="grid grid-cols-3 items-center justify-center divide-x divide-gray-200 my-4 lg:my-6 lg:mb-12 text-center text-xs text-gray-600 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 items-start sm:items-center justify-center gap-y-6 sm:divide-x divide-gray-200 my-4 lg:my-6 lg:mb-12 text-center text-xs text-gray-600 max-w-4xl mx-auto">
           <p>
             Los datos recogidos son puramente <br /> objetivos y recogidos de
             fuentes oficiales.
@@ -3771,8 +3768,8 @@ function index() {
       </section>
 
       <section>
-        <div className="lg:text-center mb-10 lg:mb-10 lg:mt-12">
-          <h3 className="text-3xl font-bold text-gray-800">
+        <div className="text-center mb-12 max-w-5xl mx-auto">
+          <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">
          Ejemplo de <span className="text-blue-500">Servicio de instalación</span> para una <span className="text-blue-500">Fachada de 10 Metros</span>
           </h3>
           <p className="mt-2 text-base text-gray-600 max-w-4xl text-center mx-auto">
@@ -3780,7 +3777,7 @@ function index() {
           </p>
         </div>
 
-        <div className="space-y-24 lg:hidden">
+        {/* <div className="space-y-24 lg:hidden">
           <section>
             <div className="px-4 mb-4">
               <h2 className="text-lg leading-6 font-medium text-gray-800">
@@ -5468,7 +5465,7 @@ function index() {
               </tbody>
             </table>
           </section>
-        </div>
+        </div> */}
 
         <div className="hidden lg:block">
           <table className="w-full h-px">
@@ -5493,7 +5490,7 @@ function index() {
                   className="w-1/4 py-4 px-6 text-lg leading-6 font-medium text-gray-800 text-center"
                   scope="col"
                 >
-                  Legrand
+                  Marca Similar
                 </th>
               </tr>
             </thead>

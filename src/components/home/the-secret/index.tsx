@@ -28,8 +28,8 @@ function index() {
 
       <hr />
 
-      <div className="bg-gray-50 shadow-sm shadow-gray-200 pb-6">
-        <div className="max-w-[85rem] mx-auto flex flex-col px-24 py-10">
+      <div className="bg-blue-50 shadow-sm shadow-gray-200 pb-6">
+        <div className="max-w-[85rem] mx-auto flex flex-col px-6 sm:px-20 py-10">
           <div className="gap-12 mx-auto flex flex-col md:items-center my-10">
             <div className="flex flex-col mx-auto">
               <h2 className="font-bold text-2xl lg:text-3xl text-gray-800 mb-3">
@@ -49,11 +49,11 @@ function index() {
                 llame “El secreto”:
               </p>
             </div>
-            <div className="bg-gray-100 py-12 w-full text-center rounded-md text-blue-600 my-10">
-              <p className="italic text-lg">
+            <div className="bg-white p-6 sm:py-12 w-full text-center rounded-md text-blue-600 my-10">
+              <strong className="italic text-lg">
                 "La mayoría de las personas no son conscientes de la cantidad de
                 técnicos que manipulan sus fachadas a diario."
-              </p>
+              </strong>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ function index() {
               </p>
             </div>
             <div className="lg:w-1/2 flex items-center justify-center">
-              <div className="flex items-center justify-center w-[500px] h-[500px] bg-gray-100 rounded-md">
+              <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md mt-6 md:mt-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

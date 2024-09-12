@@ -108,13 +108,8 @@ function index() {
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  alt=""
-                  src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
-                  className="h-8 w-auto"
-                />
+              <a href="/" className="-m-1.5 p-1.5">
+              <h1 className="text-2xl font-bold text-blue-600">TAPACABLES</h1>
               </a>
               <button
                 type="button"
@@ -140,10 +135,10 @@ function index() {
                 </div>
                 <div className="py-6">
                   <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    href="#contacto"
+                    className="w-fit rounded-sm bg-blue-600 px-3 py-3 text-base text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
                   >
-                    Log in
+                    Solicitar información <span aria-hidden="true">&rarr;</span>
                   </a>
                 </div>
               </div>
@@ -154,14 +149,14 @@ function index() {
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto  py-32 sm:py-48 lg:py-44 2xl:py-48">
-          <div className="text-left relative z-10 ">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          <div className="relative z-10 ">
+            <h1 className="text-center lg:text-left font-bold tracking-tight text-white text-5xl sm:text-6xl lg:text-7xl">
               ¿Cables en tu fachada?
             </h1>
-            <p className="mt-6 text-lg leading-8 text-neutral-200 max-w-xl">
-            Alegre su mirada sin cables por su fachada
+            <p className="text-center lg:text-left mt-6 text-xl lg:text:2xl leading-8 text-neutral-200 max-w-xl">
+              Alegre su mirada sin cables por su fachada
             </p>
-            <div className="mt-10 flex items-start justify-start gap-x-6">
+            <div className="mt-10 flex items-center lg:items-start justify-center lg:justify-start gap-x-6">
               <a
                 href="#"
                 className="rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"

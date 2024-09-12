@@ -3,9 +3,9 @@ import React from "react";
 function index() {
   return (
     <div>
-      <div className="flex flex-col items-center justify-center max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div className="flex flex-col items-center justify-center max-w-[85rem] px-6 py-10 lg:px-8 lg:py-14 mx-auto">
         <div className="max-w-3xl text-center mb-10 lg:mb-14 mx-auto">
-          <h2 className="text-gray-800 font-semibold text-2xl md:text-4xl md:leading-tight">
+          <h2 className="text-gray-800 font-semibold text-3xl md:text-4xl md:leading-tight mb-6 md:mb-0">
             ¿Cómo vamos a{" "}
             <span className="underline decoration-solid decoration-blue-500">
               Trabajar juntos
@@ -18,7 +18,7 @@ function index() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center lg:justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center justify-center max-w-5xl mx-auto">
           <div>
             <div className="mb-4">
               <h3 className="text-blue-500 text-xs font-medium uppercase">
@@ -126,7 +126,7 @@ function index() {
             </a>
           </div>
 
-          <div className="flex items-center justify-center w-[500px] h-[500px] bg-gray-100 rounded-md ml-12">
+          <div className="flex items-center justify-center w-[330px] h-[330px] md:w-[430px] md:h-[430px] xl:w-[500px] xl:h-[500px] bg-gray-100 rounded-md xl:ml-12 mx-auto">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

@@ -7,9 +7,9 @@ import OurProduct4 from "@/images/OurProduct4.png";
 
 function index() {
   return (
-    <div className="max-w-[85rem] gap-12 px-12 lg:py-16 mx-auto my-12 shadow-sm">
-      <div className="flex flex-row items-center justify-between">
-        <div className="lg:w-1/2 flex flex-col items-center justify-center">
+    <div className="max-w-[85rem] gap-12 px-6 lg:px-12 lg:py-16 mx-auto my-12 shadow-sm">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
+        <div className="lg:w-1/2 flex flex-col items-center justify-center my-12 lg:my-0">
           <div className="grid grid-cols grid-cols-12 gap-2 sm:gap-6 items-center">
             <div className="col-span-6">
               <Image
@@ -38,9 +38,9 @@ function index() {
         </div>
 
         <div className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0 ">
-          <div className="space-y-6 sm:space-y-8 pl-12">
+          <div className="space-y-6 sm:space-y-8 lg:pl-12">
             <div className="space-y-2 md:space-y-4">
-              <h2 className="font-bold text-2xl lg:text-3xl text-gray-800">
+              <h2 className="font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
                 Diseño, Calidad y Funcionalidad en una misma Canaleta
               </h2>
               <p className="text-gray-500">

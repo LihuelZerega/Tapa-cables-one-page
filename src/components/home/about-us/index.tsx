@@ -7,9 +7,9 @@ function index() {
   return (
     <div className="mt-32">
       <div className="mx-auto">
-        <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row md:items-center md:gap-12 xl:gap-32 px-12 my-10">
+        <div className="max-w-[85rem] gap-12 mx-auto flex flex-col-reverse lg:flex-row md:items-center md:gap-12 xl:gap-32 px-6 my-10">
           <div className="lg:w-1/2 flex flex-col items-center justify-center">
-            <div className="flex items-center justify-center w-[500px] h-[500px] bg-gray-100 rounded-md">
+            <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -49,7 +49,7 @@ function index() {
           <div className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0">
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
-                <h2 className="font-bold text-2xl lg:text-3xl text-gray-800">
+                <h2 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
                   ¿Que es Tapacables?
                 </h2>
                 <p className="text-gray-500">
@@ -79,7 +79,7 @@ function index() {
           </div>
         </div>
 
-        <div className="grid gap-12 w-full bg-neutral-50 my-24 px-12">
+        <div className="grid gap-12 w-full bg-neutral-50 my-24 px-6">
           <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-12 mx-auto">
             <h3 className="text-2xl font-semibold text-gray-800 text-center mb-12">
               ¿Te ayudamos a encontrar la solución ideal para tus necesidades?
@@ -201,9 +201,9 @@ function index() {
           </div>
         </div>
 
-        <div className="max-w-[85rem] gap-12 mx-auto lg:flex lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-12 my-12">
+        <div className="max-w-[85rem] gap-12 mx-auto flex flex-col-reverse lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-6 my-12">
           <div className="lg:w-1/2 flex flex-col items-center justify-center">
-            <div className="flex items-center justify-center w-[500px] h-[500px] bg-gray-100 rounded-md">
+            <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -243,10 +243,10 @@ function index() {
             </p>
           </div>
 
-          <div className="lg:w-1/2 mt-5 sm:mt-10 lg:mt-0  pl-12">
+          <div className="lg:w-1/2 mt-5 sm:mt-10 lg:mt-0 md:pl-12">
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
-                <h2 className="font-bold text-2xl lg:text-3xl text-gray-800">
+                <h2 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
                   Tapacables y su nacimiento
                 </h2>
                 <p className="text-gray-500">

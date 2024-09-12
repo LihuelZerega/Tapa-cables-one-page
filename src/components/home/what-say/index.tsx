@@ -7,22 +7,45 @@ import LaSextaLogo from "@/images/LaSextaLogo.png";
 
 function index() {
   return (
-    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div className="max-w-[85rem] py-10 px-6 lg:px-8 lg:py-14 mx-auto">
       <div className="pb-10 text-center mx-auto">
-        <h2 className="text-2xl font-bold md:text-3xl md:leading-tight text-gray-800">
+        <h2 className="text-3xl font-bold md:text-4xl md:leading-tight text-gray-800">
           ¿Que dicen de nosotros?
         </h2>
-        <div className="flex flex-row items-center justify-between max-w-5xl mt-8 mx-auto select-none">
-          <Image src={RadioYaLogo} alt="RadioYaLogo" width={120} height={120} />
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 max-w-5xl mt-8 mx-auto select-none">
+          <div className="flex items-center justify-center mx-auto">
+            <Image
+              src={RadioYaLogo}
+              alt="RadioYaLogo"
+              width={120}
+              height={120}
+            />
+          </div>
 
-          <Image src={OkDiarioLogo} alt="RadioYaLogo" width={110} height={110} />
+          <div className="flex items-center justify-center mx-auto">
+            <Image
+              src={OkDiarioLogo}
+              alt="RadioYaLogo"
+              width={110}
+              height={110}
+            />
+          </div>
 
-          <Image src={ElMundioFinancieroLogo} alt="RadioYaLogo" width={130} height={130} />
+          <div className="flex items-center justify-center mx-auto">
+            <Image
+              src={ElMundioFinancieroLogo}
+              alt="RadioYaLogo"
+              width={130}
+              height={130}
+            />
+          </div>
 
-          <Image src={LaSextaLogo} alt="RadioYaLogo" width={30} height={30} />
+          <div className="flex items-center justify-center mx-auto">
+            <Image src={LaSextaLogo} alt="RadioYaLogo" width={30} height={30} />
+          </div>
         </div>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <a
           className="group flex flex-col h-full border border-gray-200 hover:shadow-lg  transition duration-300 rounded-md p-5"
           href="#"
@@ -92,7 +115,7 @@ function index() {
             </p>
           </div>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

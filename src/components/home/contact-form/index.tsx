@@ -1,19 +1,14 @@
-"use client";
-
-import { useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { Field, Label, Switch } from "@headlessui/react";
+import React from "react";
 
 export default function Example() {
-  const [agreed, setAgreed] = useState(false);
 
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <div className="mx-auto max-w-2xl text-center">
+      <div className="mx-auto max-w-5xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-blue-500 sm:text-4xl">
           Creemos que te podemos ayudar
         </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
+        <p className="mt-2 text-base leading-8 text-gray-600">
           Si tienes alguna duda, necesitas información adicional o solicitar
           presupuesto déjanos tus datos y nos pondremos en contacto en la máxima
           brevedad posible.
@@ -22,7 +17,7 @@ export default function Example() {
       <form
         action="#"
         method="POST"
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
+        className="mx-auto mt-16 max-w-5xl sm:mt-20"
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
