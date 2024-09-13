@@ -358,7 +358,10 @@ function Index() {
                   </strong>
                 </p>
 
-                <div className="flex items-center justify-center mx-auto pt-4" onClick={openTerms}>
+                <div
+                  className="flex items-center justify-center mx-auto pt-4"
+                  onClick={openTerms}
+                >
                   <PulsatingButton>
                     ¿Quieres conocer el secreto?
                   </PulsatingButton>
@@ -595,68 +598,68 @@ function Index() {
                   adjunto unas fotos para que veas lo que enfrentamos día a día.
                 </p>
               </div>
-{/* 
-              // <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 items-center justify-center mx-auto gap-x-12 py-6 w-full">
-              //   <div className="h-[450px] select-none">
-              //     <Image
-              //       src={TheSecretImage1}
-              //       width={450}
-              //       height={600}
-              //       alt=""
-              //       className="h-[450px] rounded-md "
-              //     />
-              //   </div>
 
-              //   <div className="h-[450px] select-none">
-              //     <Image
-              //       src={TheSecretImage2}
-              //       width={450}
-              //       height={600}
-              //       alt=""
-              //       className="h-[450px] rounded-md "
-              //     />
-              //   </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 items-center justify-center mx-auto gap-x-12 py-6 w-full">
+                <div className="h-[450px] select-none">
+                  <Image
+                    src={TheSecretImage1}
+                    width={450}
+                    height={600}
+                    alt=""
+                    className="h-[450px] rounded-md "
+                  />
+                </div>
 
-              //   <div className="h-[450px] select-none">
-              //     <Image
-              //       src={TheSecretImage3}
-              //       width={450}
-              //       height={600}
-              //       alt=""
-              //       className="h-[450px] rounded-md "
-              //     />
-              //   </div>
+                <div className="h-[450px] select-none">
+                  <Image
+                    src={TheSecretImage2}
+                    width={450}
+                    height={600}
+                    alt=""
+                    className="h-[450px] rounded-md "
+                  />
+                </div>
 
-              //   <div className="h-[450px] select-none">
-              //     <Image
-              //       src={TheSecretImage4}
-              //       width={450}
-              //       height={600}
-              //       alt=""
-              //       className="h-[450px] rounded-md "
-              //     />
-              //   </div>
+                <div className="h-[450px] select-none">
+                  <Image
+                    src={TheSecretImage3}
+                    width={450}
+                    height={600}
+                    alt=""
+                    className="h-[450px] rounded-md "
+                  />
+                </div>
 
-              //   <div className="h-[450px] select-none">
-              //     <Image
-              //       src={TheSecretImage5}
-              //       width={450}
-              //       height={600}
-              //       alt=""
-              //       className="h-[450px] rounded-md "
-              //     />
-              //   </div>
+                <div className="h-[450px] select-none">
+                  <Image
+                    src={TheSecretImage4}
+                    width={450}
+                    height={600}
+                    alt=""
+                    className="h-[450px] rounded-md "
+                  />
+                </div>
 
-              //   <div className="h-[450px] select-none">
-              //     <Image
-              //       src={TheSecretImage6}
-              //       width={450}
-              //       height={600}
-              //       alt=""
-              //       className="h-[450px] rounded-md "
-              //     />
-              //   </div>
-              // </div> */}
+                <div className="h-[450px] select-none">
+                  <Image
+                    src={TheSecretImage5}
+                    width={450}
+                    height={600}
+                    alt=""
+                    className="h-[450px] rounded-md "
+                  />
+                </div>
+
+                <div className="h-[450px] select-none">
+                  <Image
+                    src={TheSecretImage6}
+                    width={450}
+                    height={600}
+                    alt=""
+                    className="h-[450px] rounded-md "
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
