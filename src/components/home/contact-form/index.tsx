@@ -28,7 +28,7 @@ export default function ContactForm() {
       return;
     }
 
-    const res = await fetch("https://tapacables.vercel.app/api/contact", {
+    const res = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
