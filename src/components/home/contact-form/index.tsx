@@ -13,16 +13,28 @@ export default function ContactForm() {
   });
 
   const [selectedMethod, setSelectedMethod] = useState("");
+  const [isTermsChecked, setIsTermsChecked] = useState(false);
   const [modalContent, setModalContent] = useState({ title: "", message: "" });
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // Verificación del método de contacto y el checkbox de términos
     if (!selectedMethod) {
       setModalContent({
         title: "Error",
         message: "Por favor, seleccione un método de contacto.",
+      });
+      setIsModalOpen(true);
+      return;
+    }
+
+    if (!isTermsChecked) {
+      setModalContent({
+        title: "Error",
+        message: "Debes aceptar los términos y condiciones antes de continuar.",
       });
       setIsModalOpen(true);
       return;
@@ -39,7 +51,8 @@ export default function ContactForm() {
     if (res.ok) {
       setModalContent({
         title: "Mensaje enviado exitosamente",
-        message: "El mensaje ha sido enviado exitosamente, pronto nos pondremos en contacto contigo. Gracias por contactarnos!",
+        message:
+          "El mensaje ha sido enviado exitosamente, pronto nos pondremos en contacto contigo. ¡Gracias por contactarnos!",
       });
       setFormData({
         name: "",
@@ -50,6 +63,7 @@ export default function ContactForm() {
         contactMethod: "",
       });
       setSelectedMethod("");
+      setIsTermsChecked(false);
     } else {
       setModalContent({
         title: "Error",
@@ -57,6 +71,14 @@ export default function ContactForm() {
       });
     }
     setIsModalOpen(true);
+  };
+
+  const openTerms = () => {
+    setIsTermsOpen(true);
+  };
+
+  const closeTerms = () => {
+    setIsTermsOpen(false);
   };
 
   return (
@@ -216,7 +238,25 @@ export default function ContactForm() {
               </div>
             </div>
           </div>
-          <div className="mt-10">
+
+          <div className="flex items-center mt-3">
+            <input
+              id="terms-checkbox"
+              name="terms-checkbox"
+              type="checkbox"
+              checked={isTermsChecked}
+              onChange={(e) => setIsTermsChecked(e.target.checked)}
+              className="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500"
+            />
+            <label htmlFor="terms-checkbox" className="ml-3 text-base">
+              Acepto los{" "}
+              <button type="button" className="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium" onClick={openTerms}>
+                Términos y Condiciones
+              </button>
+            </label>
+          </div>
+
+          <div className="mt-4">
             <button
               type="submit"
               className="block w-full rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
@@ -226,6 +266,231 @@ export default function ContactForm() {
           </div>
         </form>
       </BlurFade>
+
+      {isTermsOpen && (
+        <div
+          id="hs-modal-upgrade-to-pro"
+          className="hs-overlay size-full fixed top-0 left-0 z-[80] overflow-x-hidden overflow-y-auto flex justify-center items-center inset-0 bg-black/30 bg-black bg-opacity-20"
+          role="dialog"
+          aria-labelledby="hs-modal-upgrade-to-pro-label"
+        >
+          <div className="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-100 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+            <div className="bg-white border border-gray-200 rounded-xl shadow-sm pointer-events-auto">
+              <div className="p-4 sm:p-7">
+                <div className="text-center">
+                  <h3
+                    id="hs-modal-upgrade-to-pro-label"
+                    className="block text-3xl sm:text-4xl font-semibold text-gray-800"
+                  >
+                    Política de Privacidad
+                  </h3>
+                  <div className="max-w-lg mx-auto">
+                    <p className="mt-2 text-sm text-gray-600">
+                      Última actualización: 13 de Septiembre de 2024
+                    </p>
+                    <p className="mt-3 text-xs text-gray-600">
+                      En Tapacables, respetamos su privacidad y estamos
+                      comprometidos a proteger sus datos personales. Esta
+                      política de privacidad describe cómo recopilamos,
+                      utilizamos, y compartimos la información cuando usted
+                      interactúa con nosotros a través de nuestro formulario de
+                      contacto.
+                    </p>
+                  </div>
+
+                  <div className="mt-5">
+                    <hr />
+                  </div>
+                </div>
+
+                <div className="py-4 sm:py-6 divide-y divide-gray-200 max-h-72 lg:max-h-32 xl:max-h-52 2xl:max-h-72 overflow-y-auto">
+                  <div className="pb-4 sm:pb-6">
+                    <h3 className="font-semibold text-xl md:text-2xl text-gray-800 mb-1">
+                      1. Información que Recopilamos
+                    </h3>
+                    <p className="text-sm md:text-base text-gray-600">
+                      Cuando usted completa el formulario de contacto en nuestro
+                      sitio web, podemos recopilar los siguientes datos
+                      personales:
+                    </p>
+                    <ul className="mt-2 text-sm text-gray-600 space-y-1">
+                      <li>- Nombre completo</li>
+                      <li>- Dirección de correo electrónico</li>
+                      <li>- Número de teléfono</li>
+                      <li>- Código postal</li>
+                      <li>- Mensaje o consulta</li>
+                      <li>
+                        - Método de contacto preferido (Correo electrónico o
+                        WhatsApp)
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="pb-4 sm:py-6">
+                    <h3 className="font-semibold text-xl md:text-2xl text-gray-800 mb-1">
+                      2. Cómo Utilizamos su Información
+                    </h3>
+                    <p className="text-sm md:text-base text-gray-600">
+                      La información que recopilamos se utiliza únicamente para
+                      los siguientes propósitos:
+                    </p>
+                    <ul className="mt-2 text-sm text-gray-600 space-y-1">
+                      <li>
+                        <strong>Responder a sus consultas:</strong> Utilizaremos
+                        su nombre, correo electrónico y número de teléfono para
+                        ponernos en contacto con usted y responder a sus
+                        preguntas.
+                      </li>
+                      <li>
+                        <strong>Procesamiento de solicitudes:</strong>Para
+                        coordinar el contacto según su método de preferencia.
+                      </li>
+                      <li>
+                        <strong>Mejorar nuestros servicios:</strong>La
+                        información nos ayuda a mejorar nuestras respuestas y la
+                        experiencia de usuario en nuestro sitio web.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="pb-4 sm:py-6">
+                    <h3 className="font-semibold text-xl md:text-2xl text-gray-800 mb-1">
+                      3. Compartir su Información
+                    </h3>
+                    <p className="text-sm md:text-base text-gray-600">
+                      No compartimos, vendemos ni alquilamos sus datos
+                      personales con terceros, excepto en las siguientes
+                      circunstancias:
+                    </p>
+                    <ul className="mt-2 text-sm text-gray-600 space-y-1">
+                      <li>
+                        <strong>Proveedores de servicios:</strong> Podemos
+                        compartir su información con proveedores de servicios
+                        que nos ayudan a gestionar nuestro sitio web o
+                        comunicarnos con usted (por ejemplo, servicios de correo
+                        electrónico).
+                      </li>
+                      <li>
+                        <strong>Cumplimiento legal:</strong> Podemos divulgar su
+                        información si así lo requiere la ley o una autoridad
+                        judicial.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="pb-4 sm:py-6">
+                    <h3 className="font-semibold text-xl md:text-2xl text-gray-800 mb-1">
+                      4. Seguridad de su Información
+                    </h3>
+                    <p className="text-sm md:text-base text-gray-600">
+                      Implementamos medidas de seguridad técnicas y
+                      organizativas para proteger sus datos personales frente a
+                      accesos no autorizados, pérdida, alteración o divulgación.
+                      Sin embargo, no podemos garantizar la seguridad absoluta
+                      de la información transmitida por internet.
+                    </p>
+                  </div>
+
+                  <div className="pb-4 sm:py-6">
+                    <h3 className="font-semibold text-xl md:text-2xl text-gray-800 mb-1">
+                      5. Retención de sus Datos
+                    </h3>
+                    <p className="text-sm md:text-base text-gray-600">
+                      Mantendremos sus datos personales solo durante el tiempo
+                      necesario para cumplir con los propósitos mencionados en
+                      esta política de privacidad, o según lo exija la ley.
+                    </p>
+                  </div>
+
+                  <div className="pb-4 sm:py-6">
+                    <h3 className="font-semibold text-xl md:text-2xl text-gray-800 mb-1">
+                      6. Derechos de los Usuarios
+                    </h3>
+                    <p className="text-sm md:text-base text-gray-600">
+                      Usted tiene los siguientes derechos con respecto a sus
+                      datos personales:
+                    </p>
+                    <ul className="mt-2 text-sm text-gray-600 space-y-1">
+                      <li>
+                        <strong>Derecho de acceso:</strong> Puede solicitar una
+                        copia de los datos que tenemos sobre usted.
+                      </li>
+                      <li>
+                        <strong>Derecho de rectificación:</strong> Puede
+                        solicitar la corrección de cualquier información
+                        incorrecta o incompleta.
+                      </li>
+                      <li>
+                        <strong>Derecho de supresión:</strong> Puede solicitar
+                        que eliminemos sus datos personales cuando ya no sean
+                        necesarios para los fines por los que fueron
+                        recopilados.
+                      </li>
+                      <li>
+                        <strong>
+                          Derecho a la limitación del tratamiento:
+                        </strong>{" "}
+                        Puede solicitar que limitemos el tratamiento de sus
+                        datos en determinadas circunstancias.
+                      </li>
+                      <li>
+                        <strong>Derecho de oposición:</strong> Puede oponerse al
+                        tratamiento de sus datos para ciertos fines.
+                      </li>
+                    </ul>
+                    <p className="text-sm md:text-base text-gray-600 mt-2">
+                      Para ejercer cualquiera de estos derechos, puede
+                      contactarnos utilizando los metodos de contacto
+                      proporcionados en nuestra web.
+                    </p>
+                  </div>
+
+                  <div className="pb-4 sm:py-6">
+                    <h3 className="font-semibold text-xl md:text-2xl text-gray-800 mb-1">
+                      7. Cambios a esta Política de Privacidad
+                    </h3>
+                    <p className="text-sm md:text-base text-gray-600">
+                      Nos reservamos el derecho de actualizar esta política de
+                      privacidad en cualquier momento. Cualquier cambio será
+                      publicado en esta página con la fecha de actualización
+                      correspondiente.
+                    </p>
+                  </div>
+
+                  <div className="pb-4 sm:py-6">
+                    <h3 className="font-semibold text-xl md:text-2xl text-gray-800 mb-1">
+                      8. Contacto
+                    </h3>
+                    <p className="text-sm md:text-base text-gray-600">
+                      Si tiene alguna pregunta o desea ejercer sus derechos
+                      relacionados con la privacidad de sus datos, puede
+                      contactarnos utilizando los metodos de contacto
+                      proporcionados en nuestra web.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-end items-center gap-x-2 p-4 sm:px-7 border-t">
+                <button
+                  type="button"
+                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-gray-50"
+                  onClick={closeTerms}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                  onClick={closeTerms}
+                >
+                  Aceptar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {isModalOpen && (
         <div
@@ -262,7 +527,6 @@ export default function ContactForm() {
             </div>
 
             <div className="p-4 sm:p-10 text-center overflow-y-auto">
-              {/* Icon */}
               <span className="mb-4 inline-flex justify-center items-center size-[46px] rounded-full border-4 border-green-50 bg-green-100 text-green-500">
                 <svg
                   className="shrink-0 size-5"
@@ -275,7 +539,6 @@ export default function ContactForm() {
                   <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
                 </svg>
               </span>
-              {/* End Icon */}
 
               <h3
                 id="hs-task-created-alert-label"
