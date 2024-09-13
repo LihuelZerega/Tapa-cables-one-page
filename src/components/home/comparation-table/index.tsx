@@ -144,7 +144,7 @@ function index() {
 
                 <td className="py-5 lg:px-6">
                   <p className="ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                    Alta <br /> (Sin necesidad de{" "}
+                    Facil <br /> (Sin necesidad de{" "}
                     <br className="block lg:hidden" /> herramientas{" "}
                     <br className="block lg:hidden" /> de corte)
                   </p>
@@ -152,7 +152,7 @@ function index() {
 
                 <td className="py-5 lg:px-6">
                   <p className="ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                    Media <br /> (Requiere <br className="block lg:hidden" />{" "}
+                  Moderada <br /> (Requiere <br className="block lg:hidden" />{" "}
                     herramientas <br className="block lg:hidden" /> de corte)
                   </p>
                 </td>
