@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tapa Cables | Alegre su mirada sin cables por su fachada",
+  title: "Tapacables | Alegre su mirada sin cables por su fachada",
   description: "Alegre su mirada sin cables por su fachada",
 };
 
