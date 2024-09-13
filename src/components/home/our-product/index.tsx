@@ -15,7 +15,7 @@ function index() {
         <div className="lg:w-1/2 flex flex-col items-center justify-center my-12 lg:my-0">
           <div className="grid grid-cols grid-cols-12 gap-2 sm:gap-6 items-center">
             <div className="col-span-6 space-y-2 md:space-y-6">
-              <BlurFade inView delay={0.2}>
+              <BlurFade inView>
                 <Image
                   className="rounded-xl"
                   src={OurProduct4}
@@ -23,7 +23,7 @@ function index() {
                 />
               </BlurFade>
 
-              <BlurFade inView delay={0.2}>
+              <BlurFade inView>
                 <Image
                   className="rounded-xl"
                   src={OurProduct5}
@@ -32,7 +32,7 @@ function index() {
               </BlurFade>
             </div>
 
-            <BlurFade inView delay={0.4} className="col-span-6">
+            <BlurFade inView className="col-span-6">
               <Image
                 className="rounded-xl"
                 src={OurProduct2}
@@ -40,7 +40,7 @@ function index() {
               />
             </BlurFade>
 
-            <BlurFade inView delay={0.6} className="col-span-12">
+            <BlurFade inView className="col-span-12">
               <Image
                 className="rounded-xl"
                 src={OurProduct3}
@@ -84,7 +84,6 @@ function index() {
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 md:gap-12">
             <BlurFade
               inView
-              delay={0.2}
               className="flex items-start gap-x-5 lg:col-span-1"
             >
               <div>

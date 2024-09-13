@@ -12,7 +12,6 @@ function index() {
         <div className="max-w-[85rem] gap-12 mx-auto flex md:hidden flex-col-reverse lg:flex-row md:items-center md:gap-12 xl:gap-32 px-6 my-10">
           <BlurFade
             inView
-            delay={0.5}
             className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0"
           >
             <div className="space-y-6 sm:space-y-8">
@@ -78,7 +77,6 @@ function index() {
         <div className="max-w-[85rem] gap-12 mx-auto hidden md:flex flex-col-reverse lg:flex-row md:items-center md:gap-12 xl:gap-32 px-6 my-10">
           <BlurFade
             inView
-            delay={0.25}
             className="lg:w-1/2 flex flex-col items-center justify-center"
           >
             <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
@@ -120,7 +118,6 @@ function index() {
 
           <BlurFade
             inView
-            delay={0.5}
             className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0"
           >
             <div className="space-y-6 sm:space-y-8">
@@ -160,13 +157,12 @@ function index() {
         <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-12 mx-auto">
           <BlurFade
             inView
-            delay={0.25}
             className="text-2xl font-semibold text-gray-800 text-center mb-12"
           >
             Nuestro compromiso es un reflejo de nuestros valores.
           </BlurFade>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-12 gap-x-32">
-            <BlurFade inView delay={0.5} className="text-center">
+            <BlurFade inView className="text-center">
               <div className="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -199,7 +195,7 @@ function index() {
               </div>
             </BlurFade>
 
-            <BlurFade inView delay={0.75} className="text-center">
+            <BlurFade inView className="text-center">
               <div className="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +240,7 @@ function index() {
               </div>
             </BlurFade>
 
-            <BlurFade inView delay={1.0} className="text-center">
+            <BlurFade inView className="text-center">
               <div className="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -280,11 +276,10 @@ function index() {
         </div>
       </div>
 
-      <section>
+      <section id="sobre-nosotros">
         <div className="max-w-[85rem] gap-12 mx-auto flex md:hidden flex-col-reverse lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-6 my-12">
           <BlurFade
             inView
-            delay={0.5}
             className="mt-5 sm:mt-10 lg:mt-0 md:pl-12"
           >
             <div className="space-y-6 sm:space-y-8">
@@ -336,7 +331,7 @@ function index() {
                       />
                     </svg>
                   </div>
-                  <p className="text-gray-500 text-sm mt-3 text-center">
+                  <p id="the-secret" className="text-gray-500 text-sm mt-3 text-center">
                     Adrià Salamanca Barberà, Fundador de Tapacables
                   </p>
                 </div>
@@ -357,7 +352,7 @@ function index() {
         <div className="max-w-[85rem] gap-12 mx-auto hidden md:flex flex-col-reverse lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-6 my-12">
           <BlurFade
             inView
-            delay={0.25}
+            
             className="lg:w-1/2 flex flex-col items-center justify-center"
           >
             <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
@@ -402,7 +397,6 @@ function index() {
 
           <BlurFade
             inView
-            delay={0.5}
             className="lg:w-1/2 mt-5 sm:mt-10 lg:mt-0 md:pl-12"
           >
             <div className="space-y-6 sm:space-y-8">
@@ -418,7 +412,7 @@ function index() {
                   necesidad, ofreciendo productos y servicios de alta calidad
                   que faciliten el ordenamiento de infraestructuras exteriores.
                 </p>
-                <p className="text-gray-500 mt-3">
+                <p id="el-secreto" className="text-gray-500 mt-3">
                   Durante su trayectoria como técnico de telecomunicaciones
                   descubrió un problema que nadie estaba viendo, al que llamo{" "}
                   <br />

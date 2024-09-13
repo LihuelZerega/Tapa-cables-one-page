@@ -31,7 +31,7 @@ export default function Home() {
         <WhatSay />
         <hr />
         <Faq />
-        <hr />
+        <hr id="contacto"/>
         <ContactForm />
         <Footer />
       </Suspense>

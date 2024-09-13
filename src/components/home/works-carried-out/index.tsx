@@ -89,6 +89,7 @@ function Carousel() {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
+          id="trabajos"
         >
           <div className="flex flex-col-reverse lg:flex lg:flex-row gap-10 xl:gap-16 md:items-center">
             <div className="md:mb-0 sm:px-6">

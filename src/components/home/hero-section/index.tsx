@@ -8,8 +8,8 @@ import HeroBanner3 from "@/images/HeroBanner3.png";
 const navigation = [
   { name: "Inicio", href: "/" },
   { name: "Producto", href: "#producto" },
-  { name: "Instalación", href: "#instalacion" },
   { name: "Sobre Nosotros", href: "#sobre-nosotros" },
+  { name: "Trabajos Realizados", href: "#trabajos" },
 ];
 
 function Index() {

@@ -4,7 +4,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 export default function Example() {
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <BlurFade inView delay={0.2} className="mx-auto max-w-5xl text-center">
+      <BlurFade inView className="mx-auto max-w-5xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-blue-500 sm:text-4xl">
           Creemos que te podemos ayudar
         </h2>
@@ -15,7 +15,7 @@ export default function Example() {
         </p>
       </BlurFade>
 
-      <BlurFade inView delay={0.4}>
+      <BlurFade inView>
         <form
           action="#"
           method="POST"

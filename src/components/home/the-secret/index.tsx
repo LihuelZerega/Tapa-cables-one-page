@@ -222,15 +222,26 @@ function Index() {
             </div>
           </div>
 
-          <div
-            className="flex flex-row items-center justify-center space-x-2 font-semibold text-blue-600 cursor-pointer"
+          <a
+            className="flex md:hidden flex-row items-center justify-center space-x-2 font-semibold text-blue-600 cursor-pointer"
             onClick={toggleSecret}
+            href="#the-secret"
           >
             <p>Ocultar el secreto</p>{" "}
             <span>
               <IoIosArrowUp className="text-lg" />
             </span>
-          </div>
+          </a>
+          <a
+            className="hidden md:flex flex-row items-center justify-center space-x-2 font-semibold text-blue-600 cursor-pointer"
+            onClick={toggleSecret}
+            href="#el-secreto"
+          >
+            <p>Ocultar el secreto</p>{" "}
+            <span>
+              <IoIosArrowUp className="text-lg" />
+            </span>
+          </a>
         </BlurFade>
       )}
     </div>
