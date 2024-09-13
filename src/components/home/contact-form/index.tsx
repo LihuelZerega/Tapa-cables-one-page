@@ -21,7 +21,6 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Verificación del método de contacto y el checkbox de términos
     if (!selectedMethod) {
       setModalContent({
         title: "Error",

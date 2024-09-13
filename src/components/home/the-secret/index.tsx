@@ -159,6 +159,7 @@ function Index() {
                 adjunto unas fotos para que veas lo que enfrentamos día a día.
               </p>
             </div>
+            
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 items-center justify-center mx-auto gap-x-12 py-6 w-full">
               <div className="h-[450px] select-none">
                 <Image
