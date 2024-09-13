@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import HeroSection from "@/components/home/hero-section";
 import AboutUs from "@/components/home/about-us";
 import TheSecret from "@/components/home/the-secret";
@@ -12,25 +13,28 @@ import WhatSay from "@/components/home/what-say";
 import Faq from "@/components/home/faq";
 import ContactForm from "@/components/home/contact-form";
 import Footer from "@/components/home/footer";
+import LoadingPage from "@/components/ui/loading-page";
 
 export default function Home() {
   return (
     <main>
-      <HeroSection />
-      <AboutUs />
-      <TheSecret />
-      <ProductAndServices />
-      <OurProduct />
-      <ComparationTable />
-      <hr className="my-12" />
-      <WorkingTogether />
-      <WorksCarriedOut />
-      <WhatSay />
-      <hr />
-      <Faq />
-      <hr />
-      <ContactForm />
-      <Footer />
+      <Suspense fallback={<LoadingPage />}>
+        <HeroSection />
+        <AboutUs />
+        <TheSecret />
+        <ProductAndServices />
+        <OurProduct />
+        <ComparationTable />
+        <hr className="my-12" />
+        <WorkingTogether />
+        <WorksCarriedOut />
+        <WhatSay />
+        <hr />
+        <Faq />
+        <hr />
+        <ContactForm />
+        <Footer />
+      </Suspense>
     </main>
   );
 }
