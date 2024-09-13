@@ -15,7 +15,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     let mailOptions = {
       from: process.env.EMAIL_USER,
-      to: email,
+      to: process.env.EMAIL_RECIBER,
       subject: 'Nuevo Contacto de Potencial Cliente - Digincrease',
       html: `
         <h1>Nuevo Contacto de Potencial Cliente</h1>
