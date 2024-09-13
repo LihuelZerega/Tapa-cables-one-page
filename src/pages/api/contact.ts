@@ -22,7 +22,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         <p>Estimado equipo</p>
         <p>Hemos recibido los datos de un potencial cliente:</p>
         <p></p>
-        <h5>Datos del Contacto</h2>
+        <h4>Datos del Contacto</h2>
         <p><strong>Nombre:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Teléfono:</strong> ${phoneNumber}</p>
