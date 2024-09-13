@@ -12,7 +12,7 @@ import TheSecretImage4 from "@/images/TheSecret4.png";
 import TheSecretImage5 from "@/images/TheSecret5.png";
 import TheSecretImage6 from "@/images/TheSecret6.png";
 
-function index() {
+function Index() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSecret = () => {
@@ -237,4 +237,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
