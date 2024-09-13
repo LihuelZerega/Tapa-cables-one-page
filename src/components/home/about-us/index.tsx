@@ -14,7 +14,7 @@ import TheSecretImage6 from "@/images/TheSecret6.png";
 import BlurFade from "@/components/magicui/blur-fade";
 import PulsatingButton from "@/components/magicui/pulsating-button";
 
-function index() {
+function Index() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openTerms = () => {
@@ -669,4 +669,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
