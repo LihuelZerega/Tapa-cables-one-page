@@ -21,10 +21,6 @@ function Index() {
     setIsModalOpen(true);
   };
 
-  const closeTerms = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <div className="mx-auto mt-32">
       <section>
@@ -554,7 +550,7 @@ function Index() {
                   </p>
                 </div>
                 <div className="lg:w-1/2 flex items-center justify-center">
-                  <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md mt-6 md:mt-0">
+                  <div className="flex items-center justify-center w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md mt-6 md:mt-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -599,68 +595,68 @@ function Index() {
                   adjunto unas fotos para que veas lo que enfrentamos día a día.
                 </p>
               </div>
+{/* 
+              // <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 items-center justify-center mx-auto gap-x-12 py-6 w-full">
+              //   <div className="h-[450px] select-none">
+              //     <Image
+              //       src={TheSecretImage1}
+              //       width={450}
+              //       height={600}
+              //       alt=""
+              //       className="h-[450px] rounded-md "
+              //     />
+              //   </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 items-center justify-center mx-auto gap-x-12 py-6 w-full">
-                <div className="h-[450px] select-none">
-                  <Image
-                    src={TheSecretImage1}
-                    width={450}
-                    height={600}
-                    alt=""
-                    className="h-[450px] rounded-md "
-                  />
-                </div>
+              //   <div className="h-[450px] select-none">
+              //     <Image
+              //       src={TheSecretImage2}
+              //       width={450}
+              //       height={600}
+              //       alt=""
+              //       className="h-[450px] rounded-md "
+              //     />
+              //   </div>
 
-                <div className="h-[450px] select-none">
-                  <Image
-                    src={TheSecretImage2}
-                    width={450}
-                    height={600}
-                    alt=""
-                    className="h-[450px] rounded-md "
-                  />
-                </div>
+              //   <div className="h-[450px] select-none">
+              //     <Image
+              //       src={TheSecretImage3}
+              //       width={450}
+              //       height={600}
+              //       alt=""
+              //       className="h-[450px] rounded-md "
+              //     />
+              //   </div>
 
-                <div className="h-[450px] select-none">
-                  <Image
-                    src={TheSecretImage3}
-                    width={450}
-                    height={600}
-                    alt=""
-                    className="h-[450px] rounded-md "
-                  />
-                </div>
+              //   <div className="h-[450px] select-none">
+              //     <Image
+              //       src={TheSecretImage4}
+              //       width={450}
+              //       height={600}
+              //       alt=""
+              //       className="h-[450px] rounded-md "
+              //     />
+              //   </div>
 
-                <div className="h-[450px] select-none">
-                  <Image
-                    src={TheSecretImage4}
-                    width={450}
-                    height={600}
-                    alt=""
-                    className="h-[450px] rounded-md "
-                  />
-                </div>
+              //   <div className="h-[450px] select-none">
+              //     <Image
+              //       src={TheSecretImage5}
+              //       width={450}
+              //       height={600}
+              //       alt=""
+              //       className="h-[450px] rounded-md "
+              //     />
+              //   </div>
 
-                <div className="h-[450px] select-none">
-                  <Image
-                    src={TheSecretImage5}
-                    width={450}
-                    height={600}
-                    alt=""
-                    className="h-[450px] rounded-md "
-                  />
-                </div>
-
-                <div className="h-[450px] select-none">
-                  <Image
-                    src={TheSecretImage6}
-                    width={450}
-                    height={600}
-                    alt=""
-                    className="h-[450px] rounded-md "
-                  />
-                </div>
-              </div>
+              //   <div className="h-[450px] select-none">
+              //     <Image
+              //       src={TheSecretImage6}
+              //       width={450}
+              //       height={600}
+              //       alt=""
+              //       className="h-[450px] rounded-md "
+              //     />
+              //   </div>
+              // </div> */}
             </div>
           </div>
         </div>
