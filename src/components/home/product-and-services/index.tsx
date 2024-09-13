@@ -23,7 +23,7 @@ function index() {
               <h4 className="text-base text-blue-500 pb-2 font-bold">
                 Para los más manitas que no necesitan de nadie…
               </h4>
-              <h3 className="text-left font-semibold text-2xl lg:text-3xl text-gray-800">
+              <h3 className="text-left font-semibold text-xl lg:text-3xl text-gray-800">
                 COMPRA DE MATERIAL
               </h3>
               <p className="text-sm mt-3 text-gray-600">
@@ -44,7 +44,7 @@ function index() {
               <h4 className="text-base text-blue-500 pb-2 font-bold">
                 Para los que no se quieren preocupar de nada…
               </h4>
-              <h3 className="uppercase text-left font-semibold text-2xl lg:text-3xl text-gray-800">
+              <h3 className="uppercase text-left font-semibold text-xl lg:text-3xl text-gray-800">
                 Servicio de Instalación -{" "}
                 <span className="text-blue-500 font-bold">20% Descuento</span>
               </h3>

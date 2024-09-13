@@ -4,6 +4,7 @@ import OurProduct1 from "@/images/OurProduct1.png";
 import OurProduct2 from "@/images/OurProduct2.png";
 import OurProduct3 from "@/images/OurProduct3.png";
 import OurProduct4 from "@/images/OurProduct4.png";
+import OurProduct5 from "@/images/OurProduct5.png";
 
 import BlurFade from "@/components/magicui/blur-fade";
 
@@ -13,15 +14,25 @@ function index() {
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
         <div className="lg:w-1/2 flex flex-col items-center justify-center my-12 lg:my-0">
           <div className="grid grid-cols grid-cols-12 gap-2 sm:gap-6 items-center">
-            <BlurFade inView delay={0.20} className="col-span-6">
-              <Image
-                className="rounded-xl"
-                src={OurProduct1}
-                alt="Features Image"
-              />
-            </BlurFade>
+            <div className="col-span-6 space-y-2 md:space-y-6">
+              <BlurFade inView delay={0.2}>
+                <Image
+                  className="rounded-xl"
+                  src={OurProduct4}
+                  alt="Features Image"
+                />
+              </BlurFade>
 
-            <BlurFade inView delay={0.40} className="col-span-6">
+              <BlurFade inView delay={0.2}>
+                <Image
+                  className="rounded-xl"
+                  src={OurProduct5}
+                  alt="Features Image"
+                />
+              </BlurFade>
+            </div>
+
+            <BlurFade inView delay={0.4} className="col-span-6">
               <Image
                 className="rounded-xl"
                 src={OurProduct2}
@@ -29,7 +40,7 @@ function index() {
               />
             </BlurFade>
 
-            <BlurFade inView delay={0.60} className="col-span-12">
+            <BlurFade inView delay={0.6} className="col-span-12">
               <Image
                 className="rounded-xl"
                 src={OurProduct3}
@@ -39,7 +50,11 @@ function index() {
           </div>
         </div>
 
-        <BlurFade inView delay={0.80} className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0 ">
+        <BlurFade
+          inView
+          delay={0.8}
+          className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0 "
+        >
           <div className="space-y-6 sm:space-y-8 lg:pl-12">
             <div className="space-y-2 md:space-y-4">
               <h2 className="font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
@@ -67,8 +82,11 @@ function index() {
       <div className="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
         <div className="lg:col-span-3">
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 md:gap-12">
-            
-            <BlurFade inView delay={0.20} className="flex items-start gap-x-5 lg:col-span-1">
+            <BlurFade
+              inView
+              delay={0.2}
+              className="flex items-start gap-x-5 lg:col-span-1"
+            >
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +142,11 @@ function index() {
               </div>
             </BlurFade>
 
-            <BlurFade inView delay={0.40} className="flex items-start gap-x-5 lg:col-span-1">
+            <BlurFade
+              inView
+              delay={0.4}
+              className="flex items-start gap-x-5 lg:col-span-1"
+            >
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +185,11 @@ function index() {
               </div>
             </BlurFade>
 
-            <BlurFade inView delay={0.60} className="flex items-start gap-x-5 lg:col-span-1">
+            <BlurFade
+              inView
+              delay={0.6}
+              className="flex items-start gap-x-5 lg:col-span-1"
+            >
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -192,11 +218,11 @@ function index() {
                   Incorporación de salidas de agua
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  A diferencia de las canaletas convencionales, nuestras
-                  canaletas están equipadas con salidas de agua que previenen la
-                  acumulación de líquidos. Esto protege tanto las canaletas como
-                  el cableado a lo largo del tiempo, garantizando una mayor
-                  durabilidad y funcionalidad.
+                  Nuestras canaletas son las únicas del mercado equipadas con
+                  salidas de agua que previenen la acumulación de líquidos. Esta
+                  funcionalidad exclusiva protege tanto las canaletas como el
+                  cableado a lo largo del tiempo, garantizando mayor durabilidad
+                  y funcionalidad.
                 </p>
               </div>
             </BlurFade>
