@@ -32,10 +32,10 @@ function index() {
                 alguna duda en el momento de la instalación.
               </p>
             </div>
-            <div>
-              <button className="bg-blue-500 hover:bg-blue-600 transition text-white p-3 rounded-md mt-6">
+            <div className="mt-10">
+              <a href="#contacto" className="bg-blue-500 hover:bg-blue-600 transition text-white p-3 rounded-md mt-6">
                 Solicitar información
-              </button>
+              </a>
             </div>
           </BlurFade>
 
@@ -53,10 +53,10 @@ function index() {
                 de descuento en el material.
               </p>
             </div>
-            <div>
-              <button className="bg-blue-500 hover:bg-blue-600 transition text-white p-3 rounded-md mt-6">
+            <div className="mt-6">
+              <a href="#contacto" className="bg-blue-500 hover:bg-blue-600 transition text-white p-3 rounded-md mt-6">
                 Solicitar información
-              </button>
+              </a>
             </div>
           </BlurFade>
         </div>

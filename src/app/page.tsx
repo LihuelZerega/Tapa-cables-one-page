@@ -3,6 +3,7 @@ import HeroSection from "@/components/home/hero-section";
 import AboutUs from "@/components/home/about-us";
 import TheSecret from "@/components/home/the-secret";
 import OurProduct from "@/components/home/our-product";
+import Benefits from "@/components/home/benefits";
 import ComparationTable from "@/components/home/comparation-table";
 import ProductAndServices from "@/components/home/product-and-services";
 import CallToAction from "@/components/home/call-to-action";
@@ -25,6 +26,8 @@ export default function Home() {
         <hr />
         <ProductAndServices />
         <OurProduct />
+        <Benefits />
+        <hr />
         <ComparationTable />
         <hr className="my-12" />
         <WorkingTogether />

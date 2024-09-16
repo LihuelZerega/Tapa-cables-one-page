@@ -10,8 +10,10 @@ export default function ContactForm() {
     message: "",
     postalCode: "",
     contactMethod: "",
+    interests: "",
   });
 
+  const [selectedInterests, setSelectedInterests] = useState("");
   const [selectedMethod, setSelectedMethod] = useState("");
   const [isTermsChecked, setIsTermsChecked] = useState(false);
   const [modalContent, setModalContent] = useState({ title: "", message: "" });
@@ -21,10 +23,30 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // Validación del método de contacto
+    if (!selectedInterests) {
+      setModalContent({
+        title: "Error",
+        message: "Por favor, seleccione un interés.",
+      });
+      setIsModalOpen(true);
+      return;
+    }
+
     if (!selectedMethod) {
       setModalContent({
         title: "Error",
         message: "Por favor, seleccione un método de contacto.",
+      });
+      setIsModalOpen(true);
+      return;
+    }
+
+    const phoneRegex = /^\d{9}$/;
+    if (!phoneRegex.test(formData.phoneNumber)) {
+      setModalContent({
+        title: "Error",
+        message: "Por favor, ingresa un número de teléfono válido de 9 dígitos.",
       });
       setIsModalOpen(true);
       return;
@@ -39,12 +61,16 @@ export default function ContactForm() {
       return;
     }
 
-    const res = await fetch("https://tapacables.vercel.app/api/contact", {
+    const res = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ ...formData, contactMethod: selectedMethod }),
+      body: JSON.stringify({
+        ...formData,
+        contactMethod: selectedMethod,
+        interests: selectedInterests,
+      }),
     });
 
     if (res.ok) {
@@ -60,7 +86,9 @@ export default function ContactForm() {
         message: "",
         postalCode: "",
         contactMethod: "",
+        interests: "",
       });
+      setSelectedInterests("");
       setSelectedMethod("");
       setIsTermsChecked(false);
     } else {
@@ -151,7 +179,7 @@ export default function ContactForm() {
                 Número de teléfono
               </label>
               <div className="relative mt-2.5">
-                <input
+              <input
                   id="phone-number"
                   name="phoneNumber"
                   type="tel"
@@ -217,6 +245,56 @@ export default function ContactForm() {
             </div>
             <div className="sm:col-span-2">
               <label
+                htmlFor="interests"
+                className="block text-sm font-semibold leading-6 text-gray-900"
+              >
+                Estoy interesado en:
+              </label>
+              <div className="flex flex-row gap-3 mt-2.5">
+                <button
+                  type="button"
+                  onClick={() => setSelectedInterests("Compra de material")}
+                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
+                    selectedInterests === "compra-de-material"
+                      ? "bg-blue-100"
+                      : ""
+                  }`}
+                >
+                  Compra De Material
+                </button>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setSelectedInterests("Servicio de instalacion")
+                  }
+                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
+                    selectedInterests === "servicio-de-instalacion"
+                      ? "bg-blue-100"
+                      : ""
+                  }`}
+                >
+                  Servicio De Instalación
+                </button>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setSelectedInterests(
+                      "Compra de material y servicio de instalacion"
+                    )
+                  }
+                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
+                    selectedInterests ===
+                    "Compra-de-material-y-servicio-de-instalacion"
+                      ? "bg-blue-100"
+                      : ""
+                  }`}
+                >
+                  Ambas opciones
+                </button>
+              </div>
+            </div>
+            <div className="sm:col-span-2">
+              <label
                 htmlFor="message"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
@@ -249,7 +327,11 @@ export default function ContactForm() {
             />
             <label htmlFor="terms-checkbox" className="ml-3 text-base">
               Acepto los{" "}
-              <button type="button" className="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium" onClick={openTerms}>
+              <button
+                type="button"
+                className="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium"
+                onClick={openTerms}
+              >
                 Términos y Condiciones
               </button>
             </label>

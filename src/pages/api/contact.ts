@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
-    const { name, email, phoneNumber, message, postalCode, contactMethod } = req.body;
+    const { name, email, phoneNumber, message, postalCode, contactMethod, interests } = req.body;
 
     let transporter = nodemailer.createTransport({
       service: 'Gmail',
@@ -28,6 +28,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         <p><strong>Teléfono:</strong> ${phoneNumber}</p>
         <p><strong>Código Postal:</strong> ${postalCode}</p>
         <p><strong>Forma de Contacto:</strong> ${contactMethod}</p>
+        <p><strong>Esta interesado en:</strong> ${interests}</p>
         <p><strong>Mensaje:</strong> ${message}</p>
       `,
     };
