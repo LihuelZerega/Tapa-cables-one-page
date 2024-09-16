@@ -23,7 +23,6 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Validación del método de contacto
     if (!selectedInterests) {
       setModalContent({
         title: "Error",
@@ -608,19 +607,6 @@ export default function ContactForm() {
             </div>
 
             <div className="p-4 sm:p-10 text-center overflow-y-auto">
-              <span className="mb-4 inline-flex justify-center items-center size-[46px] rounded-full border-4 border-green-50 bg-green-100 text-green-500">
-                <svg
-                  className="shrink-0 size-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
-                </svg>
-              </span>
-
               <h3
                 id="hs-task-created-alert-label"
                 className="mb-2 text-xl font-bold text-gray-800"

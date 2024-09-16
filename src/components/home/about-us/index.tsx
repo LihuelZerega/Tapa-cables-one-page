@@ -313,7 +313,7 @@ function Index() {
                 </p>
                 <div className="flex flex-col items-center justify-center">
                   <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
-                    <Image src={Adria} width={500} height={500} alt="image" />
+                    <Image src={Adria} width={330} height={330} alt="image" />
                   </div>
                   <p
                     id="the-secret"

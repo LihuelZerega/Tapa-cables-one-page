@@ -1,32 +1,31 @@
-"use client"
+"use client";
 
-import { TrendingUp } from "lucide-react"
-import { LabelList, Pie, PieChart } from "recharts"
+import { Pie, PieChart } from "recharts";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+import { CardContent } from "@/components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart"
-
-export const description = "A pie chart with a label list"
+  ChartLegend,
+  ChartLegendContent,
+} from "@/components/ui/chart";
 
 const chartData = [
-  { browser: "chrome", visitors: 275, fill: "var(--color-chrome)" },
-  { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
-  { browser: "firefox", visitors: 187, fill: "var(--color-firefox)" },
-  { browser: "edge", visitors: 173, fill: "var(--color-edge)" },
-  { browser: "other", visitors: 90, fill: "var(--color-other)" },
-]
+  { browser: "Proteccion de Cableado", visitors: 11, fill: "#014ba0" },
+  { browser: "Seguridad", visitors: 44, fill: "#1466c3" },
+  {
+    browser: "Aumento del Valor de la Propiedad",
+    visitors: 69,
+    fill: "#6aa9e9",
+  },
+  {
+    browser: "Mejora estetica y elimina aspecto antiguo",
+    visitors: 176,
+    fill: "#3b8eed",
+  },
+];
 
 const chartConfig = {
   visitors: {
@@ -48,50 +47,56 @@ const chartConfig = {
     label: "Edge",
     color: "hsl(var(--chart-4))",
   },
-  other: {
-    label: "Other",
-    color: "hsl(var(--chart-5))",
-  },
-} satisfies ChartConfig
+} satisfies ChartConfig;
 
-export function Component() {
+export function Chart() {
   return (
-    <Card className="flex flex-col">
-      <CardHeader className="items-center pb-0">
-        <CardTitle>Pie Chart - Label List</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
-      </CardHeader>
-      <CardContent className="flex-1 pb-0">
+    <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:items-start space-y-6">
+        <div>
+          <h3 className="text-center md:text-left text-gray-800 font-semibold text-xl">
+            ¿Porque instalaron las canaletas?
+          </h3>
+          <p className="text-center md:text-left text-gray-600">Estos fueron los resultados</p>
+        </div>
+        <div className="space-y-3">
+          <div className="flex flex-row items-center space-x-2">
+            <div className="text-transparent select-none bg-[#014ba0] w-4 h-4 rounded-sm">
+              d
+            </div>
+            <p>Proteccion de Cableado</p>
+          </div>
+          <div className="flex flex-row items-center space-x-2">
+            <div className="text-transparent select-none bg-[#1466c3] w-4 h-4 rounded-sm">
+              d
+            </div>
+            <p>Seguridad</p>
+          </div>
+          <div className="flex flex-row items-center space-x-2">
+            <div className="text-transparent select-none bg-[#3b8eed] w-4 h-4 rounded-sm">
+              d
+            </div>
+            <p>Mejora estetica y elimina aspecto antiguo</p>
+          </div>
+          <div className="flex flex-row items-center space-x-2">
+            <div className="text-transparent select-none bg-[#6aa9e9] w-4 h-4 rounded-sm">
+              d
+            </div>
+            <p>Aumento del Valor de la Propiedad</p>
+          </div>
+        </div>
+      </div>
+      <CardContent className="flex-1 pb-0 mt-12 md:mt-0">
         <ChartContainer
           config={chartConfig}
-          className="mx-auto aspect-square max-h-[250px]"
+          className="mx-auto aspect-square max-h-[250px] pb-0 [&_.recharts-pie-label-text]:fill-foreground"
         >
           <PieChart>
-            <ChartTooltip
-              content={<ChartTooltipContent nameKey="visitors" hideLabel />}
-            />
-            <Pie data={chartData} dataKey="visitors">
-              <LabelList
-                dataKey="browser"
-                className="fill-background"
-                stroke="none"
-                fontSize={12}
-                formatter={(value: keyof typeof chartConfig) =>
-                  chartConfig[value]?.label
-                }
-              />
-            </Pie>
+            <ChartTooltip content={<ChartTooltipContent hideLabel />} />
+            <Pie data={chartData} dataKey="visitors" label nameKey="browser" />
           </PieChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter className="flex-col gap-2 text-sm">
-        <div className="flex items-center gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
-        </div>
-        <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
-        </div>
-      </CardFooter>
-    </Card>
-  )
+    </div>
+  );
 }

@@ -1,8 +1,13 @@
 import React from "react";
+import { Chart } from "./chart";
+import BlurFade from "@/components/magicui/blur-fade";
 
 function index() {
   return (
-    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <BlurFade
+      inView
+      className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
+    >
       <div className="text-center">
         <h2 className="text-gray-800 font-bold text-3xl md:text-4xl md:leading-tight">
           Beneficios principales de tapar los cables en su fachada.
@@ -12,8 +17,8 @@ function index() {
           varios beneficios clave
         </p>
       </div>
-      <div className="flex flex-col md:flex-row items-start justify-center gap-6 pt-12">
-        <div className="md:w-1/2 grid grid-cols-2 gap-6">
+      <div className="flex flex-col md:flex-row items-start justify-center gap-6 md:gap-12 pt-12">
+        <div className="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
               Mejora Estética y eliminar aspecto antiguo
@@ -56,17 +61,16 @@ function index() {
             </p>
           </div>
         </div>
-        <div className="md:w-1/2">
+        <div className="flex flex-col md:w-1/2 space-y-6">
           <h4 className="text-gray-700">
             Además, en base a estos beneficios realizamos un estudio a 300
             personas que ya se habían instalado canaletas en su fachada y le
-            realizamos la siguiente pregunta: Cuál es el motivo principal por el
-            que instaló canaletas en su fachada?
-            <br /> Y estos fueron los resultados:
+            realizamos la siguiente pregunta:
           </h4>
+          <Chart />
         </div>
       </div>
-    </div>
+    </BlurFade>
   );
 }
 
