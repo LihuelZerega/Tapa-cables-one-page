@@ -30,7 +30,7 @@ function index() {
                   src={OurProduct5}
                   alt="Features Image"
                 />
-                <p className="pt-1 text-gray-600 text-sm">Sistema patentado M y H</p>
+                <p className="pt-1 text-gray-600 text-sm">Vista estructural</p>
 
               </BlurFade>
             </div>
