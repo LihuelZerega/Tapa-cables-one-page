@@ -282,13 +282,6 @@ function Index() {
                     {"“"}El secreto{"”"}
                   </strong>{" "}
                   <br />
-                  <span className="text-black font-bold italic">Presiona el</span>{" "}
-                  <span className="text-blue-500 font-bold italic">
-                    BOTÓN AZUL
-                  </span>{" "}
-                  <span className="text-black font-bold italic">
-                    para descubrirlo
-                  </span>
                 </p>
 
                 <div
@@ -299,6 +292,14 @@ function Index() {
                     Quiero descubrir el secreto
                   </button>
                 </div>
+                
+                <span className="text-black font-bold italic">Presiona el</span>{" "}
+                  <span className="text-blue-500 font-bold italic">
+                    BOTÓN AZUL
+                  </span>{" "}
+                  <span className="text-black font-bold italic">
+                    para descubrirlo
+                  </span>
               </div>
             </div>
           </BlurFade>
@@ -338,13 +339,6 @@ function Index() {
                   <strong>
                     {"“"}El secreto{"”"}
                   </strong>{" "}
-                  <span className="text-black font-bold italic">Presiona el</span>{" "}
-                  <span className="text-blue-500 font-bold italic">
-                    BOTÓN AZUL
-                  </span>{" "}
-                  <span className="text-black font-bold italic">
-                    para descubrirlo
-                  </span>
                 </p>
 
                 <div onClick={openTerms}>
@@ -352,6 +346,14 @@ function Index() {
                     Quiero descubrir el secreto
                   </button>
                 </div>
+
+                <span className="text-black font-bold italic">Presiona el</span>{" "}
+                  <span className="text-blue-500 font-bold italic">
+                    BOTÓN AZUL
+                  </span>{" "}
+                  <span className="text-black font-bold italic">
+                    para descubrirlo
+                  </span>
               </div>
             </div>
           </BlurFade>
