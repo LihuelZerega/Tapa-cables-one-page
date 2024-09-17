@@ -19,7 +19,7 @@ const chartData = [
     fill: "#6aa9e9",
   },
   {
-    browser: "Mejora estetica y elimina aspecto antiguo",
+    browser: "Mejora estética",
     visitors: 176,
     fill: "#3b8eed",
   },
@@ -82,7 +82,7 @@ export function Chart() {
             <div className="text-transparent select-none bg-[#3b8eed] w-4 h-4 rounded-sm">
               d
             </div>
-            <p>Mejora estetica y elimina aspecto antiguo</p>
+            <p>Mejora estética</p>
           </div>
         </div>
       </div>
