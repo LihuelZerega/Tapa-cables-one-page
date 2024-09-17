@@ -274,7 +274,7 @@ export default function ContactForm() {
                 >
                   Servicio De Instalación
                 </button>
-                <button
+                {/* <button
                   type="button"
                   onClick={() =>
                     setSelectedInterests(
@@ -289,7 +289,7 @@ export default function ContactForm() {
                   }`}
                 >
                   Ambas opciones
-                </button>
+                </button> */}
               </div>
             </div>
             <div className="sm:col-span-2">
