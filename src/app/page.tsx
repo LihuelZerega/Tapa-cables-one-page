@@ -32,6 +32,7 @@ export default function Home() {
         <hr className="my-12" />
         <WorkingTogether />
         <div id="Trabajos" />
+        <div id="trabajos" />
         <WorksCarriedOut />
         <WhatSay />
         <hr />
