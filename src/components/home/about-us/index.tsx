@@ -282,12 +282,12 @@ function Index() {
                     {"“"}El secreto{"”"}
                   </strong>{" "}
                   <br />
-                  <span className="text-black font-bold italic">PRESIONA</span>{" "}
+                  <span className="text-black font-bold italic">Presiona el</span>{" "}
                   <span className="text-blue-500 font-bold italic">
-                    BOTON AZUL
+                    BOTÓN AZUL
                   </span>{" "}
                   <span className="text-black font-bold italic">
-                    PARA DESCUBRIRLO
+                    para descubrirlo
                   </span>
                 </p>
 

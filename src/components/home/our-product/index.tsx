@@ -41,7 +41,7 @@ function index() {
                 src={OurProduct2}
                 alt="Features Image"
               />
-                <p className="pt-1 text-gray-600 text-sm">Unión del soporte y canaleta</p>
+                <p className="pt-1 text-gray-600 text-sm">Unión entre el soporte y la canaleta</p>
 
             </BlurFade>
 
