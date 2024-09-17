@@ -23,6 +23,7 @@ export default function Home() {
         <HeroSection />
         <AboutUs />
         <div id="Producto" />
+        <hr />
         <ProductAndServices />
         <OurProduct />
         <Benefits />
