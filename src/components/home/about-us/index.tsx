@@ -293,6 +293,8 @@ function Index() {
                   </button>
                 </div>
                 
+                <div className="mt-2">
+
                 <span className="text-black font-bold italic">Presiona el</span>{" "}
                   <span className="text-blue-500 font-bold italic">
                     BOTÓN AZUL
@@ -300,6 +302,7 @@ function Index() {
                   <span className="text-black font-bold italic">
                     para descubrirlo
                   </span>
+                </div>
               </div>
             </div>
           </BlurFade>
@@ -347,6 +350,8 @@ function Index() {
                   </button>
                 </div>
 
+<div className="mt-2">
+
                 <span className="text-black font-bold italic">Presiona el</span>{" "}
                   <span className="text-blue-500 font-bold italic">
                     BOTÓN AZUL
@@ -354,6 +359,7 @@ function Index() {
                   <span className="text-black font-bold italic">
                     para descubrirlo
                   </span>
+</div>
               </div>
             </div>
           </BlurFade>
