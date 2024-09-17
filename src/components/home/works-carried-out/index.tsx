@@ -81,7 +81,10 @@ function Carousel() {
   );
 
   return (
-    <BlurFade inView className="max-w-[85rem] px-6 py-10 lg:px-8 lg:py-14 mx-auto">
+    <BlurFade
+      inView
+      className="max-w-[85rem] px-6 py-10 lg:px-8 lg:py-14 mx-auto"
+    >
       {currentTestimonials.map((testimonial) => (
         <motion.div
           key={testimonial.id}
@@ -121,6 +124,7 @@ function Carousel() {
                     fill="currentColor"
                   />
                 </svg>
+                  <div id="Trabajos"></div>
 
                 <div className="relative z-10">
                   <p className="text-xs font-semibold text-blue-500 tracking-wide uppercase mb-3">

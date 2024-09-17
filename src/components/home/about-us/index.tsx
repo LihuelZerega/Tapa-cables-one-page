@@ -279,7 +279,14 @@ function Index() {
                   descubrió un problema que nadie estaba viendo, al que llamo{" "}
                   <strong>
                     {"“"}El secreto{"”"}
-                  </strong>
+                  </strong>{" "}
+                  <span className="text-black font-bold italic">PRESIONA</span>{" "}
+                  <span className="text-blue-500 font-bold italic">
+                    BOTON AZUL
+                  </span>{" "}
+                  <span className="text-black font-bold italic">
+                    PARA DESCUBRIRLO
+                  </span>
                 </p>
 
                 <div
@@ -328,11 +335,14 @@ function Index() {
                   <br />
                   <strong>
                     {"“"}El secreto{"”"}
-                  </strong>
-                  {" "}
+                  </strong>{" "}
                   <span className="text-black font-bold italic">PRESIONA</span>{" "}
-                  <span className="text-blue-500 font-bold italic">BOTON AZUL</span>{" "}
-                  <span className="text-black font-bold italic">PARA DESCUBRIRLO</span>
+                  <span className="text-blue-500 font-bold italic">
+                    BOTON AZUL
+                  </span>{" "}
+                  <span className="text-black font-bold italic">
+                    PARA DESCUBRIRLO
+                  </span>
                 </p>
 
                 <div onClick={openTerms}>
@@ -343,6 +353,7 @@ function Index() {
               </div>
             </div>
           </BlurFade>
+                <hr id="Producto" />
         </div>
       </section>
 

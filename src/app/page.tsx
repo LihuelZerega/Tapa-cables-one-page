@@ -22,8 +22,6 @@ export default function Home() {
       <Suspense fallback={<LoadingPage />}>
         <HeroSection />
         <AboutUs />
-        {/* <TheSecret /> */}
-        <hr id="Producto"/>
         <ProductAndServices />
         <OurProduct />
         <Benefits />

@@ -143,7 +143,6 @@ function index() {
               alt="image"
               className="rounded-md"
             />
-            <div id="Trabajos"></div>
           </BlurFade>
         </div>
       </div>
