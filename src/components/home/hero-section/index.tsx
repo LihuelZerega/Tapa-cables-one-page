@@ -123,7 +123,7 @@ function Index() {
             <h1 className="text-center lg:text-left font-bold tracking-tight text-white text-5xl sm:text-6xl lg:text-7xl">
               ¿Cables en tu fachada?
             </h1>
-            <p className="text-center lg:text-left mt-6 text-xl lg:text:2xl leading-8 text-neutral-200 max-w-xl">
+            <p className="text-center lg:text-left mt-1.5 sm:mt-6 text-xl lg:text:2xl leading-8 text-neutral-200 max-w-xl">
               Alegre su mirada sin cables por su fachada
             </p>
             <div className="mt-10 flex items-center lg:items-start justify-center lg:justify-start gap-x-6">
