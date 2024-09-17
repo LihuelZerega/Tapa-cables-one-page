@@ -12,6 +12,13 @@ const navigation = [
   { name: "Trabajos Realizados", href: "#trabajos" },
 ];
 
+const navigationMobile = [
+  { name: "Inicio", href: "/" },
+  { name: "Producto", href: "#Producto" },
+  { name: "Sobre Nosotros", href: "#Sobre-nosotros" },
+  { name: "Trabajos Realizados", href: "#Trabajos" },
+];
+
 function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -26,11 +33,6 @@ function Index() {
             <div className="flex lg:flex-1">
               <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                {/* <img
-                alt=""
-                src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
-                className="h-8 w-auto"
-              /> */}
                 <h1 className="text-2xl font-bold text-blue-600">TAPACABLES</h1>
               </a>
             </div>
@@ -64,40 +66,6 @@ function Index() {
               </a>
             </div>
           </nav>
-
-          {/* <div className="relative h-8 p-1 bg-neutral-50 fixed shadow-md">
-            <div className="flex flex-row justify-between px-6">
-              <div className="flex flex-row items-center space-x-6">
-                <a
-                  href=""
-                  className="flex flex-row items-center space-x-3 text-sm"
-                >
-                  <Call02Icon />
-
-                  <p>+34 640 12 34 56</p>
-                </a>
-                <a
-                  href=""
-                  className="flex flex-row items-center space-x-3 text-sm"
-                >
-                  <Mail01Icon />
-
-                  <p>info@tapa-cables.com</p>
-                </a>
-              </div>
-              <div className="flex flex-row items-center space-x-6">
-                <a href="" className="">
-                  <Facebook02Icon />
-                </a>
-                <a href="" className="">
-                  <InstagramIcon />
-                </a>
-                <a href="" className="">
-                  <NewTwitterIcon />
-                </a>
-              </div>
-            </div>
-          </div> */}
         </div>
 
         <Dialog
@@ -109,7 +77,7 @@ function Index() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="/" className="-m-1.5 p-1.5">
-              <h1 className="text-2xl font-bold text-blue-600">TAPACABLES</h1>
+                <h1 className="text-2xl font-bold text-blue-600">TAPACABLES</h1>
               </a>
               <button
                 type="button"
@@ -123,10 +91,11 @@ function Index() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
+                  {navigationMobile.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
+                      onClick={() => setMobileMenuOpen(false)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
@@ -136,6 +105,7 @@ function Index() {
                 <div className="py-6">
                   <a
                     href="#contacto"
+                    onClick={() => setMobileMenuOpen(false)}
                     className="w-fit rounded-sm bg-blue-600 px-3 py-3 text-base text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
                   >
                     Solicitar información <span aria-hidden="true">&rarr;</span>

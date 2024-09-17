@@ -13,7 +13,7 @@ function index() {
     <div className="max-w-[85rem] gap-12 px-6 lg:px-12 lg:py-16 mx-auto my-12">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
         <div className="lg:w-1/2 flex flex-col items-center justify-center my-12 lg:my-0">
-          <div className="grid grid-cols grid-cols-12 gap-2 sm:gap-6 items-center">
+          <div className="grid grid-cols grid-cols-12 gap-2 sm:gap-6 items-start">
             <div className="col-span-6 space-y-2 md:space-y-6">
               <BlurFade inView>
                 <Image
@@ -21,6 +21,7 @@ function index() {
                   src={OurProduct4}
                   alt="Features Image"
                 />
+                <p className="pt-1 text-gray-600 text-sm">Salidas de agua</p>
               </BlurFade>
 
               <BlurFade inView>
@@ -29,6 +30,8 @@ function index() {
                   src={OurProduct5}
                   alt="Features Image"
                 />
+                <p className="pt-1 text-gray-600 text-sm">Sistema patentado M y H</p>
+
               </BlurFade>
             </div>
 
@@ -38,6 +41,8 @@ function index() {
                 src={OurProduct2}
                 alt="Features Image"
               />
+                <p className="pt-1 text-gray-600 text-sm">Vista lateral sistema de anclaje canaleta y soporte</p>
+
             </BlurFade>
 
             <BlurFade inView className="col-span-12">
@@ -46,6 +51,8 @@ function index() {
                 src={OurProduct3}
                 alt="Features Image"
               />
+                <p className="pt-1 text-gray-600 text-sm">Vista a pie de calle</p>
+
             </BlurFade>
           </div>
         </div>

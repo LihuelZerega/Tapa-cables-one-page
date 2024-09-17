@@ -51,7 +51,7 @@ const chartConfig = {
 
 export function Chart() {
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col lg:flex-row">
       <div className="flex flex-col md:items-start space-y-6">
         <div>
           <h3 className="text-center md:text-left text-gray-800 font-semibold text-xl">
@@ -86,14 +86,14 @@ export function Chart() {
           </div>
         </div>
       </div>
-      <CardContent className="flex-1 pb-0 mt-12 md:mt-0">
+      <CardContent className="flex pb-0 pt-12 md:pt-4">
         <ChartContainer
           config={chartConfig}
-          className="mx-auto aspect-square max-h-[250px] pb-0 [&_.recharts-pie-label-text]:fill-foreground"
+          className="mx-auto aspect-square lg:aspect-auto max-h-[300px] lg:w-[300px] pb-0 [&_.recharts-pie-label-text]:fill-foreground"
         >
-          <PieChart>
+          <PieChart >
             <ChartTooltip content={<ChartTooltipContent hideLabel />} />
-            <Pie data={chartData} dataKey="visitors" label nameKey="browser" />
+            <Pie data={chartData} dataKey="visitors" label nameKey="browser"/>
           </PieChart>
         </ChartContainer>
       </CardContent>

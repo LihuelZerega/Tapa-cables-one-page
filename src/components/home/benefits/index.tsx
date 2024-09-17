@@ -18,7 +18,7 @@ function index() {
         </p>
       </div>
       <div className="flex flex-col md:flex-row items-start justify-center gap-6 md:gap-12 pt-12">
-        <div className="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
               Mejora Estética y eliminar aspecto antiguo
@@ -61,7 +61,7 @@ function index() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:w-1/2 space-y-6">
+        <div className="flex flex-col lg:w-1/2 space-y-6">
           <h4 className="text-gray-700">
             Además, en base a estos beneficios realizamos un estudio a 300
             personas que ya se habían instalado canaletas en su fachada y le

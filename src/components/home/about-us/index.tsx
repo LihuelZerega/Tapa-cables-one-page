@@ -4,6 +4,9 @@ import Image from "next/image";
 import AboutUs1 from "@/images/AboutUs1.png";
 import Adria from "@/images/Adria.png";
 
+import WhatIsTapacables from "@/images/WhatIsTapacables.png";
+
+import TheSecretImage0 from "@/images/TheSecret0.png";
 import TheSecretImage1 from "@/images/TheSecret1.png";
 import TheSecretImage2 from "@/images/TheSecret2.png";
 import TheSecretImage3 from "@/images/TheSecret3.png";
@@ -46,40 +49,14 @@ function Index() {
                   creado y patentado nuestras propias canaletas.
                 </p>
 
-                <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="36"
-                    height="36"
-                    color="#9b9b9b"
-                    fill="none"
-                  >
-                    <path
-                      d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    />
-                    <circle
-                      cx="16.5"
-                      cy="7.5"
-                      r="1.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    />
-                    <path
-                      d="M16 22C15.3805 19.7749 13.9345 17.7821 11.8765 16.3342C9.65761 14.7729 6.87163 13.9466 4.01569 14.0027C3.67658 14.0019 3.33776 14.0127 3 14.0351"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M13 18C14.7015 16.6733 16.5345 15.9928 18.3862 16.0001C19.4362 15.999 20.4812 16.2216 21.5 16.6617"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                <div className="flex items-center justify-center w-[330px] bg-gray-100 rounded-md">
+                  <Image
+                    src={WhatIsTapacables}
+                    width={330}
+                    height={330}
+                    alt=""
+                    className="rounded-md"
+                  />
                 </div>
 
                 <p className="text-gray-500 mt-3">
@@ -98,40 +75,14 @@ function Index() {
             inView
             className="lg:w-1/2 flex flex-col items-center justify-center"
           >
-            <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="36"
-                height="36"
-                color="#9b9b9b"
-                fill="none"
-              >
-                <path
-                  d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                />
-                <circle
-                  cx="16.5"
-                  cy="7.5"
-                  r="1.5"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                />
-                <path
-                  d="M16 22C15.3805 19.7749 13.9345 17.7821 11.8765 16.3342C9.65761 14.7729 6.87163 13.9466 4.01569 14.0027C3.67658 14.0019 3.33776 14.0127 3 14.0351"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M13 18C14.7015 16.6733 16.5345 15.9928 18.3862 16.0001C19.4362 15.999 20.4812 16.2216 21.5 16.6617"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linejoin="round"
-                />
-              </svg>
+            <div className="flex items-center justify-center sm:w-[500px] bg-gray-100 rounded-md">
+              <Image
+                src={WhatIsTapacables}
+                width={500}
+                height={500}
+                alt=""
+                className="rounded-md"
+              />
             </div>
           </BlurFade>
 
@@ -293,6 +244,7 @@ function Index() {
             </BlurFade>
           </div>
         </div>
+        <div id="Sobre-nosotros"></div>
       </div>
 
       <section id="sobre-nosotros">
@@ -335,8 +287,8 @@ function Index() {
                   onClick={openTerms}
                 >
                   <button className="bg-blue-500 hover:bg-blue-600 transition px-3 py-2 rounded-md text-white">
-                  Quiero descubrir el secreto
-                  </button >
+                    Quiero descubrir el secreto
+                  </button>
                 </div>
               </div>
             </div>
@@ -380,7 +332,9 @@ function Index() {
                 </p>
 
                 <div onClick={openTerms}>
-                  <button className="bg-blue-500 hover:bg-blue-600 transition px-3 py-2 rounded-md text-white">Quiero descubrir el secreto</button >
+                  <button className="bg-blue-500 hover:bg-blue-600 transition px-3 py-2 rounded-md text-white">
+                    Quiero descubrir el secreto
+                  </button>
                 </div>
               </div>
             </div>
@@ -492,39 +446,20 @@ function Index() {
                 </div>
                 <div className="lg:w-1/2 flex items-center justify-center">
                   <div className="flex items-center justify-center w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md mt-6 md:mt-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      color="#9b9b9b"
-                      fill="none"
-                    >
-                      <path
-                        d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                      />
-                      <circle
-                        cx="16.5"
-                        cy="7.5"
-                        r="1.5"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                      />
-                      <path
-                        d="M16 22C15.3805 19.7749 13.9345 17.7821 11.8765 16.3342C9.65761 14.7729 6.87163 13.9466 4.01569 14.0027C3.67658 14.0019 3.33776 14.0127 3 14.0351"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M13 18C14.7015 16.6733 16.5345 15.9928 18.3862 16.0001C19.4362 15.999 20.4812 16.2216 21.5 16.6617"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <Image
+                      src={TheSecretImage0}
+                      width={330}
+                      height={330}
+                      alt=""
+                      className="block md:hidden rounded-md"
+                    />
+                    <Image
+                      src={TheSecretImage0}
+                      width={500}
+                      height={500}
+                      alt=""
+                      className="hidden md:block rounded-md"
+                    />
                   </div>
                 </div>
               </div>
