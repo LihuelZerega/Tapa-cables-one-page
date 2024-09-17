@@ -353,7 +353,6 @@ function Index() {
               </div>
             </div>
           </BlurFade>
-          <hr id="Producto" />
         </div>
       </section>
 
