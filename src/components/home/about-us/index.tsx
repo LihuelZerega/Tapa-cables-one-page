@@ -329,6 +329,10 @@ function Index() {
                   <strong>
                     {"“"}El secreto{"”"}
                   </strong>
+                  {" "}
+                  <span className="text-black font-bold italic">PRESIONA</span>{" "}
+                  <span className="text-blue-500 font-bold italic">BOTON AZUL</span>{" "}
+                  <span className="text-black font-bold italic">PARA DESCUBRIRLO</span>
                 </p>
 
                 <div onClick={openTerms}>

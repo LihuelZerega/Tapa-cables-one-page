@@ -254,7 +254,7 @@ export default function ContactForm() {
                   type="button"
                   onClick={() => setSelectedInterests("Compra de material")}
                   className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
-                    selectedInterests === "compra-de-material"
+                    selectedInterests === "Compra de material"
                       ? "bg-blue-100"
                       : ""
                   }`}
@@ -267,7 +267,7 @@ export default function ContactForm() {
                     setSelectedInterests("Servicio de instalacion")
                   }
                   className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
-                    selectedInterests === "servicio-de-instalacion"
+                    selectedInterests === "Servicio de instalacion"
                       ? "bg-blue-100"
                       : ""
                   }`}
@@ -283,7 +283,7 @@ export default function ContactForm() {
                   }
                   className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
                     selectedInterests ===
-                    "Compra-de-material-y-servicio-de-instalacion"
+                    "Compra de material y servicio de instalacion"
                       ? "bg-blue-100"
                       : ""
                   }`}
