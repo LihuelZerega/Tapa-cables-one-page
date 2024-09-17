@@ -22,6 +22,7 @@ export default function Home() {
       <Suspense fallback={<LoadingPage />}>
         <HeroSection />
         <AboutUs />
+        <div id="Producto" />
         <ProductAndServices />
         <OurProduct />
         <Benefits />
@@ -29,11 +30,12 @@ export default function Home() {
         <ComparationTable />
         <hr className="my-12" />
         <WorkingTogether />
+        <div id="Trabajos" />
         <WorksCarriedOut />
         <WhatSay />
         <hr />
         <Faq />
-        <hr id="contacto"/>
+        <hr id="contacto" />
         <ContactForm />
         <Footer />
       </Suspense>

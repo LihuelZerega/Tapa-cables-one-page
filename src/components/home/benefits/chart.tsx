@@ -57,7 +57,9 @@ export function Chart() {
           <h3 className="text-center md:text-left text-gray-800 font-semibold text-xl">
             ¿Porque instalaron las canaletas?
           </h3>
-          <p className="text-center md:text-left text-gray-600">Estos fueron los resultados</p>
+          <p className="text-center md:text-left text-gray-600">
+            Estos fueron los resultados
+          </p>
         </div>
         <div className="space-y-3">
           <div className="flex flex-row items-center space-x-2">
@@ -73,16 +75,16 @@ export function Chart() {
             <p>Seguridad</p>
           </div>
           <div className="flex flex-row items-center space-x-2">
-            <div className="text-transparent select-none bg-[#3b8eed] w-4 h-4 rounded-sm">
-              d
-            </div>
-            <p>Mejora estetica y elimina aspecto antiguo</p>
-          </div>
-          <div className="flex flex-row items-center space-x-2">
             <div className="text-transparent select-none bg-[#6aa9e9] w-4 h-4 rounded-sm">
               d
             </div>
             <p>Aumento del Valor de la Propiedad</p>
+          </div>
+          <div className="flex flex-row items-center space-x-2">
+            <div className="text-transparent select-none bg-[#3b8eed] w-4 h-4 rounded-sm">
+              d
+            </div>
+            <p>Mejora estetica y elimina aspecto antiguo</p>
           </div>
         </div>
       </div>
@@ -91,9 +93,9 @@ export function Chart() {
           config={chartConfig}
           className="mx-auto aspect-square lg:aspect-auto max-h-[300px] lg:w-[300px] pb-0 [&_.recharts-pie-label-text]:fill-foreground"
         >
-          <PieChart >
+          <PieChart>
             <ChartTooltip content={<ChartTooltipContent hideLabel />} />
-            <Pie data={chartData} dataKey="visitors" label nameKey="browser"/>
+            <Pie data={chartData} dataKey="visitors" label nameKey="browser" />
           </PieChart>
         </ChartContainer>
       </CardContent>
