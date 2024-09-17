@@ -353,7 +353,7 @@ function Index() {
               </div>
             </div>
           </BlurFade>
-                <hr id="Producto" />
+          <hr id="Producto" />
         </div>
       </section>
 
@@ -460,7 +460,7 @@ function Index() {
                   </p>
                 </div>
                 <div className="lg:w-1/2 flex items-center justify-center">
-                  <div className="flex items-center justify-center w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md mt-6 md:mt-0">
+                  <div className="flex flex-col items-center justify-center w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] rounded-md mt-6 md:mt-0">
                     <Image
                       src={TheSecretImage0}
                       width={330}
@@ -475,6 +475,9 @@ function Index() {
                       alt=""
                       className="hidden md:block rounded-md"
                     />
+                    <p className="pt-1 text-gray-600 text-sm">
+                      Canaleta que no debería de usarse para cubrir el cableado
+                    </p>
                   </div>
                 </div>
               </div>
