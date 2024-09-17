@@ -293,7 +293,7 @@ function Index() {
                   </button>
                 </div>
                 
-                <div className="mt-2">
+                <div className="text-center mt-2">
 
                 <span className="text-black font-bold italic">Presiona el</span>{" "}
                   <span className="text-blue-500 font-bold italic">
