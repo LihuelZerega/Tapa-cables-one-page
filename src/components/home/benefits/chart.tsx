@@ -8,8 +8,6 @@ import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-  ChartLegend,
-  ChartLegendContent,
 } from "@/components/ui/chart";
 
 const chartData = [
@@ -88,10 +86,10 @@ export function Chart() {
           </div>
         </div>
       </div>
-      <CardContent className="flex pb-0 pt-12 md:pt-4">
+      <CardContent className="flex pb-0 pt-6 md:pt-4 max-w-full lg:max-w-[300px]">
         <ChartContainer
           config={chartConfig}
-          className="mx-auto aspect-square lg:aspect-auto max-h-[300px] lg:w-[300px] pb-0 [&_.recharts-pie-label-text]:fill-foreground"
+          className="mx-auto w-full max-w-xs aspect-square lg:aspect-auto lg:w-[300px] pb-0 [&_.recharts-pie-label-text]:fill-foreground"
         >
           <PieChart>
             <ChartTooltip content={<ChartTooltipContent hideLabel />} />

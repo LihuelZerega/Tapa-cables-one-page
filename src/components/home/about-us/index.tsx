@@ -277,9 +277,11 @@ function Index() {
                 <p className="text-center text-gray-500 mt-3">
                   Durante su trayectoria como técnico de telecomunicaciones
                   descubrió un problema que nadie estaba viendo, al que llamo{" "}
+                  <br />
                   <strong>
                     {"“"}El secreto{"”"}
                   </strong>{" "}
+                  <br />
                   <span className="text-black font-bold italic">PRESIONA</span>{" "}
                   <span className="text-blue-500 font-bold italic">
                     BOTON AZUL
