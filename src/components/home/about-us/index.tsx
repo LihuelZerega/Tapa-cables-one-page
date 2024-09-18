@@ -244,10 +244,11 @@ function Index() {
             </BlurFade>
           </div>
         </div>
-        <div id="Sobre-nosotros"></div>
+        <div id="Sobre-nosotros" />
+        <div id="sobre-nosotros" />
       </div>
 
-      <section id="sobre-nosotros">
+      <section>
         <div className="max-w-[85rem] gap-12 mx-auto flex md:hidden flex-col-reverse lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-6 my-12">
           <BlurFade inView className="mt-5 sm:mt-10 lg:mt-0 md:pl-12">
             <div className="space-y-6 sm:space-y-8">
@@ -292,10 +293,11 @@ function Index() {
                     Quiero descubrir el secreto
                   </button>
                 </div>
-                
-                <div className="text-center mt-2">
 
-                <span className="text-black font-bold italic">Presiona el</span>{" "}
+                <div className="text-center mt-2">
+                  <span className="text-black font-bold italic">
+                    Presiona el
+                  </span>{" "}
                   <span className="text-blue-500 font-bold italic">
                     BOTÓN AZUL
                   </span>{" "}
@@ -319,6 +321,7 @@ function Index() {
             <p className="text-gray-500 text-sm mt-3 text-center">
               Adrià Salamanca Barberà, Fundador de Tapacables
             </p>
+            <div id="producto" />
           </BlurFade>
 
           <BlurFade inView className="lg:w-1/2 mt-5 sm:mt-10 lg:mt-0 md:pl-12">
@@ -350,16 +353,17 @@ function Index() {
                   </button>
                 </div>
 
-<div className="mt-2">
-
-                <span className="text-black font-bold italic">Presiona el</span>{" "}
+                <div className="mt-2">
+                  <span className="text-black font-bold italic">
+                    Presiona el
+                  </span>{" "}
                   <span className="text-blue-500 font-bold italic">
                     BOTÓN AZUL
                   </span>{" "}
                   <span className="text-black font-bold italic">
                     para descubrirlo
                   </span>
-</div>
+                </div>
               </div>
             </div>
           </BlurFade>

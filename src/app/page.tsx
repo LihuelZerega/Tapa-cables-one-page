@@ -23,7 +23,7 @@ export default function Home() {
         <HeroSection />
         <AboutUs />
         <div id="Producto" />
-        <hr id="producto" />
+        <hr/>
         <ProductAndServices />
         <OurProduct />
         <Benefits />
@@ -32,7 +32,6 @@ export default function Home() {
         <hr className="my-12" />
         <WorkingTogether />
         <div id="Trabajos" />
-        <div id="trabajos" />
         <WorksCarriedOut />
         <WhatSay />
         <hr />

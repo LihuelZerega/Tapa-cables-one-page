@@ -144,6 +144,7 @@ function index() {
               className="rounded-md"
             />
           </BlurFade>
+          <div id="trabajos" />
         </div>
       </div>
     </div>
