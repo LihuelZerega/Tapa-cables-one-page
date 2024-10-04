@@ -18,10 +18,6 @@ function index() {
             </span>
             ?
           </h2>
-          <p className="mt-1 text-gray-600">
-            Nos complace explicarte los pasos a seguir para que podamos trabajar
-            juntos de manera eficiente.
-          </p>
         </BlurFade>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center justify-center max-w-5xl mx-auto">
