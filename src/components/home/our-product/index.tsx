@@ -77,7 +77,7 @@ function index() {
               </p>
               <p className="text-gray-500 mt-2">
                 La apertura superior facilita la puesta de cableado nuevo de
-                manera mas eficiente sin tener que manipular la misma y así no
+                manera más eficiente sin tener que manipular la misma y así no
                 ser dañada, a pie de calle no se aprecia que este abierta
                 manteniendo perfectamente su estetica.
               </p>

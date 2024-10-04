@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import AboutUs1 from "@/images/AboutUs1.png";
+import { Compare } from "@/components/ui/compare";
 import Adria from "@/images/Adria.png";
 
 import WhatIsTapacables from "@/images/WhatIsTapacables.png";
@@ -15,7 +16,6 @@ import TheSecretImage5 from "@/images/TheSecret5.png";
 import TheSecretImage6 from "@/images/TheSecret6.png";
 
 import BlurFade from "@/components/magicui/blur-fade";
-import PulsatingButton from "@/components/magicui/pulsating-button";
 
 function Index() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -37,9 +37,9 @@ function Index() {
             className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0"
           >
             <div className="space-y-6 sm:space-y-8">
-              <div className="space-y-4">
+              <div className="flex flex-col items-center justify-center space-y-4">
                 <h3 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
-                  ¿Que es Tapacables?
+                  ¿Qué es Tapacables?
                 </h3>
                 <p className="text-gray-500">
                   Tapacables surge con el objetivo de ofrecer soluciones
@@ -50,12 +50,13 @@ function Index() {
                 </p>
 
                 <div className="flex items-center justify-center w-[330px] bg-gray-100 rounded-md">
-                  <Image
-                    src={WhatIsTapacables}
-                    width={330}
-                    height={330}
-                    alt=""
-                    className="rounded-md"
+                  <Compare
+                    firstImage="https://res.cloudinary.com/dbhxvj3w7/image/upload/v1725974362/ComparationProduct_j5oukt.png"
+                    secondImage="https://res.cloudinary.com/dbhxvj3w7/image/upload/v1725974358/ComparationProduct2_hovm3m.png"
+                    firstImageClassName="object-cover object-left-top"
+                    secondImageClassname="object-cover object-left-top"
+                    className="w-full h-[350px] lg:w-[500px] lg:h-[550px]"
+                    slideMode="hover"
                   />
                 </div>
 
@@ -76,13 +77,17 @@ function Index() {
             className="lg:w-1/2 flex flex-col items-center justify-center"
           >
             <div className="flex items-center justify-center sm:w-[500px] bg-gray-100 rounded-md">
-              <Image
-                src={WhatIsTapacables}
-                width={500}
-                height={500}
-                alt=""
-                className="rounded-md"
-              />
+              <div className="md:mb-0 sm:px-6">
+                <Compare
+                  firstImage="https://res.cloudinary.com/dbhxvj3w7/image/upload/v1725974362/ComparationProduct_j5oukt.png"
+                  secondImage="https://res.cloudinary.com/dbhxvj3w7/image/upload/v1725974358/ComparationProduct2_hovm3m.png"
+                  firstImageClassName="object-cover object-left-top"
+                  secondImageClassname="object-cover object-left-top"
+                  className="w-full h-[350px] lg:w-[500px] lg:h-[550px]"
+                  slideMode="hover"
+                />
+                <div className="absolute bottom-0 start-0 -z-[1] translate-y-10 -translate-x-14"></div>
+              </div>
             </div>
           </BlurFade>
 
@@ -93,7 +98,7 @@ function Index() {
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <h3 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
-                  ¿Que es Tapacables?
+                  ¿Qué es Tapacables?
                 </h3>
                 <p className="text-gray-500">
                   Tapacables surge con el objetivo de ofrecer soluciones
@@ -158,9 +163,15 @@ function Index() {
                 </svg>
               </div>
               <div className="mt-3">
-                <h3 className="text-md font-semibold text-gray-700">Calidad</h3>
+                <h3 className="text-md font-semibold text-gray-700">
+                  Un problema sin solución <br /> <span className="text-[#3b82f6]">“Hasta ahora…”</span>
+                </h3>
                 <p className="text-sm mt-1 text-gray-600">
-                  Productos y servicios <br /> que superan las expectativas.
+                  La realidad es que casi a diario muchos técnicos están
+                  poniendo cables nuevos por las fachadas, y a muy pocos les
+                  preocupa cómo quedan puestos, además las canaletas existentes
+                  en el mercado no satisfacen las necesidades reales del
+                  cliente.
                 </p>
               </div>
             </BlurFade>
@@ -202,10 +213,13 @@ function Index() {
               </div>
               <div className="mt-3">
                 <h3 className="text-md font-semibold text-gray-700">
-                  Confianza
+                  Sabemos de lo que hablamos <br /> <span className="text-[#3b82f6]">“lo hemos visto”</span>
                 </h3>
                 <p className="text-sm mt-1 text-gray-600">
-                  Garantizamos <br /> una experiencia sobresaliente.
+                  Subidos a una escalera lo hemos visto todo mucho mejor, es por
+                  eso que hemos creado nuestra propia canaleta y ofrecemos un
+                  servicio integral de instalación, para facilitar el orden del
+                  cableado y cuidar la estética de las fachadas.
                 </p>
               </div>
             </BlurFade>
@@ -235,10 +249,14 @@ function Index() {
               </div>
               <div className="mt-3">
                 <h3 className="text-md font-semibold text-gray-700">
-                  Profesionalidad
+                  Sabemos cómo hacerlo <br /> <span className="text-[#3b82f6]">“Nos gustan las cosas bien hechas”</span>
                 </h3>
                 <p className="text-sm mt-1 text-gray-600">
-                  Compromiso con <br /> la excelencia y responsabilidad.
+                  Nuestra experiencia en el sector de las telecomunicaciones,
+                  nos aporta la capacidad de realizar estos trabajos sin
+                  problemas, además nuestro trato siempre cercano en nuestro dia
+                  a dia con clientes nos ha permitido conocer plenamente sus
+                  necesidades.
                 </p>
               </div>
             </BlurFade>
@@ -260,9 +278,7 @@ function Index() {
                   Adrià Salamanca Barberà, fundador de Tapacables, con una
                   sólida experiencia en el sector de telecomunicaciones, detectó
                   la falta de soluciones eficientes para la ocultación de cables
-                  en fachadas. Este proyecto empresarial busca cubrir esta
-                  necesidad, ofreciendo productos y servicios de alta calidad
-                  que faciliten el ordenamiento de infraestructuras exteriores.
+                  en fachadas. Este proyecto empresarial tiene como objetivo cubrir esta necesidad, ofreciendo productos y servicios de alta calidad que facilitan la organización y protección del cableado en exteriores.
                 </p>
                 <div className="flex flex-col items-center justify-center">
                   <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
@@ -413,7 +429,7 @@ function Index() {
                   <p className="text-gray-600 text-left mb-4">
                     La realidad es que entre el 90-95% de las canaletas
                     instaladas no cumplen con las necesidades reales, y de este
-                    porcentaje, más del 80% se deterioran con el tiempo. Estos
+                    porcentaje, más del 80% se deteriora con el tiempo. Estos
                     son datos basados en mi experiencia, y los números no
                     mienten.
                   </p>

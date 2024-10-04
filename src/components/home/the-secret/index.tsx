@@ -57,7 +57,7 @@ function Index() {
                 <p className="text-gray-600 text-left mb-4">
                   La realidad es que entre el 90-95% de las canaletas instaladas
                   no cumplen con las necesidades reales, y de este porcentaje,
-                  más del 80% se deterioran con el tiempo. Estos son datos
+                  más del 80% se deteriora con el tiempo. Estos son datos
                   basados en mi experiencia, y los números no mienten.
                 </p>
                 <p className="text-gray-600 text-left">
@@ -65,7 +65,7 @@ function Index() {
                   telecomunicaciones me ha permitido observar este problema de
                   cerca. Durante años, instalé miles de metros de cableado en
                   diversas fachadas y me di cuenta de un hecho importante al que
-                  llame {"“"}El secreto{"”"}:
+                  llamé {"“"}El secreto{"”"}:
                 </p>
               </div>
               <div className="bg-white p-6 sm:py-12 w-full text-center rounded-md text-blue-600 my-10">
@@ -94,7 +94,7 @@ function Index() {
                   fácilmente en una de sus peores inversiones.
                 </p>
                 <p>
-                  Ponte en mi lugar: eres un técnico a tres metros de altura
+                  Ponte en mi lugar: eres un técnico a tres metros de altura,
                   subido a una escalera, intentando abrir y cerrar estas tapas
                   con las manos sucias de la grasa acumulada en las fachadas. Se
                   hace muy difícil conseguir que las tapas cierren

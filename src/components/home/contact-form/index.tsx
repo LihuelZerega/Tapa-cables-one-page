@@ -126,7 +126,7 @@ export default function ContactForm() {
           className="mx-auto mt-16 max-w-5xl sm:mt-20"
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-            <div>
+            <div className="sm:col-span-2">
               <label
                 htmlFor="first-name"
                 className="block text-sm font-semibold leading-6 text-gray-900"
@@ -148,7 +148,37 @@ export default function ContactForm() {
                 />
               </div>
             </div>
-            <div>
+
+            <div className="sm:col-span-2">
+              <label
+                htmlFor="contact-method"
+                className="block text-sm font-semibold leading-6 text-gray-900"
+              >
+                Forma de contacto
+              </label>
+              <div className="flex flex-row gap-3 mt-2.5">
+                <button
+                  type="button"
+                  onClick={() => setSelectedMethod("email")}
+                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
+                    selectedMethod === "email" ? "bg-blue-100" : ""
+                  }`}
+                >
+                  <span>Email</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedMethod("whatsapp")}
+                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
+                    selectedMethod === "whatsapp" ? "bg-blue-100" : ""
+                  }`}
+                >
+                  <span>WhatsApp</span>
+                </button>
+              </div>
+            </div>
+
+            <div className="sm:col-span-2">
               <label
                 htmlFor="email"
                 className="block text-sm font-semibold leading-6 text-gray-900"
@@ -214,35 +244,8 @@ export default function ContactForm() {
                 />
               </div>
             </div>
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="contact-method"
-                className="block text-sm font-semibold leading-6 text-gray-900"
-              >
-                Forma de contacto
-              </label>
-              <div className="flex flex-row gap-3 mt-2.5">
-                <button
-                  type="button"
-                  onClick={() => setSelectedMethod("email")}
-                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
-                    selectedMethod === "email" ? "bg-blue-100" : ""
-                  }`}
-                >
-                  <span>Email</span>
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setSelectedMethod("whatsapp")}
-                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
-                    selectedMethod === "whatsapp" ? "bg-blue-100" : ""
-                  }`}
-                >
-                  <span>WhatsApp</span>
-                </button>
-              </div>
-            </div>
-            <div className="sm:col-span-2">
+
+            {/* <div className="sm:col-span-2">
               <label
                 htmlFor="interests"
                 className="block text-sm font-semibold leading-6 text-gray-900"
@@ -274,24 +277,8 @@ export default function ContactForm() {
                 >
                   Servicio De Instalación
                 </button>
-                {/* <button
-                  type="button"
-                  onClick={() =>
-                    setSelectedInterests(
-                      "Compra de material y servicio de instalacion"
-                    )
-                  }
-                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
-                    selectedInterests ===
-                    "Compra de material y servicio de instalacion"
-                      ? "bg-blue-100"
-                      : ""
-                  }`}
-                >
-                  Ambas opciones
-                </button> */}
               </div>
-            </div>
+            </div> */}
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"

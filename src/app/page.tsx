@@ -26,9 +26,9 @@ export default function Home() {
         <hr/>
         <ProductAndServices />
         <OurProduct />
-        <Benefits />
         <hr />
         <ComparationTable />
+        <Benefits />
         <hr className="my-12" />
         <WorkingTogether />
         <div id="Trabajos" />

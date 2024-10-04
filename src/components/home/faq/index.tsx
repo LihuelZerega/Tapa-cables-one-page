@@ -19,9 +19,9 @@ const FAQ: React.FC = () => {
         "La ventaja principal  es el impacto visual, estéticamente hablando, su fachada cambiará por completo, otras ventajas que nos hacen ganar dinero o ahorrarlo,  sería la revalorización de su propiedad y  evitar asumir responsabilidad civil en caso de que alguien sufra algún daño debido a un cable colgante.",
     },
     {
-      question: "¿Tapacables realiza todo tipo de trabajos?",
+      question: "¿La solución de Tapacables es universal para todas las fachadas?",
       answer:
-        "Nos enfocamos en ofrecer soluciones donde sabemos que podemos aportar verdadero valor. Si nuestra propuesta no es la más adecuada para ti, te guiaremos con honestidad para que encuentres la mejor alternativa. Porque más que vender, nos importa ayudarte a lograr lo que necesitas.",
+        "No, nuestro producto y servicio no son una solución universal. Dependemos del tipo de fachada en la que se vaya a trabajar. Nos enfocamos en proyectos donde sabemos que podemos aportar verdadero valor. Si el trabajo no es adecuado para nuestro producto, te lo diremos con total transparencia.",
     },
     {
       question: "¿Qué garantías me ofrece tapacables?",
@@ -31,13 +31,7 @@ const FAQ: React.FC = () => {
     {
       question: "¿Puedo comprar solo el material e instalarlo yo mismo?",
       answer:
-        "¡Por supuesto! Nuestras canaletas se han diseñado para que sean muy fáciles de instalar, van acompañadas de un manual de instrucciones y le ofreceremos un teléfono para que pueda llamar al servicio técnico si tiene alguna duda en el momento de la instalación.",
-    },
-    {
-      question:
-        "¿Qué ventajas me ofrece contratar el servicio de instalación en vez de  instalarlas yo mismo?",
-      answer:
-        "Ofrecemos un descuento del 20% del valor del material si contrata el servicio de instalación.",
+        "No, no vendemos el material por separado. Ofrecemos un servicio completo que incluye tanto el material como la instalación profesional para garantizar siempre el  mejor resultado.",
     },
     {
       question: "¿Qué gastos se incluyen en el servicio de instalación?",
@@ -53,12 +47,6 @@ const FAQ: React.FC = () => {
       question: "¿De qué color son las canaletas?",
       answer:
         "Blanco es el color básico que ofrecemos sin coste adicional. Sin embargo, si el cliente necesita un color específico, podemos ajustarnos a sus necesidades, aunque esto podría implicar un costo adicional.",
-    },
-    {
-      question:
-        "¿Aparte de la venta de material y el servicio de instalación tenemos otros servicios?",
-      answer:
-        "Si, ofrecemos un estudio totalmente gratuito para ahorrar en tu factura de la luz o de internet, seguramente estas pagando mas de lo que deberías pagar y no lo sabes, pincha aquí para obtener más información: LINK WHATSAPP",
     },
     {
       question: "¿Cómo puedo ampliar la información de esta página web?",

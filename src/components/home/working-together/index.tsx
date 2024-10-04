@@ -12,9 +12,9 @@ function index() {
           className="max-w-3xl text-center mb-10 lg:mb-14 mx-auto"
         >
           <h2 className="text-gray-800 font-semibold text-3xl md:text-4xl md:leading-tight mb-6 md:mb-0">
-            ¿Cómo vamos a{" "}
+            ¿Cómo es{" "}
             <span className="underline decoration-solid decoration-blue-500">
-              Trabajar juntos
+              Trabajar con nosotros
             </span>
             ?
           </h2>
@@ -43,12 +43,10 @@ function index() {
 
               <div className="grow pt-0.5 pb-8 sm:pb-12">
                 <span className="text-gray-800 text-base font-medium">
-                  Completar Formulario: {""}
+                Completa el Formulario
                 </span>
                 <p className="text-sm text-gray-600">
-                  El primer paso es completar el formulario que encontrarás al
-                  final de nuestra página web. Esto nos permitirá crear tu ficha
-                  de cliente y gestionar tu solicitud de forma más precisa.
+                Rellena el formulario al final de esta página web para iniciar el proceso. Con esto creamos tu ficha y podemos gestionar tu solicitud de manera más efectiva.
                 </p>
               </div>
             </div>
@@ -64,16 +62,10 @@ function index() {
 
               <div className="grow pt-0.5 pb-8 sm:pb-12">
                 <span className="text-gray-800 text-base font-medium">
-                  Contacto y Recolección de Información: {""}
+                Contacto y Evaluación
                 </span>
                 <p className="text-sm text-gray-600">
-                  Una vez recibido el formulario, nos pondremos en contacto
-                  contigo a través del medio que hayas indicado. En esta fase,
-                  te solicitaremos la información necesaria sobre la fachada en
-                  la que se realizarán los trabajos. Es importante señalar que,
-                  aunque tratamos de ayudar a todos nuestros clientes, no
-                  siempre contamos con una solución universal para cada caso
-                  específico.
+                Nos pondremos en contacto para solicitar más detalles sobre tu fachada. Analizaremos si nuestra solución es adecuada para ti, si lo es, te enviaremos un presupuesto personalizado.
                 </p>
               </div>
             </div>
@@ -89,37 +81,10 @@ function index() {
 
               <div className="grow pt-0.5 pb-8 sm:pb-12">
                 <span className="text-gray-800 font-medium">
-                  Estudio de Presupuesto Gratuito: {""}
+                Presupuesto y Siguientes Pasos
                 </span>
                 <p className="text-sm text-gray-600">
-                  Después de recibir la información requerida, realizaremos un
-                  análisis personalizado para determinar si nuestra solución es
-                  la adecuada para ti. Agendaremos una llamada para discutir los
-                  resultados de este estudio contigo.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-x-5 ms-1">
-              <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
-                <div className="relative z-10 size-8 flex justify-center items-center">
-                  <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-blue-500 font-semibold text-xs uppercase rounded-full">
-                    4
-                  </span>
-                </div>
-              </div>
-
-              <div className="grow pt-0.5 pb-8 sm:pb-12">
-                <span className="text-gray-800 font-medium">
-                  Propuesta y Seguimiento: {""}
-                </span>
-                <p className="text-sm text-gray-600">
-                  Si el estudio resulta favorable, te enviaremos un presupuesto
-                  detallado y te contactaremos en la fecha que hayas indicado
-                  para explicarte los próximos pasos, siempre y cuando aceptes
-                  la propuesta. Si el resultado del estudio no es positivo, te
-                  orientaremos hacia otras alternativas para ofrecerte la mejor
-                  solución posible
+                Si aceptas el presupuesto, coordinaremos los detalles para comenzar el trabajo, así de simple. 
                 </p>
               </div>
             </div>

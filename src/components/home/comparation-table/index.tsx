@@ -7,8 +7,8 @@ function index() {
       <section>
         <BlurFade inView className="text-center mb-12 max-w-5xl mx-auto px-3">
           <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">
-            <span className="text-blue-500">Comparativa</span> de Canaletas con{" "}
-            <span className="text-blue-500">Apertura superior</span>
+            <span className="text-blue-500">Comparativa</span> con{" "}
+            <span className="text-blue-500">Marca similar </span>
           </h3>
           <p className="mt-2 text-base text-gray-600 max-w-4xl text-center mx-auto">
             La comparativa se ha realizado con otra marca que, al igual que
@@ -152,7 +152,7 @@ function index() {
 
                 <td className="py-5 lg:px-6">
                   <p className="ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                  Moderada <br /> (Requiere <br className="block lg:hidden" />{" "}
+                    Moderada <br /> (Requiere <br className="block lg:hidden" />{" "}
                     herramientas <br className="block lg:hidden" /> de corte)
                   </p>
                 </td>
@@ -189,15 +189,98 @@ function index() {
                 </th>
 
                 <td className="py-5 lg:px-6">
-                  <p className="ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                    Si
-                  </p>
+                  <div className="flex items-center justify-center ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-blue-500 text-center whitespace-nowrap">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      color="currentColor"
+                      fill="none"
+                    >
+                      <path
+                        d="M5 14.5C5 14.5 6.5 14.5 8.5 18C8.5 18 14.0588 8.83333 19 7"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
                 </td>
 
                 <td className="py-5 lg:px-6">
-                  <p className="ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                    No
-                  </p>
+                  <div className="flex items-center justify-center ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-blue-500 text-center whitespace-nowrap">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="22"
+                      height="22"
+                      color="currentColor"
+                      fill="none"
+                    >
+                      <path
+                        d="M19.0005 4.99988L5.00049 18.9999M5.00049 4.99988L19.0005 18.9999"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <th
+                  className="py-5 ps-2 pe-2 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-start whitespace-nowrap"
+                  scope="row"
+                >
+                  Servicio de <br className="block lg:hidden" /> instalación{" "}
+                  <br className="block lg:hidden" />
+                  oficial{" "}
+                </th>
+
+                <td className="py-5 lg:px-6">
+                  <div className="flex items-center justify-center ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-blue-500 text-center whitespace-nowrap">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      color="currentColor"
+                      fill="none"
+                    >
+                      <path
+                        d="M5 14.5C5 14.5 6.5 14.5 8.5 18C8.5 18 14.0588 8.83333 19 7"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </td>
+
+                <td className="py-5 lg:px-6">
+                  <div className="flex items-center justify-center ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-blue-500 text-center whitespace-nowrap">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="22"
+                      height="22"
+                      color="currentColor"
+                      fill="none"
+                    >
+                      <path
+                        d="M19.0005 4.99988L5.00049 18.9999M5.00049 4.99988L19.0005 18.9999"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
                 </td>
               </tr>
             </tbody>
@@ -205,14 +288,14 @@ function index() {
         </BlurFade>
 
         <p className="text-xs font-medium text-center mt-6 text-gray-600">
-          Los datos recogidos son puramente objetivos y recogidos de
-          fuentes oficiales.
+          Los datos recogidos son puramente objetivos y recogidos de fuentes
+          oficiales.
         </p>
 
         <hr className="my-12 max-w-xl mx-auto" />
       </section>
 
-      <section>
+      {/* <section>
         <BlurFade inView className="text-center mb-12 max-w-5xl mx-auto">
           <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">
             Ejemplo de <span className="text-blue-500">Costes en material</span>{" "}
@@ -533,7 +616,7 @@ function index() {
             específicas de cada cliente.
           </p>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
