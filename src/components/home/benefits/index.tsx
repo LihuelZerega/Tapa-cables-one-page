@@ -10,47 +10,50 @@ function index() {
     >
       <div className="text-center">
         <h2 className="text-gray-800 font-bold text-3xl md:text-4xl md:leading-tight">
-          Beneficios principales de tapar los cables en su fachada.
+          Beneficios de tapar el cableado
         </h2>
-        <p className="text-base text-gray-600 max-w-4xl text-center mx-auto">
-          Poner una canaleta para ocultar el cableado en una fachada ofrece
-          varios beneficios clave
-        </p>
       </div>
       <div className="flex flex-col md:flex-row items-start justify-center gap-6 md:gap-12 pt-12">
         <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
-            Una fachada moderna
+              Una fachada moderna
             </h4>
             <p className="text-gray-600 text-sm">
-            Al ocultar los cables y usar nuestras canaletas de diseño, eliminas ese aspecto descuidado y antiguo.
+              Al ocultar los cables y usar nuestras canaletas de diseño,
+              eliminas ese aspecto descuidado y antiguo.
             </p>
           </div>
 
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
-            Que lo que tenemos dure más
+              Que lo que tenemos dure más
             </h4>
             <p className="text-gray-600 text-sm">
-            Al estar dentro de una canaleta, el cableado queda protegido de tirones, desgaste y mal tiempo, lo que ayuda a prolongar su vida útil.
-
-            </p>
-          </div>
-
-          <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
-            <h4 className="text-blue-500 font-semibold text-xl">Lo más importante</h4>
-            <p className="text-gray-600 text-sm">
-            Al eliminar los cables sueltos, reduce el riesgo de accidentes y evita posibles problemas legales.
+              Al estar dentro de una canaleta, el cableado queda protegido de
+              tirones, desgaste y mal tiempo, lo que ayuda a prolongar su vida
+              útil.
             </p>
           </div>
 
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
-            Aumenta tu valor
+              Lo más importante
             </h4>
             <p className="text-gray-600 text-sm">
-            Ocultar los cables mejora el aspecto moderno y profesional de la fachada, lo que automáticamente revaloriza  tu propiedad en el mercado. 
+              Al eliminar los cables sueltos, reduce el riesgo de accidentes y
+              evita posibles problemas legales.
+            </p>
+          </div>
+
+          <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
+            <h4 className="text-blue-500 font-semibold text-xl">
+              Aumenta tu valor
+            </h4>
+            <p className="text-gray-600 text-sm">
+              Ocultar los cables mejora el aspecto moderno y profesional de la
+              fachada, lo que automáticamente revaloriza tu propiedad en el
+              mercado.
             </p>
           </div>
         </div>
