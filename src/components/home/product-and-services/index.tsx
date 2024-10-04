@@ -9,11 +9,8 @@ function index() {
       <div className="flex flex-col items-center justify-center">
         <BlurFade inView className="text-center mb-10">
           <h2 className="text-blue-500 font-bold text-3xl md:text-4xl md:leading-tight">
-            La Solución Perfecta
+          Servicio integral de instalación
           </h2>
-          <p className="text-lg lg:text-xl text-gray-600 max-w-4xl text-center mx-auto">
-            Servicio integral de instalación
-          </p>
         </BlurFade>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 items-start justify-center gap-6 lg:px-12 2xl:mx-24">
