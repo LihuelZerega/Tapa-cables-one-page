@@ -213,7 +213,7 @@ function Index() {
               </div>
               <div className="mt-3">
                 <h3 className="text-md font-semibold text-gray-700">
-                  Sabemos de lo que hablamos <br /> <span className="text-[#3b82f6]">“lo hemos visto”</span>
+                  Sabemos de lo que hablamos <br /> <span className="text-[#3b82f6]">“Lo hemos visto”</span>
                 </h3>
                 <p className="text-sm mt-1 text-gray-600">
                   Subidos a una escalera lo hemos visto todo mucho mejor, es por
