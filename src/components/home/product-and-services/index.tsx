@@ -11,7 +11,7 @@ function index() {
           <h2 className="text-blue-500 font-bold text-3xl md:text-4xl md:leading-tight">
             La Solución Perfecta
           </h2>
-          <p className="text-base text-gray-600 max-w-4xl text-center mx-auto">
+          <p className="text-lg lg:text-xl text-gray-600 max-w-4xl text-center mx-auto">
             Servicio integral de instalación
           </p>
         </BlurFade>
@@ -19,48 +19,42 @@ function index() {
         <div className="grid grid-cols-1 lg:grid-cols-3 items-start justify-center gap-6 lg:px-12 2xl:mx-24">
           <BlurFade
             inView
-            className="border border-neutral-300 rounded-md lg:h-[230px] p-6"
+            className="border border-neutral-300 rounded-md lg:h-[170px] p-6"
           >
             <div>
               <h3 className="uppercase text-left font-semibold text-xl lg:text-3xl text-gray-800">
                 <span className="text-blue-500">1. Análisis</span>
               </h3>
               <p className="mt-3 text-gray-600">
-                Comenzamos evaluando las características de tu fachada y tus
-                necesidades. Con esta información, realizamos un estudio para
-                validar si nuestra solución es la adecuada para ti.
+              Evaluamos tu fachada y necesidades para confirmar si nuestra solución es adecuada.
               </p>
             </div>
           </BlurFade>
 
           <BlurFade
             inView
-            className="border border-neutral-300 rounded-md lg:h-[230px] p-6"
+            className="border border-neutral-300 rounded-md lg:h-[170px] p-6"
           >
             <div>
               <h3 className="uppercase text-left font-semibold text-xl lg:text-3xl text-gray-800">
-                <span className="text-blue-500">2. Instalación</span>
+                <span className="text-gray-800">2. Instalación</span>
               </h3>
               <p className="mt-3 text-gray-600">
-                Nuestro equipo de profesionales se encarga de todo el proceso,
-                cuidando hasta el último detalle para que el resultado sea
-                funcional y estéticamente impecable.
+              Nos encargamos de todo, asegurando un resultado funcional y estéticamente impecable.
               </p>
             </div>
           </BlurFade>
 
           <BlurFade
             inView
-            className="border border-neutral-300 rounded-md lg:h-[230px] p-6"
+            className="border border-neutral-300 rounded-md lg:h-[170px] p-6"
           >
             <div>
               <h3 className="uppercase text-left font-semibold text-xl lg:text-3xl text-gray-800">
                 <span className="text-blue-500">3. Garantía</span>
               </h3>
               <p className="mt-3 text-gray-600">
-                Una vez finaliza el trabajo, te ofrecemos garantía tanto en
-                materiales como de instalación, y quedamos a tu disposición para
-                resolver cualquier duda o eventualidad que pueda surgir.
+              Ofrecemos garantía en materiales e instalación, y estamos disponibles para cualquier duda o eventualidad.
               </p>
             </div>
           </BlurFade>
