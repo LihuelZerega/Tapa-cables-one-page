@@ -34,9 +34,9 @@ function index() {
           >
             <div>
               <h3 className="uppercase text-left font-semibold text-xl lg:text-3xl text-gray-800">
-                <span className="text-gray-50">2. Instalación</span>
+                <span className="text-blue-500">2. Instalación</span>
               </h3>
-              <p className="mt-3 text-gray-200">
+              <p className="mt-3 text-gray-600">
               Nos encargamos de todo, asegurando un resultado funcional y estéticamente impecable.
               </p>
             </div>
