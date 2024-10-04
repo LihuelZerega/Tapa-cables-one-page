@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tapacables | Alegre su mirada sin cables por su fachada",
-  description: "Alegre su mirada sin cables por su fachada",
+  title: "Tapacables | Transformamos fachadas, tapando cables",
+  description: "Transformamos fachadas, tapando cables",
 };
 
 export default function RootLayout({
