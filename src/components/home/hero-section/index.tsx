@@ -7,14 +7,14 @@ import HeroBanner3 from "@/images/HeroBanner3.png";
 
 const navigation = [
   { name: "Inicio", href: "/" },
-  { name: "Producto", href: "#producto" },
+  { name: "Nuestro Servicio", href: "#producto" },
   { name: "Sobre Nosotros", href: "#sobre-nosotros" },
   { name: "Trabajos Realizados", href: "#trabajos" },
 ];
 
 const navigationMobile = [
   { name: "Inicio", href: "/" },
-  { name: "Producto", href: "#Producto" },
+  { name: "Nuestro Servicio", href: "#Producto" },
   { name: "Sobre Nosotros", href: "#Sobre-nosotros" },
   { name: "Trabajos Realizados", href: "#Trabajos" },
 ];

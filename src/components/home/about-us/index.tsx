@@ -167,11 +167,7 @@ function Index() {
                   Un problema sin solución <br /> <span className="text-[#3b82f6]">“Hasta ahora…”</span>
                 </h3>
                 <p className="text-sm mt-1 text-gray-600">
-                  La realidad es que casi a diario muchos técnicos están
-                  poniendo cables nuevos por las fachadas, y a muy pocos les
-                  preocupa cómo quedan puestos, además las canaletas existentes
-                  en el mercado no satisfacen las necesidades reales del
-                  cliente.
+                Casi a diario, muchos técnicos colocan cables nuevos en las fachadas, y a pocos les importa cómo quedan. Además, las canaletas existentes en el mercado no satisfacen las necesidades reales del cliente.
                 </p>
               </div>
             </BlurFade>
@@ -216,10 +212,7 @@ function Index() {
                   Sabemos de lo que hablamos <br /> <span className="text-[#3b82f6]">“Lo hemos visto”</span>
                 </h3>
                 <p className="text-sm mt-1 text-gray-600">
-                  Subidos a una escalera lo hemos visto todo mucho mejor, es por
-                  eso que hemos creado nuestra propia canaleta y ofrecemos un
-                  servicio integral de instalación, para facilitar el orden del
-                  cableado y cuidar la estética de las fachadas.
+                Desde las alturas, lo hemos observado mejor que nadie. Por eso creamos nuestras propias canaletas y ofrecemos un servicio integral para ordenar el cableado y cuidar la estética de las fachadas.
                 </p>
               </div>
             </BlurFade>
@@ -252,11 +245,7 @@ function Index() {
                   Sabemos cómo hacerlo <br /> <span className="text-[#3b82f6]">“Nos gustan las cosas bien hechas”</span>
                 </h3>
                 <p className="text-sm mt-1 text-gray-600">
-                  Nuestra experiencia en el sector de las telecomunicaciones,
-                  nos aporta la capacidad de realizar estos trabajos sin
-                  problemas, además nuestro trato siempre cercano en nuestro dia
-                  a dia con clientes nos ha permitido conocer plenamente sus
-                  necesidades.
+                Nuestra experiencia en telecomunicaciones nos permite realizar estos trabajos sin problemas. Además, el trato cercano con nuestros clientes nos ha ayudado a entender plenamente sus necesidades.
                 </p>
               </div>
             </BlurFade>
@@ -337,7 +326,6 @@ function Index() {
             <p className="text-gray-500 text-sm mt-3 text-center">
               Adrià Salamanca Barberà, Fundador de Tapacables
             </p>
-            <div id="producto" />
           </BlurFade>
 
           <BlurFade inView className="lg:w-1/2 mt-5 sm:mt-10 lg:mt-0 md:pl-12">
