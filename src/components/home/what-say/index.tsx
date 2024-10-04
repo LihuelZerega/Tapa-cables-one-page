@@ -11,7 +11,7 @@ function index() {
     <div className="max-w-[85rem] py-10 px-6 lg:px-8 lg:py-14 mx-auto">
       <div className="pb-10 text-center mx-auto">
         <BlurFade inView className="text-3xl font-bold md:text-4xl md:leading-tight text-gray-800">
-          ¿Que dicen de nosotros?
+          ¿Qué dicen de nosotros?
         </BlurFade>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 max-w-5xl mt-8 mx-auto select-none">

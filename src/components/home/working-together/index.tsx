@@ -89,7 +89,7 @@ function index() {
               className="group inline-flex items-center gap-x-2 py-2 px-3 bg-blue-500 hover:bg-blue-600 font-medium text-sm text-neutral-200 rounded-md focus:outline-none"
               href="#contacto"
             >
-              Contactanos!
+              Contactános!
             </a>
           </BlurFade>
 

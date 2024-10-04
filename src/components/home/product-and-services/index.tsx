@@ -9,7 +9,7 @@ function index() {
       <div className="flex flex-col items-center justify-center">
         <BlurFade inView className="text-center mb-10">
           <h2 className="text-blue-500 font-bold text-3xl md:text-4xl md:leading-tight">
-          Servicio integral de instalación
+          Servicio integral <span className="text-gray-800">de</span> instalación
           </h2>
         </BlurFade>
 
@@ -30,7 +30,7 @@ function index() {
 
           <BlurFade
             inView
-            className="border bg-blue-500 border-neutral-300 rounded-md lg:h-[170px] p-6"
+            className="border border-neutral-300 rounded-md lg:h-[170px] p-6"
           >
             <div>
               <h3 className="uppercase text-left font-semibold text-xl lg:text-3xl text-gray-800">
