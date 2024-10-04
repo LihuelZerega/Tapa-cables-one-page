@@ -293,7 +293,7 @@ function Index() {
                 </div>
                 <p className="text-center text-gray-500 mt-3">
                   Durante su trayectoria como técnico de telecomunicaciones
-                  descubrió un problema que nadie estaba viendo, al que llamo{" "}
+                  descubrió un problema que nadie estaba viendo, al que llamó{" "}
                   <br />
                   <strong>
                     {"“"}El secreto{"”"}
@@ -356,7 +356,7 @@ function Index() {
                 </p>
                 <p id="el-secreto" className="text-gray-500 mt-3">
                   Durante su trayectoria como técnico de telecomunicaciones
-                  descubrió un problema que nadie estaba viendo, al que llamo{" "}
+                  descubrió un problema que nadie estaba viendo, al que llamó{" "}
                   <br />
                   <strong>
                     {"“"}El secreto{"”"}
@@ -438,7 +438,7 @@ function Index() {
                     de telecomunicaciones me ha permitido observar este problema
                     de cerca. Durante años, instalé miles de metros de cableado
                     en diversas fachadas y me di cuenta de un hecho importante
-                    al que llame {"“"}El secreto{"”"}:
+                    al que llamé {"“"}El secreto{"”"}:
                   </p>
                 </div>
                 <div className="bg-gray-100 p-6 sm:py-12 w-full text-center rounded-md text-blue-600 my-5">

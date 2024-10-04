@@ -75,12 +75,6 @@ function index() {
               Solicitar Presupuesto
             </a>
           </div>
-
-          <p className="text-center text-sm max-w-2xl mt-10">
-            Tanto para la compra de material como para el servicio de
-            instalacion, sera atendido previamente por un experto para valorar
-            si nuestra solución es la adecuada para ti.
-          </p>
         </BlurFade>
       </div>
     </div>
