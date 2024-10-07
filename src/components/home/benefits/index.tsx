@@ -10,7 +10,7 @@ function index() {
     >
       <div className="text-center">
         <h2 className="text-gray-800 font-bold text-3xl md:text-4xl md:leading-tight">
-          Beneficios de tapar el cableado
+        Beneficios de tapar el cableado de su fachada
         </h2>
       </div>
       <div className="flex flex-col md:flex-row items-start justify-center gap-6 md:gap-12 pt-12">
