@@ -7,14 +7,14 @@ import HeroBanner3 from "@/images/HeroBanner3.png";
 
 const navigation = [
   { name: "Inicio", href: "/" },
-  { name: "Nuestro Servicio", href: "#producto" },
+  { name: "Servicio de Instalación", href: "#producto" },
   { name: "Sobre Nosotros", href: "#sobre-nosotros" },
   { name: "Trabajos Realizados", href: "#trabajos" },
 ];
 
 const navigationMobile = [
   { name: "Inicio", href: "/" },
-  { name: "Nuestro Servicio", href: "#Producto" },
+  { name: "Servicio de Instalación", href: "#Producto" },
   { name: "Sobre Nosotros", href: "#Sobre-nosotros" },
   { name: "Trabajos Realizados", href: "#Trabajos" },
 ];
@@ -62,7 +62,7 @@ function Index() {
                 href="#contacto"
                 className="w-fit rounded-sm bg-blue-600 px-3 py-3 text-base text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
               >
-                Solicitar información <span aria-hidden="true">&rarr;</span>
+                Solicitar Presupuesto <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </nav>
@@ -108,7 +108,7 @@ function Index() {
                     onClick={() => setMobileMenuOpen(false)}
                     className="w-fit rounded-sm bg-blue-600 px-3 py-3 text-base text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
                   >
-                    Solicitar información <span aria-hidden="true">&rarr;</span>
+                    Solicitar Presupuesto <span aria-hidden="true">&rarr;</span>
                   </a>
                 </div>
               </div>

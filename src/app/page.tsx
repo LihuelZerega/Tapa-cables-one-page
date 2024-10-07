@@ -23,7 +23,7 @@ export default function Home() {
         <HeroSection />
         <AboutUs />
         <div id="Producto" />
-        <hr/>
+        <hr id="producto"/>
         <ProductAndServices />
         <OurProduct />
         <hr />

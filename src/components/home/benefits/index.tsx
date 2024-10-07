@@ -17,7 +17,7 @@ function index() {
         <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
-              Una fachada moderna
+            Una fachada más moderna
             </h4>
             <p className="text-gray-600 text-sm">
               Al ocultar los cables y usar nuestras canaletas de diseño,
