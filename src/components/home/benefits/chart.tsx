@@ -64,7 +64,7 @@ export function Chart() {
             <div className="text-transparent select-none bg-[#014ba0] w-4 h-4 rounded-sm">
               d
             </div>
-            <p>Protección de Cableado</p>
+            <p>Protección de cableado</p>
           </div>
           <div className="flex flex-row items-center space-x-2">
             <div className="text-transparent select-none bg-[#1466c3] w-4 h-4 rounded-sm">
@@ -76,7 +76,7 @@ export function Chart() {
             <div className="text-transparent select-none bg-[#6aa9e9] w-4 h-4 rounded-sm">
               d
             </div>
-            <p>Aumento del valor de la Propiedad</p>
+            <p>Aumento del valor de la cropiedad</p>
           </div>
           <div className="flex flex-row items-center space-x-2">
             <div className="text-transparent select-none bg-[#3b8eed] w-4 h-4 rounded-sm">
