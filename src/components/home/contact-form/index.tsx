@@ -23,14 +23,14 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!selectedInterests) {
-      setModalContent({
-        title: "Error",
-        message: "Por favor, seleccione un interés.",
-      });
-      setIsModalOpen(true);
-      return;
-    }
+    // if (!selectedInterests) {
+    //   setModalContent({
+    //     title: "Error",
+    //     message: "Por favor, seleccione un interés.",
+    //   });
+    //   setIsModalOpen(true);
+    //   return;
+    // }
 
     if (!selectedMethod) {
       setModalContent({
