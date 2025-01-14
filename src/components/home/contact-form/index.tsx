@@ -135,7 +135,6 @@ export default function ContactForm() {
                 />
               </div>
             </div>
-
             <div className="sm:col-span-2">
               <label
                 htmlFor="email"
@@ -156,35 +155,6 @@ export default function ContactForm() {
                   autoComplete="email"
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                 />
-              </div>
-            </div>
-
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="contact-method"
-                className="block text-sm font-semibold leading-6 text-gray-900"
-              >
-                Forma de contacto
-              </label>
-              <div className="flex flex-row gap-3 mt-2.5">
-                <button
-                  type="button"
-                  onClick={() => setSelectedMethod("email")}
-                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
-                    selectedMethod === "email" ? "bg-blue-100" : ""
-                  }`}
-                >
-                  <span>Email</span>
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setSelectedMethod("whatsapp")}
-                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
-                    selectedMethod === "whatsapp" ? "bg-blue-100" : ""
-                  }`}
-                >
-                  <span>WhatsApp</span>
-                </button>
               </div>
             </div>
             <div className="sm:col-span-2">
@@ -493,7 +463,7 @@ export default function ContactForm() {
                   Cerrar
                 </button>
                 <a
-                  href="https://wa.me/34665121492"
+                  href={`https://wa.me/34665121492?text=Hola,%20mi%20nombre%20es%20${encodeURIComponent(formData.name)}%20me%20gustaria%20solicitar%20un%20presupuesto`}
                   className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-[#128C7E] bg-[#128C7E] text-white shadow-sm hover:bg-[#075E54] focus:outline-none focus:bg-[#075E54]"
                 >
                   <FaWhatsapp className="text-xl"/>
