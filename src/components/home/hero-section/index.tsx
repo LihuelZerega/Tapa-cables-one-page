@@ -27,7 +27,9 @@ function Index() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
+      if (window.scrollY === 0) {
+        setShowHeader(true);
+      } else if (window.scrollY > lastScrollY) {
         setShowHeader(false);
       } else {
         setShowHeader(true);
