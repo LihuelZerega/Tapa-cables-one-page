@@ -25,10 +25,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         <h4>Datos del Contacto</h2>
         <p><strong>Nombre:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Teléfono:</strong> ${phoneNumber}</p>
-        <p><strong>Código Postal:</strong> ${postalCode}</p>
         <p><strong>Forma de Contacto:</strong> ${contactMethod}</p>
-        <p><strong>Esta interesado en:</strong> ${interests}</p>
         <p><strong>Mensaje:</strong> ${message}</p>
       `,
     };

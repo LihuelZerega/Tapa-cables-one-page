@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -21,11 +22,29 @@ const navigationMobile = [
 
 function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   return (
     <div className="bg-white">
-      <header className="inset-x-0 top-0 z-50 fixed">
-        <div className="fixed w-full">
+      <header className={`inset-x-0 top-0 z-50 fixed transition-transform duration-300 ${showHeader ? "translate-y-0" : "-translate-y-full"}`}>
+        <div className="w-full">
           <nav
             aria-label="Global"
             className="flex items-center justify-between py-6 px-6 lg:px-8 bg-white w-full z-50 shadow-sm"

@@ -5,7 +5,6 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 const WhatsAppButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
 
   const openModal = () => {
@@ -18,13 +17,13 @@ const WhatsAppButton = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    let message = `Hola, soy ${name} ${surname}. Me gustaría `;
+    let message = `Hola, mi nombre es ${name}. Me gustaría `;
     if (selectedOption === "consulta") {
       message += "realizar una consulta.";
     } else if (selectedOption === "presupuesto") {
       message += "solicitar un presupuesto.";
     }
-    const whatsappUrl = `https://wa.me/5491144080057?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/34665121492?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappUrl, "_blank");
@@ -37,7 +36,7 @@ const WhatsAppButton = () => {
         onClick={openModal}
         style={{
           position: "fixed",
-          bottom: "20px",
+          bottom: "200px",
           right: "20px",
           borderRadius: "50%",
           padding: "6px",
@@ -105,16 +104,6 @@ const WhatsAppButton = () => {
                   />
                 </div>
                 <div className="sm:col-span-2">
-                  <label className="text-sm">Apellido:</label>
-                  <input
-                    type="text"
-                    value={surname}
-                    onChange={(e) => setSurname(e.target.value)}
-                    required
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-                <div className="sm:col-span-2">
                   <label className="text-sm">Seleccione una opción:</label>
                   <div className="flex flex-row gap-3 mt-2.5">
                     <button
@@ -145,7 +134,7 @@ const WhatsAppButton = () => {
 
               <div className="text-center text-sm">
                 Si quieres contactarnos de otra manera, puedes enviarnos un{" "}
-                <span className="text-blue-600">Email</span> a{" "}
+                <a href="mailto:adriansalamancabarbera@gmail.com" className="text-blue-600 underline underline-offset-2">Email</a> a{" "}
                 <span className="text-blue-600">
                   adriansalamancabarbera@gmail.com
                 </span>

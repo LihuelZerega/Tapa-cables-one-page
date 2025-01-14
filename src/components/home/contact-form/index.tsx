@@ -1,14 +1,13 @@
 "use client";
 import React, { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 import BlurFade from "@/components/magicui/blur-fade";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phoneNumber: "",
     message: "",
-    postalCode: "",
     contactMethod: "",
     interests: "",
   });
@@ -41,16 +40,6 @@ export default function ContactForm() {
       return;
     }
 
-    const phoneRegex = /^\d{9}$/;
-    if (!phoneRegex.test(formData.phoneNumber)) {
-      setModalContent({
-        title: "Error",
-        message: "Por favor, ingresa un número de teléfono válido de 9 dígitos.",
-      });
-      setIsModalOpen(true);
-      return;
-    }
-
     if (!isTermsChecked) {
       setModalContent({
         title: "Error",
@@ -74,16 +63,14 @@ export default function ContactForm() {
 
     if (res.ok) {
       setModalContent({
-        title: "Mensaje enviado exitosamente",
+        title: "¿Quieres obtener un presupuesto?",
         message:
-          "El mensaje ha sido enviado exitosamente, pronto nos pondremos en contacto contigo. ¡Gracias por contactarnos!",
+          "Para obtener un presupuesto sigue el proceso a través de whatsapp, en caso de cualquier otra consulta espere y nos pondremos en contacto.",
       });
       setFormData({
         name: "",
         email: "",
-        phoneNumber: "",
         message: "",
-        postalCode: "",
         contactMethod: "",
         interests: "",
       });
@@ -151,6 +138,29 @@ export default function ContactForm() {
 
             <div className="sm:col-span-2">
               <label
+                htmlFor="email"
+                className="block text-sm font-semibold leading-6 text-gray-900"
+              >
+                Email
+              </label>
+              <div className="mt-2.5">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
+                  required
+                  autoComplete="email"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-2">
+              <label
                 htmlFor="contact-method"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
@@ -177,108 +187,6 @@ export default function ContactForm() {
                 </button>
               </div>
             </div>
-
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="email"
-                className="block text-sm font-semibold leading-6 text-gray-900"
-              >
-                Email
-              </label>
-              <div className="mt-2.5">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                  required
-                  autoComplete="email"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-            <div>
-              <label
-                htmlFor="phone-number"
-                className="block text-sm font-semibold leading-6 text-gray-900"
-              >
-                Número de teléfono
-              </label>
-              <div className="relative mt-2.5">
-              <input
-                  id="phone-number"
-                  name="phoneNumber"
-                  type="tel"
-                  value={formData.phoneNumber}
-                  onChange={(e) =>
-                    setFormData({ ...formData, phoneNumber: e.target.value })
-                  }
-                  required
-                  autoComplete="tel"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-            <div>
-              <label
-                htmlFor="postal-code"
-                className="block text-sm font-semibold leading-6 text-gray-900"
-              >
-                Código Postal
-              </label>
-              <div className="mt-2.5">
-                <input
-                  id="postal-code"
-                  name="postalCode"
-                  type="text"
-                  value={formData.postalCode}
-                  onChange={(e) =>
-                    setFormData({ ...formData, postalCode: e.target.value })
-                  }
-                  required
-                  autoComplete="postal-code"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-
-            {/* <div className="sm:col-span-2">
-              <label
-                htmlFor="interests"
-                className="block text-sm font-semibold leading-6 text-gray-900"
-              >
-                Estoy interesado en:
-              </label>
-              <div className="flex flex-row gap-3 mt-2.5">
-                <button
-                  type="button"
-                  onClick={() => setSelectedInterests("Compra de material")}
-                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
-                    selectedInterests === "Compra de material"
-                      ? "bg-blue-100"
-                      : ""
-                  }`}
-                >
-                  Compra De Material
-                </button>
-                <button
-                  type="button"
-                  onClick={() =>
-                    setSelectedInterests("Servicio de instalacion")
-                  }
-                  className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
-                    selectedInterests === "Servicio de instalacion"
-                      ? "bg-blue-100"
-                      : ""
-                  }`}
-                >
-                  Servicio De Instalación
-                </button>
-              </div>
-            </div> */}
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
@@ -567,40 +475,14 @@ export default function ContactForm() {
           aria-labelledby="hs-task-created-alert-label"
         >
           <div className="relative flex flex-col bg-white shadow-lg rounded-xl w-full max-w-lg">
-            <div className="absolute top-2 end-2">
-              <button
-                type="button"
-                className="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200"
-                aria-label="Close"
-                onClick={() => setIsModalOpen(false)}
-              >
-                <span className="sr-only">Close</span>
-                <svg
-                  className="shrink-0 size-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M18 6 6 18" />
-                  <path d="m6 6 12 12" />
-                </svg>
-              </button>
-            </div>
-
             <div className="p-4 sm:p-10 text-center overflow-y-auto">
               <h3
                 id="hs-task-created-alert-label"
-                className="mb-2 text-xl font-bold text-gray-800"
+                className="mb-2 text-2xl font-bold text-gray-800"
               >
                 {modalContent.title}
               </h3>
-              <p className="text-gray-500">{modalContent.message}</p>
+              <p className="text-gray-500 text-sm">{modalContent.message}</p>
 
               <div className="mt-6 flex justify-center gap-x-4">
                 <button
@@ -610,6 +492,13 @@ export default function ContactForm() {
                 >
                   Cerrar
                 </button>
+                <a
+                  href="https://wa.me/34665121492"
+                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-[#128C7E] bg-[#128C7E] text-white shadow-sm hover:bg-[#075E54] focus:outline-none focus:bg-[#075E54]"
+                >
+                  <FaWhatsapp className="text-xl"/>
+                  <p>Whatsapp</p>
+                </a>
               </div>
             </div>
           </div>
