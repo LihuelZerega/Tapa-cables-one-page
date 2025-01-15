@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import BlurFade from "@/components/magicui/blur-fade";
+import { motion } from "framer-motion";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -18,9 +19,12 @@ export default function ContactForm() {
   const [modalContent, setModalContent] = useState({ title: "", message: "" });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isTermsOpen, setIsTermsOpen] = useState(false);
+  const [userName, setUserName] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
 
     if (!isTermsChecked) {
       setModalContent({
@@ -28,6 +32,7 @@ export default function ContactForm() {
         message: "Debes aceptar los términos y condiciones antes de continuar.",
       });
       setIsModalOpen(true);
+      setIsLoading(false);
       return;
     }
 
@@ -59,6 +64,7 @@ export default function ContactForm() {
       setSelectedInterests("");
       setSelectedMethod("");
       setIsTermsChecked(false);
+      setUserName(formData.name);
     } else {
       setModalContent({
         title: "Error",
@@ -66,6 +72,7 @@ export default function ContactForm() {
       });
     }
     setIsModalOpen(true);
+    setIsLoading(false);
   };
 
   const openTerms = () => {
@@ -78,7 +85,7 @@ export default function ContactForm() {
 
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <BlurFade inView className="mx-auto max-w-5xl text-center">
+      <BlurFade inView className="mx-auto max-w-5xl lg:max-w-3xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-blue-500 sm:text-4xl">
           Creemos que te podemos ayudar
         </h2>
@@ -92,7 +99,7 @@ export default function ContactForm() {
       <BlurFade inView>
         <form
           onSubmit={handleSubmit}
-          className="mx-auto mt-16 max-w-5xl sm:mt-20"
+          className="mx-auto mt-16 max-w-5xl lg:max-w-3xl sm:mt-20"
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div className="sm:col-span-2">
@@ -100,7 +107,7 @@ export default function ContactForm() {
                 htmlFor="first-name"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Nombre
+                Nombre completo
               </label>
               <div className="mt-2.5">
                 <input
@@ -193,6 +200,40 @@ export default function ContactForm() {
           </div>
         </form>
       </BlurFade>
+
+      {isLoading && (
+        <motion.div
+          className="fixed inset-0 z-[90] flex items-center justify-center bg-black/30"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-neutral-50 z-50">
+            <div className="text-center">
+              <svg
+                className="animate-spin h-5 w-5 text-blue-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </motion.div>
+      )}
 
       {isTermsOpen && (
         <div
@@ -420,11 +461,14 @@ export default function ContactForm() {
       )}
 
       {isModalOpen && (
-        <div
+        <motion.div
           id="hs-task-created-alert"
-          className="fixed inset-0 z-[80] flex items-center justify-center overflow-x-hidden overflow-y-auto bg-black/30 px-12 "
+          className="fixed inset-0 z-[80] flex items-center justify-center overflow-x-hidden overflow-y-auto bg-black/30 px-12"
           role="dialog"
           aria-labelledby="hs-task-created-alert-label"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
         >
           <div className="relative flex flex-col bg-white shadow-lg rounded-xl w-full max-w-lg">
             <div className="p-4 sm:p-10 text-center overflow-y-auto">
@@ -445,16 +489,18 @@ export default function ContactForm() {
                   Cerrar
                 </button>
                 <a
-                  href={`https://wa.me/34665121492?text=Hola,%20mi%20nombre%20es%20${encodeURIComponent(formData.name)}%20me%20gustaria%20solicitar%20un%20presupuesto`}
+                  href={`https://wa.me/34665121492?text=Hola,%20mi%20nombre%20es%20${encodeURIComponent(
+                    userName
+                  )}%20me%20gustaria%20solicitar%20un%20presupuesto`}
                   className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-[#128C7E] bg-[#128C7E] text-white shadow-sm hover:bg-[#075E54] focus:outline-none focus:bg-[#075E54]"
                 >
-                  <FaWhatsapp className="text-xl"/>
+                  <FaWhatsapp className="text-xl" />
                   <p>Whatsapp</p>
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   );
