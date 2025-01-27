@@ -20,7 +20,7 @@ function index() {
             Una fachada más moderna
             </h4>
             <p className="text-gray-600 text-sm">
-              Al ocultar los cables y usar nuestras canaletas de diseño,
+              Al ocultar los cables,
               eliminas ese aspecto descuidado y antiguo.
             </p>
           </div>

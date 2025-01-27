@@ -17,7 +17,7 @@ const testimonials = [
     secondImage:
       "https://res.cloudinary.com/dbhxvj3w7/image/upload/v1725974358/ComparationProduct2_hovm3m.png",
     quote:
-      "Las canaletas de Tapacables son mucho más fáciles de usar que otras marcas. La apertura superior ahorra tiempo. Una opción claramente mejor.",
+      "Estas canaletas destacan por su facilidad de uso. Su apertura superior permite ahorrar tiempo, convirtiéndolas en una opción muy conveniente.",
     location: "Calle Serrano, Madrid",
     author: "Carlos Martín López",
     date: "15 Feb, 2024",

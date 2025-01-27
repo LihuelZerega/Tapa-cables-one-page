@@ -38,21 +38,21 @@ const FAQ: React.FC = () => {
       answer:
         "La mano de obra, recursos técnicos, plus de peligrosidad por trabajos en altura, seguro de responsabilidad civil, y los costos de desplazamiento.",
     },
-    {
-      question: "¿De qué material están hechas las canaletas y los soportes?",
-      answer:
-        "Las tapas o canaletas están fabricadas en Aluminio de 1,20 mm de espesor y los soportes en Acerlor de 3mm, la decisión primordial era escoger  materiales de durabilidad alta y con gran resistencia a la corrosión, Los resultados en las pruebas de resistencia mecánica fueron más que excelentes, soportando en casi 10 veces más al peso estimado medio.",
-    },
+    // {
+    //   question: "¿De qué material están hechas las canaletas y los soportes?",
+    //   answer:
+    //     "Las tapas o canaletas están fabricadas en Aluminio de 1,20 mm de espesor y los soportes en Acerlor de 3mm, la decisión primordial era escoger  materiales de durabilidad alta y con gran resistencia a la corrosión, Los resultados en las pruebas de resistencia mecánica fueron más que excelentes, soportando en casi 10 veces más al peso estimado medio.",
+    // },
     {
       question: "¿De qué color son las canaletas?",
       answer:
         "Blanco es el color básico que ofrecemos sin coste adicional. Sin embargo, si el cliente necesita un color específico, podemos ajustarnos a sus necesidades, aunque esto podría implicar un costo adicional.",
     },
-    {
-      question: "¿Cómo puedo ampliar la información de esta página web?",
-      answer:
-        "Lo que nosotros te recomendamos es que rellenes el formulario y nos pondremos en contacto contigo, Además ponemos a tu disposición tapacables.es, donde tienes información más extensa de nuestra empresa y de lo que ofrecemos.",
-    },
+    // {
+    //   question: "¿Cómo puedo ampliar la información de esta página web?",
+    //   answer:
+    //     "Lo que nosotros te recomendamos es que rellenes el formulario y nos pondremos en contacto contigo, Además ponemos a tu disposición tapacables.es, donde tienes información más extensa de nuestra empresa y de lo que ofrecemos.",
+    // },
   ];
 
   const toggleAccordion = (index: number) => {
@@ -123,7 +123,7 @@ const FAQ: React.FC = () => {
                   </svg>
                 </button>
                 <div
-                  className={`hs-accordion-content w-full overflow-hidden transition-[height] duration-300 ${
+                  className={`hs-accordion-content w-full overflow-hidden transition-[height] duration-300 px-3 ${
                     openIndex === index ? "block" : "hidden"
                   }`}
                 >

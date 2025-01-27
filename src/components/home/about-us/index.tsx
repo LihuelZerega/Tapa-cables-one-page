@@ -103,9 +103,7 @@ function Index() {
                 <p className="text-gray-500">
                   Tapacables surge con el objetivo de ofrecer soluciones
                   eficientes a un mercado con escasas alternativas para la
-                  ocultación de cableado en fachadas. Impulsados por nuestra
-                  ambición de brindar la mejor solución posible, hemos diseñado,
-                  creado y patentado nuestras propias canaletas.
+                  ocultación de cableado en fachadas.
                 </p>
                 <p className="text-gray-500 mt-3">
                   Nuestro enfoque se centra en dos objetivos fundamentales:
@@ -167,7 +165,7 @@ function Index() {
                   Un problema sin solución <br /> <span className="text-[#3b82f6]">“Hasta ahora…”</span>
                 </h3>
                 <p className="text-sm mt-1 text-gray-600">
-                Casi a diario, muchos técnicos colocan cables nuevos en las fachadas, y a pocos les importa cómo quedan. Además, las canaletas existentes en el mercado no satisfacen las necesidades reales del cliente.
+                Casi a diario, muchos técnicos colocan cables nuevos en las fachadas, y a pocos les importa cómo quedan.
                 </p>
               </div>
             </BlurFade>
@@ -212,7 +210,7 @@ function Index() {
                   Sabemos de lo que hablamos <br /> <span className="text-[#3b82f6]">“Lo hemos visto”</span>
                 </h3>
                 <p className="text-sm mt-1 text-gray-600">
-                Desde las alturas, lo hemos observado mejor que nadie. Por eso creamos nuestras propias canaletas y ofrecemos un servicio integral para ordenar el cableado y cuidar la estética de las fachadas.
+                Desde las alturas, lo hemos observado mejor que nadie. Por eso ofrecemos un servicio integral para ordenar el cableado y cuidar la estética de las fachadas.
                 </p>
               </div>
             </BlurFade>
@@ -469,8 +467,7 @@ function Index() {
                     canaletas.
                   </p>
                   <p>
-                    Por esta razón decidí crear Tapacables, un sistema diseñado
-                    para ser más práctico, con una abertura superior que permite
+                    Por esta razón decidí crear Tapacables, y colaborar con los mejores proveedores de canaletas con abertura superior que permiten
                     incorporar nuevos cables de manera rápida, sencilla y
                     efectiva, sin las dificultades que presentan las soluciones
                     tradicionales.

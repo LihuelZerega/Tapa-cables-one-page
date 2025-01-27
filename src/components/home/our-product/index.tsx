@@ -86,7 +86,7 @@ function index() {
         </BlurFade>
       </div>
 
-      <div className="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
+      {/* <div className="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
         <div className="lg:col-span-3">
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 md:gap-12">
             <BlurFade
@@ -234,7 +234,7 @@ function index() {
             </BlurFade>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

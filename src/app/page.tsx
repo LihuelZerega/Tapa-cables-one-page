@@ -26,7 +26,7 @@ export default function Home() {
         <ProductAndServices />
         <OurProduct />
         <hr />
-        <ComparationTable />
+        {/* <ComparationTable /> */}
         <Benefits />
         <hr className="my-12" />
         <WorkingTogether />
