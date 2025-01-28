@@ -45,8 +45,7 @@ function Index() {
                   Tapacables surge con el objetivo de ofrecer soluciones
                   eficientes a un mercado con escasas alternativas para la
                   ocultación de cableado en fachadas. Impulsados por nuestra
-                  ambición de brindar la mejor solución posible, hemos diseñado,
-                  creado y patentado nuestras propias canaletas.
+                  ambición de brindar la mejor solución posible.
                 </p>
 
                 <div className="flex items-center justify-center w-[330px] bg-gray-100 rounded-md">
