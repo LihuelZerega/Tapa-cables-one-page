@@ -24,7 +24,7 @@ export default function Home() {
         <div id="Producto" />
         <hr id="producto" />
         <ProductAndServices />
-        <OurProduct />
+        {/* <OurProduct /> */}
         <hr />
         {/* <ComparationTable /> */}
         <Benefits />
