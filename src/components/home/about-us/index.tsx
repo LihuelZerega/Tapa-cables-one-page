@@ -7,6 +7,9 @@ import Adria from "@/images/Adria.png";
 
 import WhatIsTapacables from "@/images/WhatIsTapacables.png";
 
+import ComparationProduct1 from "@/images/ComparationProduct.png"
+import ComparationProduct2 from "@/images/ComparationProduct2.png"
+
 import TheSecretImage0 from "@/images/TheSecret0.png";
 import TheSecretImage1 from "@/images/TheSecret1.png";
 import TheSecretImage2 from "@/images/TheSecret2.png";
@@ -50,8 +53,8 @@ function Index() {
 
                 <div className="flex items-center justify-center w-[330px] bg-gray-100 rounded-md">
                   <Compare
-                    firstImage="https://res.cloudinary.com/dbhxvj3w7/image/upload/v1725974362/ComparationProduct_j5oukt.png"
-                    secondImage="https://res.cloudinary.com/dbhxvj3w7/image/upload/v1725974358/ComparationProduct2_hovm3m.png"
+                    firstImage={ComparationProduct1.src}
+                    secondImage={ComparationProduct2.src}
                     firstImageClassName="object-cover object-left-top"
                     secondImageClassname="object-cover object-left-top"
                     className="w-full h-[350px] lg:w-[500px] lg:h-[550px]"
@@ -62,8 +65,9 @@ function Index() {
                 <p className="text-gray-500 mt-3">
                   Nuestro enfoque se centra en dos objetivos fundamentales:
                   ofrecer un servicio de instalación integral que nadie más está
-                  proporcionando y desarrollar el mejor producto disponible en
-                  el mercado. Estamos convencidos de que hemos alcanzado ambos.
+                  proporcionando y utilizar materiales de la más alta calidad
+                  para garantizar un resultado impecable. Estamos convencidos de
+                  que hemos alcanzado ambos.
                 </p>
               </div>
             </div>
@@ -78,8 +82,8 @@ function Index() {
             <div className="flex items-center justify-center sm:w-[500px] bg-gray-100 rounded-md">
               <div className="md:mb-0 sm:px-6">
                 <Compare
-                  firstImage="https://res.cloudinary.com/dbhxvj3w7/image/upload/v1725974362/ComparationProduct_j5oukt.png"
-                  secondImage="https://res.cloudinary.com/dbhxvj3w7/image/upload/v1725974358/ComparationProduct2_hovm3m.png"
+                  firstImage={ComparationProduct1.src}
+                  secondImage={ComparationProduct2.src}
                   firstImageClassName="object-cover object-left-top"
                   secondImageClassname="object-cover object-left-top"
                   className="w-full h-[350px] lg:w-[500px] lg:h-[550px]"
@@ -107,8 +111,9 @@ function Index() {
                 <p className="text-gray-500 mt-3">
                   Nuestro enfoque se centra en dos objetivos fundamentales:
                   ofrecer un servicio de instalación integral que nadie más está
-                  proporcionando y desarrollar el mejor producto disponible en
-                  el mercado. Estamos convencidos de que hemos alcanzado ambos.
+                  proporcionando y utilizar materiales de la más alta calidad
+                  para garantizar un resultado impecable. Estamos convencidos de
+                  que hemos alcanzado ambos.
                 </p>
                 {/* <p className="text-gray-500 mt-3">
                   <strong>Nuestros productos</strong> se componen de perfiles de
@@ -161,10 +166,12 @@ function Index() {
               </div>
               <div className="mt-3">
                 <h3 className="text-md font-semibold text-gray-700">
-                  Un problema sin solución <br /> <span className="text-[#3b82f6]">“Hasta ahora…”</span>
+                  Un problema sin solución <br />{" "}
+                  <span className="text-[#3b82f6]">“Hasta ahora…”</span>
                 </h3>
                 <p className="text-sm mt-1 text-gray-600">
-                Casi a diario, muchos técnicos colocan cables nuevos en las fachadas, y a pocos les importa cómo quedan.
+                  Casi a diario, muchos técnicos colocan cables nuevos en las
+                  fachadas, y a pocos les importa cómo quedan.
                 </p>
               </div>
             </BlurFade>
@@ -206,10 +213,13 @@ function Index() {
               </div>
               <div className="mt-3">
                 <h3 className="text-md font-semibold text-gray-700">
-                  Sabemos de lo que hablamos <br /> <span className="text-[#3b82f6]">“Lo hemos visto”</span>
+                  Sabemos de lo que hablamos <br />{" "}
+                  <span className="text-[#3b82f6]">“Lo hemos visto”</span>
                 </h3>
                 <p className="text-sm mt-1 text-gray-600">
-                Desde las alturas, lo hemos observado mejor que nadie. Por eso ofrecemos un servicio integral para ordenar el cableado y cuidar la estética de las fachadas.
+                  Desde las alturas, lo hemos observado mejor que nadie. Por eso
+                  ofrecemos un servicio integral para ordenar el cableado y
+                  cuidar la estética de las fachadas.
                 </p>
               </div>
             </BlurFade>
@@ -239,10 +249,16 @@ function Index() {
               </div>
               <div className="mt-3">
                 <h3 className="text-md font-semibold text-gray-700">
-                  Sabemos cómo hacerlo <br /> <span className="text-[#3b82f6]">“Nos gustan las cosas bien hechas”</span>
+                  Sabemos cómo hacerlo <br />{" "}
+                  <span className="text-[#3b82f6]">
+                    “Nos gustan las cosas bien hechas”
+                  </span>
                 </h3>
                 <p className="text-sm mt-1 text-gray-600">
-                Nuestra experiencia en telecomunicaciones nos permite realizar estos trabajos sin problemas. Además, el trato cercano con nuestros clientes nos ha ayudado a entender plenamente sus necesidades.
+                  Nuestra experiencia en telecomunicaciones nos permite realizar
+                  estos trabajos sin problemas. Además, el trato cercano con
+                  nuestros clientes nos ha ayudado a entender plenamente
+                  sus necesidades.
                 </p>
               </div>
             </BlurFade>
@@ -264,7 +280,10 @@ function Index() {
                   Adrià Salamanca Barberà, fundador de Tapacables, con una
                   sólida experiencia en el sector de telecomunicaciones, detectó
                   la falta de soluciones eficientes para la ocultación de cables
-                  en fachadas. Este proyecto empresarial tiene como objetivo cubrir esta necesidad, ofreciendo productos y servicios de alta calidad que facilitan la organización y protección del cableado en exteriores.
+                  en fachadas. Este proyecto empresarial tiene como objetivo
+                  cubrir esta necesidad, ofreciendo productos y servicios de
+                  alta calidad que facilitan la organización y protección del
+                  cableado en exteriores.
                 </p>
                 <div className="flex flex-col items-center justify-center">
                   <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
@@ -466,10 +485,11 @@ function Index() {
                     canaletas.
                   </p>
                   <p>
-                    Por esta razón decidí crear Tapacables, y colaborar con los mejores proveedores de canaletas con abertura superior que permiten
-                    incorporar nuevos cables de manera rápida, sencilla y
-                    efectiva, sin las dificultades que presentan las soluciones
-                    tradicionales.
+                    Por esta razón decidí crear Tapacables, y colaborar con los
+                    mejores proveedores de canaletas con abertura superior que
+                    permiten incorporar nuevos cables de manera rápida, sencilla
+                    y efectiva, sin las dificultades que presentan las
+                    soluciones tradicionales.
                   </p>
                 </div>
                 <div className="lg:w-1/2 flex items-center justify-center">
