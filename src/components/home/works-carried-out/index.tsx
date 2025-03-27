@@ -3,31 +3,22 @@
 import React, { useState } from "react";
 import { Compare } from "@/components/ui/compare";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 import BlurFade from "@/components/magicui/blur-fade";
 
-import ComparationProduct1 from "@/images/ComparationProduct.png";
-import ComparationProduct2 from "@/images/ComparationProduct2.png";
+import TheLearningBusSin from "@/images/testimonials/TheLearningBusSin.png";
+import TheLearningBusCon from "@/images/testimonials/TheLearningBusCon.png";
+import VeintinueveSin from "@/images/testimonials/29Sin.png";
+import VeintinueveCon from "@/images/testimonials/29Con.png";
+import TreintaSin from "@/images/testimonials/30Sin.png";
+import TreintaCon from "@/images/testimonials/30Con.png";
 
 const testimonials = [
   {
     id: 1,
-    firstImage:
-      "https://res.cloudinary.com/dbhxvj3w7/image/upload/v1725974362/ComparationProduct_j5oukt.png",
-    secondImage:
-      "https://res.cloudinary.com/dbhxvj3w7/image/upload/v1725974358/ComparationProduct2_hovm3m.png",
-    quote:
-      "Estas canaletas destacan por su facilidad de uso. Su apertura superior permite ahorrar tiempo, convirtiéndolas en una opción muy conveniente.",
-    location: "Calle Serrano, Madrid",
-    author: "Carlos Martín López",
-    date: "15 Feb, 2024",
-  },
-  {
-    id: 2,
-    firstImage:
-      "https://images.unsplash.com/photo-1664574654529-b60630f33fdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80",
-    secondImage:
-      "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+    firstImage: VeintinueveSin,
+    secondImage: VeintinueveCon,
     quote:
       "Estoy muy contenta con la calidad de las canaletas. Son resistentes y estéticamente perfectas para mi fachada. Sin duda, una gran compra.",
     location: "Calle Larios, Málaga",
@@ -35,11 +26,19 @@ const testimonials = [
     date: "2 Sep, 2024",
   },
   {
+    id: 2,
+    firstImage: TheLearningBusSin,
+    secondImage: TheLearningBusCon,
+    quote:
+      "Estas canaletas destacan por su facilidad de uso. Su apertura superior permite ahorrar tiempo, convirtiéndolas en una opción muy conveniente.",
+    location: "Calle Serrano, Madrid",
+    author: "Carlos Martín López",
+    date: "15 Feb, 2024",
+  },
+  {
     id: 3,
-    firstImage:
-      "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
-    secondImage:
-      "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
+    firstImage: TreintaSin,
+    secondImage: TreintaCon,
     quote:
       "Excelente solución para la gestión de cables en espacios interiores. ¡Muy recomendable!",
     location: "Calle Mayor, Barcelona",
@@ -48,15 +47,13 @@ const testimonials = [
   },
   {
     id: 4,
-    firstImage:
-      "https://images.unsplash.com/photo-1592194996308-7e23a19f4a25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
-    secondImage:
-      "https://images.unsplash.com/photo-1534159558078-49b20dbb1b06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
+    firstImage: TreintaSin,
+    secondImage: TreintaCon,
     quote:
-      "Calidad insuperable y fácil de instalar. Muy contento con los resultados.",
-    location: "Gran Vía, Madrid",
-    author: "Ana Gómez Torres",
-    date: "12 Ago, 2023",
+      "Excelente solución para la gestión de cables en espacios interiores. ¡Muy recomendable!",
+    location: "Calle Mayor, Barcelona",
+    author: "Santiago Ruiz Pérez",
+    date: "5 Jun, 2023",
   },
 ];
 
@@ -78,7 +75,7 @@ function Carousel() {
   const currentTestimonials = testimonials.slice(
     currentIndex,
     currentIndex + 1
-  );
+  );  
 
   return (
     <BlurFade
@@ -96,8 +93,8 @@ function Carousel() {
           <div className="flex flex-col-reverse lg:flex lg:flex-row gap-10 xl:gap-16 md:items-center">
             <div className="md:mb-0 sm:px-6">
               <Compare
-                firstImage={testimonial.firstImage}
-                secondImage={testimonial.secondImage}
+                firstImage={testimonial.firstImage.src}
+                secondImage={testimonial.secondImage.src}
                 firstImageClassName="object-cover object-left-top"
                 secondImageClassname="object-cover object-left-top"
                 className="w-full h-[350px] lg:w-[500px] lg:h-[550px]"
