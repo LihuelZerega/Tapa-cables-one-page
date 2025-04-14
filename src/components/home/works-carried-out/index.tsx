@@ -17,18 +17,9 @@ import TreintaSin from "@/images/testimonials/30Sin.png";
 import TreintaCon from "@/images/testimonials/30Con.png";
 
 const testimonials = [
+
   {
     id: 1,
-    firstImage: Esquinero1,
-    secondImage: Esquinero2,
-    quote:
-      "Estamos muy contentos con el cambio. La fachada se ve mucho más limpia y superaron con creces nuestras expectativas, Hicieron un trabajo de diez, gracias a todo el equipo.",
-    location: "Málaga",
-    author: "Mario Fernández",
-    date: "Septiembre 2024",
-  },
-  {
-    id: 2,
     firstImage: TreintaSin,
     secondImage: TreintaCon,
     quote:
@@ -38,7 +29,7 @@ const testimonials = [
     date: "Junio 2023",
   },
   {
-    id: 3,
+    id: 2,
     firstImage: TheLearningBusSin,
     secondImage: TheLearningBusCon,
     quote:
@@ -48,7 +39,7 @@ const testimonials = [
     date: "Febrero 2024",
   },
   {
-    id: 4,
+    id: 3,
     firstImage: VeintinueveSin,
     secondImage: VeintinueveCon,
     quote:
@@ -59,12 +50,22 @@ const testimonials = [
   },
   {
     id: 4,
-    firstImage: VeintinueveSin,
-    secondImage: VeintinueveCon,
+    firstImage: Esquinero1,
+    secondImage: Esquinero2,
     quote:
-      "Mis vecinos no han parado de preguntar qué habíamos hecho en la fachada porque el cambio es brutal. Fue una de las mejores decisiones que tomamos para nuestra comunidad. Ahora el edificio se ve mucho más elegante.",
+      "Estamos muy contentos con el cambio. La fachada se ve mucho más limpia y superaron con creces nuestras expectativas, Hicieron un trabajo de diez, gracias a todo el equipo.",
     location: "Málaga",
-    author: "Maria Dolores, Presidenta de la comunidad.",
+    author: "Mario Fernández",
+    date: "Septiembre 2024",
+  },
+  {
+    id: 4,
+    firstImage: Esquinero1,
+    secondImage: Esquinero2,
+    quote:
+      "Estamos muy contentos con el cambio. La fachada se ve mucho más limpia y superaron con creces nuestras expectativas, Hicieron un trabajo de diez, gracias a todo el equipo.",
+    location: "Málaga",
+    author: "Mario Fernández",
     date: "Septiembre 2024",
   },
 ];

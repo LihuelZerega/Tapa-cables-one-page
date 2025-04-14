@@ -11,13 +11,8 @@ import {
 } from "@/components/ui/chart";
 
 const chartData = [
-  { browser: "Proteccion de Cableado", visitors: 11, fill: "#014ba0" },
+  { browser: "Proteccion de Cableado", visitors: 69, fill: "#014ba0" },
   { browser: "Seguridad", visitors: 44, fill: "#1466c3" },
-  {
-    browser: "Aumento del Valor de la Propiedad",
-    visitors: 69,
-    fill: "#6aa9e9",
-  },
   {
     browser: "Mejora estética y eliminar el aspecto antiguo",
     visitors: 176,
@@ -71,12 +66,6 @@ export function Chart() {
               d
             </div>
             <p>Seguridad</p>
-          </div>
-          <div className="flex flex-row items-center space-x-2">
-            <div className="text-transparent select-none bg-[#6aa9e9] w-4 h-4 rounded-sm">
-              d
-            </div>
-            <p>Aumento del valor de la cropiedad</p>
           </div>
           <div className="flex flex-row items-center space-x-2">
             <div className="text-transparent select-none bg-[#3b8eed] w-4 h-4 rounded-sm">
