@@ -301,15 +301,15 @@ function Index() {
                   <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
                     <Image src={Adria} width={330} height={330} alt="image" />
                   </div>
-                  <p className="flex flex-row items-center gap-2 text-gray-500 text-sm mt-3 text-center">
+                  <p className="flex flex-row items-center justify-center gap-2 text-gray-500  mt-3 text-left">
 
-              <span className="hover:text-blue-500">
+              <span className="text-left hover:text-blue-500">
                 <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
+                  width="30"
+                  height="30"
                   color="currentColor"
                   fill="none"
                 >
