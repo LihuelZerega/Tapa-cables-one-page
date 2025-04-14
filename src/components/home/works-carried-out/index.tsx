@@ -17,9 +17,18 @@ import TreintaSin from "@/images/testimonials/30Sin.png";
 import TreintaCon from "@/images/testimonials/30Con.png";
 
 const testimonials = [
-
   {
     id: 1,
+    firstImage: VeintinueveSin,
+    secondImage: VeintinueveCon,
+    quote:
+      "Mis vecinos no han parado de preguntar qué habíamos hecho en la fachada porque el cambio es brutal. Fue una de las mejores decisiones que tomamos para nuestra comunidad. Ahora el edificio se ve mucho más elegante.",
+    location: "Málaga",
+    author: "Maria Dolores, Presidenta de la comunidad.",
+    date: "Septiembre 2024",
+  },
+  {
+    id: 2,
     firstImage: TreintaSin,
     secondImage: TreintaCon,
     quote:
@@ -29,7 +38,7 @@ const testimonials = [
     date: "Junio 2023",
   },
   {
-    id: 2,
+    id: 3,
     firstImage: TheLearningBusSin,
     secondImage: TheLearningBusCon,
     quote:
@@ -37,16 +46,6 @@ const testimonials = [
     location: "Madrid",
     author: "Jordi Ruiz, Director de la academia.",
     date: "Febrero 2024",
-  },
-  {
-    id: 3,
-    firstImage: VeintinueveSin,
-    secondImage: VeintinueveCon,
-    quote:
-      "Mis vecinos no han parado de preguntar qué habíamos hecho en la fachada porque el cambio es brutal. Fue una de las mejores decisiones que tomamos para nuestra comunidad. Ahora el edificio se ve mucho más elegante.",
-    location: "Málaga",
-    author: "Maria Dolores, Presidenta de la comunidad.",
-    date: "Septiembre 2024",
   },
   {
     id: 4,
