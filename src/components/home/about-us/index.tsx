@@ -4,12 +4,9 @@ import Image from "next/image";
 import AboutUs1 from "@/images/AboutUs1.png";
 import { Compare } from "@/components/ui/compare";
 import Adria from "@/images/Adria.png";
-
-import WhatIsTapacables from "@/images/WhatIsTapacables.png";
+import LinkedinLogo from "@/images/LinkedinLogo.webp";
 
 import QueEsTapacables from "@/images/QueEsTapacables.jpeg";
-import ComparationProduct1 from "@/images/ComparationProduct.png";
-import ComparationProduct2 from "@/images/ComparationProduct2.png";
 
 import TheSecretImage0 from "@/images/TheSecret0.png";
 import TheSecretImage1 from "@/images/TheSecret1.png";
@@ -43,7 +40,7 @@ function Index() {
             <div className="space-y-6 sm:space-y-8">
               <div className="flex flex-col items-center justify-center space-y-4">
                 <h3 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
-                  ¿Qué es Tapacables?
+                  Nuestra Misión
                 </h3>
                 <p className="text-gray-500">
                   Tapacables surge con el objetivo de ofrecer soluciones
@@ -72,8 +69,7 @@ function Index() {
                   Nuestro enfoque se centra en dos objetivos fundamentales:
                   ofrecer un servicio de instalación integral que nadie más está
                   proporcionando y utilizar materiales de la más alta calidad
-                  para garantizar un resultado impecable. Estamos convencidos de
-                  que hemos alcanzado ambos.
+                  para garantizar un resultado impecable.
                 </p>
               </div>
             </div>
@@ -113,7 +109,7 @@ function Index() {
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <h3 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
-                  ¿Qué es Tapacables?
+                  Nuestra Misión
                 </h3>
                 <p className="text-gray-500">
                   Tapacables surge con el objetivo de ofrecer soluciones
@@ -124,8 +120,7 @@ function Index() {
                   Nuestro enfoque se centra en dos objetivos fundamentales:
                   ofrecer un servicio de instalación integral que nadie más está
                   proporcionando y utilizar materiales de la más alta calidad
-                  para garantizar un resultado impecable. Estamos convencidos de
-                  que hemos alcanzado ambos.
+                  para garantizar un resultado impecable.
                 </p>
                 {/* <p className="text-gray-500 mt-3">
                   <strong>Nuestros productos</strong> se componen de perfiles de
@@ -301,48 +296,12 @@ function Index() {
                   <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
                     <Image src={Adria} width={330} height={330} alt="image" />
                   </div>
-                  <p className="flex flex-row items-center justify-center gap-2 text-gray-500  mt-3 text-left">
-
-              <span className="text-left hover:text-blue-500">
-                <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="30"
-                  height="30"
-                  color="currentColor"
-                  fill="none"
-                >
-                  <path
-                    d="M7 10V17"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7.00801 7L6.99902 7"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                </a>
-              </span>
+                  <p className="flex flex-row items-center justify-center gap-2 text-gray-500 mt-3 text-left">
+                    <span className="text-center hover:text-blue-500">
+                      <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
+                        <Image src={LinkedinLogo} className="h-8 w-8" alt="" />
+                      </a>
+                    </span>
                     Adrià Salamanca Barberà, Fundador de Tapacables
                   </p>
                 </div>
@@ -392,42 +351,7 @@ function Index() {
             <p className="flex flex-row items-center gap-2 text-gray-500 text-sm mt-3 text-center">
               <span className="hover:text-blue-500">
                 <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                  color="currentColor"
-                  fill="none"
-                >
-                  <path
-                    d="M7 10V17"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7.00801 7L6.99902 7"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                  <Image src={LinkedinLogo} className="h-8 w-8" alt="" />
                 </a>
               </span>
               Adrià Salamanca Barberà, Fundador de Tapacables
@@ -444,9 +368,7 @@ function Index() {
                   Adrià Salamanca Barberà, fundador de Tapacables, con una
                   sólida experiencia en el sector de telecomunicaciones, detectó
                   la falta de soluciones eficientes para la ocultación de cables
-                  en fachadas. Este proyecto empresarial busca cubrir esta
-                  necesidad, ofreciendo productos y servicios de alta calidad
-                  que faciliten el ordenamiento de infraestructuras exteriores.
+                  en fachadas.
                 </p>
                 <p id="el-secreto" className="text-gray-500 mt-3">
                   Durante su trayectoria como técnico de telecomunicaciones

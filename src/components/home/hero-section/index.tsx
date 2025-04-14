@@ -172,37 +172,24 @@ function Index() {
 
       <section className="overflow-hidden bg-neutral-50 pt-32">
         <div className="relative mx-auto max-w-5xl px-6 py-24">
-          <div className="relative z-10 mx-auto max-w-2xl text-center">
-            <h1 className="font-bold tracking-tight text-4xl md:text-5xl lg:text-6xl text-gray-800">
-              Somos La Solución que Nadie Más Ofrece
+          <div className="relative z-10 mx-auto max-w-3xl text-center">
+            <h1 className="font-bold tracking-tight text-5xl md:text-5xl lg:text-6xl text-gray-800">
+              Transformamos fachadas, tapando cables.
             </h1>
             <p className="mx-auto mt-8 max-w-2xl text-xl text-gray-600">
-              Ordenamos y protegemos el cableado de tu fachada con un servicio
-              integral y materiales de alta calidad. Descubre “El Secreto” de
-              una fachada impecable. Transformamos fachadas, tapando cables.
+              Descubre nuestro apartado ‘El Secreto’ y entiende por qué podemos
+              ayudarte.
             </p>
             <div className="mt-10 flex items-center lg:items-center justify-center lg:justify-center gap-x-6">
               <a
-                href="#Producto"
-                className="block lg:hidden rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
-              >
-                Descubre cómo
-              </a>
-              <a
-                href="#producto"
-                className="hidden lg:block rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
-              >
-                Descubre cómo
-              </a>
-              <a
                 href="#Sobre-nosotros"
-                className="block lg:hidden rounded-sm bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-800 border shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition"
+                className="block lg:hidden rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
               >
                 El Secreto
               </a>
               <a
                 href="#sobre-nosotros"
-                className="hidden lg:block rounded-sm bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-800 border shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition"
+                className="hidden lg:block rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
               >
                 El Secreto
               </a>
