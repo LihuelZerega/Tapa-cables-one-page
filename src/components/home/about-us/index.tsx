@@ -7,8 +7,9 @@ import Adria from "@/images/Adria.png";
 
 import WhatIsTapacables from "@/images/WhatIsTapacables.png";
 
-import ComparationProduct1 from "@/images/ComparationProduct.png"
-import ComparationProduct2 from "@/images/ComparationProduct2.png"
+import QueEsTapacables from "@/images/QueEsTapacables.jpeg";
+import ComparationProduct1 from "@/images/ComparationProduct.png";
+import ComparationProduct2 from "@/images/ComparationProduct2.png";
 
 import TheSecretImage0 from "@/images/TheSecret0.png";
 import TheSecretImage1 from "@/images/TheSecret1.png";
@@ -32,7 +33,7 @@ function Index() {
   };
 
   return (
-    <div className="mx-auto mt-32">
+    <div className="mx-auto mt-16 md:mt-32">
       <section>
         <div className="max-w-[85rem] gap-12 mx-auto flex md:hidden flex-col-reverse lg:flex-row md:items-center md:gap-12 xl:gap-32 px-6 my-10">
           <BlurFade
@@ -51,14 +52,19 @@ function Index() {
                   ambición de brindar la mejor solución posible.
                 </p>
 
-                <div className="flex items-center justify-center w-[330px] bg-gray-100 rounded-md">
-                  <Compare
+                <div className="flex items-center justify-center my-3">
+                  {/* <Compare
                     firstImage={ComparationProduct1.src}
                     secondImage={ComparationProduct2.src}
                     firstImageClassName="object-cover object-left-top"
                     secondImageClassname="object-cover object-left-top"
                     className="w-full h-[350px] lg:w-[500px] lg:h-[550px]"
                     slideMode="hover"
+                  /> */}
+                  <img
+                    src={QueEsTapacables.src}
+                    alt=""
+                    className="w-full rounded-md my-3"
                   />
                 </div>
 
@@ -79,17 +85,23 @@ function Index() {
             inView
             className="lg:w-1/2 flex flex-col items-center justify-center"
           >
-            <div className="flex items-center justify-center sm:w-[500px] bg-gray-100 rounded-md">
+            <div className="flex items-center justify-center">
               <div className="md:mb-0 sm:px-6">
-                <Compare
+                {/* <Compare
                   firstImage={ComparationProduct1.src}
                   secondImage={ComparationProduct2.src}
                   firstImageClassName="object-cover object-left-top"
                   secondImageClassname="object-cover object-left-top"
                   className="w-full h-[350px] lg:w-[500px] lg:h-[550px]"
                   slideMode="hover"
+                /> */}
+                <img
+                  src={QueEsTapacables.src}
+                  alt=""
+                  className="w-full rounded-md"
                 />
-                <div className="absolute bottom-0 start-0 -z-[1] translate-y-10 -translate-x-14"></div>
+
+                {/* <div className="absolute bottom-0 start-0 -z-[1] translate-y-10 -translate-x-14"></div> */}
               </div>
             </div>
           </BlurFade>
@@ -289,10 +301,48 @@ function Index() {
                   <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
                     <Image src={Adria} width={330} height={330} alt="image" />
                   </div>
-                  <p
-                    id="the-secret"
-                    className="text-gray-500 text-sm mt-3 text-center"
-                  >
+                  <p className="flex flex-row items-center gap-2 text-gray-500 text-sm mt-3 text-center">
+
+              <span className="hover:text-blue-500">
+                <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  color="currentColor"
+                  fill="none"
+                >
+                  <path
+                    d="M7 10V17"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.00801 7L6.99902 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                </a>
+              </span>
                     Adrià Salamanca Barberà, Fundador de Tapacables
                   </p>
                 </div>
@@ -339,7 +389,47 @@ function Index() {
             <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
               <Image src={Adria} width={500} height={500} alt="image" />
             </div>
-            <p className="text-gray-500 text-sm mt-3 text-center">
+            <p className="flex flex-row items-center gap-2 text-gray-500 text-sm mt-3 text-center">
+              <span className="hover:text-blue-500">
+                <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  color="currentColor"
+                  fill="none"
+                >
+                  <path
+                    d="M7 10V17"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.00801 7L6.99902 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                </a>
+              </span>
               Adrià Salamanca Barberà, Fundador de Tapacables
             </p>
           </BlurFade>

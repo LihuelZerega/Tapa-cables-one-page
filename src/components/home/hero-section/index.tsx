@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import HeroBanner3 from "@/images/HeroBanner3.png";
+import Link from "next/link";
 
 const navigation = [
   { name: "Inicio", href: "/" },
@@ -45,7 +46,11 @@ function Index() {
 
   return (
     <div className="bg-white">
-      <header className={`inset-x-0 top-0 z-50 fixed transition-transform duration-300 ${showHeader ? "translate-y-0" : "-translate-y-full"}`}>
+      <header
+        className={`inset-x-0 top-0 z-50 fixed transition-transform duration-300 ${
+          showHeader ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
         <div className="w-full">
           <nav
             aria-label="Global"
@@ -138,7 +143,7 @@ function Index() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      {/* <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto  py-32 sm:py-48 lg:py-44 2xl:py-48">
           <div className="relative z-10 ">
             <h1 className="text-center lg:text-left font-bold tracking-tight text-white text-5xl sm:text-6xl lg:text-7xl">
@@ -162,17 +167,49 @@ function Index() {
               </a>
             </div>
           </div>
-          <div className="absolute inset-0 bg-white z-0">
-            <Image
-              className="absolute inset-0 w-full h-[40rem] object-cover object-top select-none"
-              src={HeroBanner3}
-              width={1920}
-              height={700}
-              alt="hero background image"
-            />
+        </div>
+      </div> */}
+
+      <section className="overflow-hidden bg-neutral-50 pt-32">
+        <div className="relative mx-auto max-w-5xl px-6 py-24">
+          <div className="relative z-10 mx-auto max-w-2xl text-center">
+            <h1 className="font-bold tracking-tight text-4xl md:text-5xl lg:text-6xl text-gray-800">
+              Somos La Solución que Nadie Más Ofrece
+            </h1>
+            <p className="mx-auto mt-8 max-w-2xl text-xl text-gray-600">
+              Ordenamos y protegemos el cableado de tu fachada con un servicio
+              integral y materiales de alta calidad. Descubre “El Secreto” de
+              una fachada impecable. Transformamos fachadas, tapando cables.
+            </p>
+            <div className="mt-10 flex items-center lg:items-center justify-center lg:justify-center gap-x-6">
+              <a
+                href="#Producto"
+                className="block lg:hidden rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
+              >
+                Descubre cómo
+              </a>
+              <a
+                href="#producto"
+                className="hidden lg:block rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
+              >
+                Descubre cómo
+              </a>
+              <a
+                href="#Sobre-nosotros"
+                className="block lg:hidden rounded-sm bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-800 border shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition"
+              >
+                El Secreto
+              </a>
+              <a
+                href="#sobre-nosotros"
+                className="hidden lg:block rounded-sm bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-800 border shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition"
+              >
+                El Secreto
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

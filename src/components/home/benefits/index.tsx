@@ -14,46 +14,31 @@ function index() {
         </h2>
       </div>
       <div className="flex flex-col md:flex-row items-start justify-center gap-6 md:gap-12 pt-12">
-        <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="lg:w-1/2 grid grid-cols-1 max-w-md gap-6">
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
             Una fachada más moderna
             </h4>
             <p className="text-gray-600 text-sm">
-              Al ocultar los cables,
-              eliminas ese aspecto descuidado y antiguo.
+            Al ocultar los cables, eliminas ese aspecto descuidado y antiguo, y dale la oportunidad a tu casa de tener el aspecto que merece tener.
             </p>
           </div>
 
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
-              Que lo que tenemos dure más
+            Que lo que tenemos dure más
             </h4>
             <p className="text-gray-600 text-sm">
-              Al estar dentro de una canaleta, el cableado queda protegido de
-              tirones, desgaste y mal tiempo, lo que ayuda a prolongar su vida
-              útil.
+            Al estar dentro de una canaleta, el cableado queda protegido de tirones, desgaste y mal tiempo, lo que ayuda a prolongar su vida útil.
             </p>
           </div>
 
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
-              Lo más importante
+            Y lo más importante
             </h4>
             <p className="text-gray-600 text-sm">
-              Al eliminar los cables sueltos, reduce el riesgo de accidentes y
-              evita posibles problemas legales.
-            </p>
-          </div>
-
-          <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
-            <h4 className="text-blue-500 font-semibold text-xl">
-              Aumenta tu valor
-            </h4>
-            <p className="text-gray-600 text-sm">
-              Ocultar los cables mejora el aspecto moderno y profesional de la
-              fachada, lo que automáticamente revaloriza tu propiedad en el
-              mercado.
+            Al eliminar la posibilidad de cables sueltos, reduce el riesgo de accidentes y evita posibles problemas legales.
             </p>
           </div>
         </div>

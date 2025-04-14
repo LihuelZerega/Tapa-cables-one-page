@@ -7,6 +7,8 @@ import Image from "next/image";
 
 import BlurFade from "@/components/magicui/blur-fade";
 
+import Esquinero1 from "@/images/testimonials/Esquinero1.png";
+import Esquinero2 from "@/images/testimonials/Esquinero2.png";
 import TheLearningBusSin from "@/images/testimonials/TheLearningBusSin.png";
 import TheLearningBusCon from "@/images/testimonials/TheLearningBusCon.png";
 import VeintinueveSin from "@/images/testimonials/29Sin.png";
@@ -17,43 +19,53 @@ import TreintaCon from "@/images/testimonials/30Con.png";
 const testimonials = [
   {
     id: 1,
-    firstImage: VeintinueveSin,
-    secondImage: VeintinueveCon,
+    firstImage: Esquinero1,
+    secondImage: Esquinero2,
     quote:
-      "Estoy muy contenta con la calidad de las canaletas. Son resistentes y estéticamente perfectas para mi fachada. Sin duda, una gran compra.",
-    location: "Calle Larios, Málaga",
-    author: "Laura Sánchez Fernández",
-    date: "2 Sep, 2024",
+      "Estamos muy contentos con el cambio. La fachada se ve mucho más limpia y superaron con creces nuestras expectativas, Hicieron un trabajo de diez, gracias a todo el equipo.",
+    location: "Málaga",
+    author: "Mario Fernández",
+    date: "Septiembre 2024",
   },
   {
     id: 2,
-    firstImage: TheLearningBusSin,
-    secondImage: TheLearningBusCon,
+    firstImage: TreintaSin,
+    secondImage: TreintaCon,
     quote:
-      "Estas canaletas destacan por su facilidad de uso. Su apertura superior permite ahorrar tiempo, convirtiéndolas en una opción muy conveniente.",
-    location: "Calle Serrano, Madrid",
-    author: "Carlos Martín López",
-    date: "15 Feb, 2024",
+      "Hicieron justo lo que necesitábamos. Ahora da gusto ver nuestra casa desde fuera. Todo fue muy fácil con ellos",
+    location: "Barcelona",
+    author: "Santiago Ruiz Pérez",
+    date: "Junio 2023",
   },
   {
     id: 3,
-    firstImage: TreintaSin,
-    secondImage: TreintaCon,
+    firstImage: TheLearningBusSin,
+    secondImage: TheLearningBusCon,
     quote:
-      "Excelente solución para la gestión de cables en espacios interiores. ¡Muy recomendable!",
-    location: "Calle Mayor, Barcelona",
-    author: "Santiago Ruiz Pérez",
-    date: "5 Jun, 2023",
+      "Profesionales, rápidos y el resultado se nota desde el primer vistazo. Nos sorprendió lo mucho que cambió la fachada de la academia con algo tan sencillo. Ahora da una imagen mucho más cuidada y profesional. Se agradece cuando un trabajo se hace bien y sin complicaciones.",
+    location: "Madrid",
+    author: "Jordi Ruiz, Director de la academia.",
+    date: "Febrero 2024",
   },
   {
     id: 4,
-    firstImage: TreintaSin,
-    secondImage: TreintaCon,
+    firstImage: VeintinueveSin,
+    secondImage: VeintinueveCon,
     quote:
-      "Excelente solución para la gestión de cables en espacios interiores. ¡Muy recomendable!",
-    location: "Calle Mayor, Barcelona",
-    author: "Santiago Ruiz Pérez",
-    date: "5 Jun, 2023",
+      "Mis vecinos no han parado de preguntar qué habíamos hecho en la fachada porque el cambio es brutal. Fue una de las mejores decisiones que tomamos para nuestra comunidad. Ahora el edificio se ve mucho más elegante.",
+    location: "Málaga",
+    author: "Maria Dolores, Presidenta de la comunidad.",
+    date: "Septiembre 2024",
+  },
+  {
+    id: 4,
+    firstImage: VeintinueveSin,
+    secondImage: VeintinueveCon,
+    quote:
+      "Mis vecinos no han parado de preguntar qué habíamos hecho en la fachada porque el cambio es brutal. Fue una de las mejores decisiones que tomamos para nuestra comunidad. Ahora el edificio se ve mucho más elegante.",
+    location: "Málaga",
+    author: "Maria Dolores, Presidenta de la comunidad.",
+    date: "Septiembre 2024",
   },
 ];
 
@@ -75,7 +87,7 @@ function Carousel() {
   const currentTestimonials = testimonials.slice(
     currentIndex,
     currentIndex + 1
-  );  
+  );
 
   return (
     <BlurFade

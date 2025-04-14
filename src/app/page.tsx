@@ -32,7 +32,7 @@ export default function Home() {
         <WorkingTogether />
         <div id="Trabajos" />
         <WorksCarriedOut />
-        <WhatSay />
+        {/* <WhatSay /> */}
         <hr />
         <Faq />
         <hr id="contacto" />

@@ -39,7 +39,7 @@ function index() {
               Carlos Martín López
               </p>
               <p className="mt-1 text-base text-gray-600">
-              Calle Serrano, Madrid
+              Madrid
               </p>
             </div>
           </div>
@@ -72,7 +72,7 @@ function index() {
               Laura Sánchez Fernández
               </p>
               <p className="mt-1 text-base text-gray-600">
-              Calle Larios, Málaga
+              Málaga
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ function index() {
               Javier Gutiérrez Muñoz
               </p>
               <p className="mt-1 text-base text-gray-600">
-              Calle Mayor, Valencia
+              Valencia
               </p>
             </div>
           </div>
