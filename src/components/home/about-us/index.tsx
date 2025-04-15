@@ -293,13 +293,11 @@ function Index() {
                   cableado en exteriores.
                 </p>
                 <div className="flex flex-col items-center justify-center">
-                  <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
-                    <Image src={Adria} width={330} height={330} alt="image" />
-                  </div>
+                    <Image src={Adria} width={300} height={300} alt="image" className="rounded-md"/>
                   <p className="flex flex-row items-center justify-center gap-2 text-gray-500 mt-3 text-left">
                     <span className="text-center hover:text-blue-500">
                       <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
-                        <Image src={LinkedinLogo} className="h-8 w-8" alt="" />
+                        <Image src={LinkedinLogo} className="h-10 w-11" alt="" />
                       </a>
                     </span>
                     Adrià Salamanca Barberà, Fundador de Tapacables
@@ -345,9 +343,7 @@ function Index() {
             inView
             className="lg:w-1/2 flex flex-col items-center justify-center"
           >
-            <div className="flex items-center justify-center w-[330px] h-[330px] sm:w-[500px] sm:h-[500px] bg-gray-100 rounded-md">
-              <Image src={Adria} width={500} height={500} alt="image" />
-            </div>
+              <Image src={Adria} width={320} height={320} alt="image" className="rounded-md" />
             <p className="flex flex-row items-center gap-2 text-gray-500 text-sm mt-3 text-center">
               <span className="hover:text-blue-500">
                 <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">

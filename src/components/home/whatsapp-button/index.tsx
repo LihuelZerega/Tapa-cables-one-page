@@ -23,7 +23,7 @@ const WhatsAppButton = () => {
     } else if (selectedOption === "presupuesto") {
       message += "solicitar un presupuesto.";
     }
-    const whatsappUrl = `https://wa.me/34665121492?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/+34614774063?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappUrl, "_blank");
@@ -134,9 +134,9 @@ const WhatsAppButton = () => {
 
               <div className="text-center text-sm">
                 Si quieres contactarnos de otra manera, puedes enviarnos un{" "}
-                <a href="mailto:adriansalamancabarbera@gmail.com" className="text-blue-600 underline underline-offset-2">Email</a> a{" "}
+                <a href="mailto:tapacables@outlook.es" className="text-blue-600 underline underline-offset-2">Email</a> a{" "}
                 <span className="text-blue-600">
-                  adriansalamancabarbera@gmail.com
+                  tapacables@outlook.es
                 </span>
               </div>
 

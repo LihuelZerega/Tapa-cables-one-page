@@ -174,11 +174,13 @@ function Index() {
         <div className="relative mx-auto max-w-5xl px-6 py-24">
           <div className="relative z-10 mx-auto max-w-3xl text-center">
             <h1 className="font-bold tracking-tight text-5xl md:text-5xl lg:text-6xl text-gray-800">
-              Transformamos fachadas, tapando cables.
+              Transformamos fachadas,{" "}
+              <span className="text-blue-500">Tapa</span>ndo{" "}
+              <span className="text-blue-500">cables</span>.
             </h1>
             <p className="mx-auto mt-8 max-w-2xl text-xl text-gray-600">
-              Descubre nuestro apartado ‘El Secreto’ y entiende por qué podemos
-              ayudarte.
+              Empresa especializada en la ocultación de cableado en fachadas.
+              Descubre, gracias a “El Secreto”, cómo lo hacemos.
             </p>
             <div className="mt-10 flex items-center lg:items-center justify-center lg:justify-center gap-x-6">
               <a
