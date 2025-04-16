@@ -297,10 +297,11 @@ function Index() {
                   <p className="flex flex-row items-center justify-center gap-2 text-gray-500 mt-3 text-left">
                     <span className="text-center hover:text-blue-500">
                       <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
-                        <Image src={LinkedinLogo} className="h-10 w-11" alt="" />
+                        <Image src={LinkedinLogo} className="h-11 w-11" alt="" />
                       </a>
                     </span>
-                    Adrià Salamanca Barberà, Fundador de Tapacables
+                    Adrià Salamanca Barbera, <br />
+                    Fundador de Tapacables
                   </p>
                 </div>
                 <p className="text-center text-gray-500 mt-3">
@@ -350,7 +351,7 @@ function Index() {
                   <Image src={LinkedinLogo} className="h-8 w-8" alt="" />
                 </a>
               </span>
-              Adrià Salamanca Barberà, Fundador de Tapacables
+              Adrià Salamanca Barbera, Fundador de Tapacables
             </p>
           </BlurFade>
 

@@ -179,7 +179,7 @@ function Index() {
               <span className="text-blue-500">cables</span>.
             </h1>
             <p className="mx-auto mt-8 max-w-2xl text-xl text-gray-600">
-              Empresa especializada en la ocultación de cableado en fachadas.
+              Empresa especializada en la ocultación de cableado en fachadas. <br />
               Descubre, gracias a “El Secreto”, cómo lo hacemos.
             </p>
             <div className="mt-10 flex items-center lg:items-center justify-center lg:justify-center gap-x-6">

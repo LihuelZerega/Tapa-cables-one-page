@@ -188,7 +188,28 @@ export const Compare = ({
           </div>
           {showHandlebar && (
             <div className="h-5 w-5 rounded-md top-1/2 -translate-y-1/2 bg-white z-30 -right-2.5 absolute   flex items-center justify-center shadow-[0px_-1px_0px_0px_#FFFFFF40]">
-              <IconDotsVertical className="h-4 w-4 text-black" />
+              {/* <IconDotsVertical className="h-4 w-4 text-black" /> */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="lucide lucide-unfold-horizontal-icon lucide-unfold-horizontal"
+              >
+                <path d="M16 12h6" />
+                <path d="M8 12H2" />
+                <path d="M12 2v2" />
+                <path d="M12 8v2" />
+                <path d="M12 14v2" />
+                <path d="M12 20v2" />
+                <path d="m19 15 3-3-3-3" />
+                <path d="m5 9-3 3 3 3" />
+              </svg>
             </div>
           )}
         </motion.div>
