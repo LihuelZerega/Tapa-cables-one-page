@@ -1,7 +1,38 @@
-import BlurFade from "@/components/magicui/blur-fade";
+"use client"
+import React, { useState } from "react";
 import { CalendarDaysIcon } from "@heroicons/react/24/outline";
 
 export default function PromoteSection() {
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const handleEmailSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (res.ok) {
+        setMessage("¡Solicitud enviada con éxito!");
+        setEmail("");
+      } else {
+        setMessage("Error al enviar la solicitud.");
+      }
+    } catch (error) {
+      setMessage("Error de red. Por favor, inténtalo de nuevo.");
+    }
+
+    setIsSubmitting(false);
+  };
+
   return (
     <div className="relative max-w-6xl mx-6 md:mx-auto">
       <div className="absolute top-0 right-0 transform z-20">
@@ -43,7 +74,7 @@ export default function PromoteSection() {
               </div>
             </dl>
             <hr className="hidden md:block"/>
-            <div className="mt-6 md:mt-3 flex flex-col md:flex-row max-w-md gap-4">
+            <form onSubmit={handleEmailSubmit} className="mt-6 md:mt-3 flex flex-col md:flex-row max-w-md gap-4">
               <label htmlFor="email-address" className="sr-only">
                 Email address
               </label>
@@ -54,15 +85,19 @@ export default function PromoteSection() {
                 required
                 placeholder="Introduce tu correo electrónico"
                 autoComplete="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="min-w-0 flex-auto border rounded-md bg-white/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-500 sm:text-sm/6"
               />
               <button
                 type="submit"
+                disabled={isSubmitting}
                 className="flex-none rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
               >
-                Solicitar evaluación
+                {isSubmitting ? "Enviando..." : "Solicitar evaluación"}
               </button>
-            </div>
+            </form>
+            {message && <p className="mt-2 text-center text-sm text-gray-600">{message}</p>}
           </div>
         </div>
         <div
