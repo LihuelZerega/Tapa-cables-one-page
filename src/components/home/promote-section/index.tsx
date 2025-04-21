@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { CalendarDaysIcon } from "@heroicons/react/24/outline";
 
@@ -60,14 +60,13 @@ export default function PromoteSection() {
               <div className="flex flex-col items-start">
                 <dt className="flex flex-row items-center space-x-2 text-base font-semibold text-gray-800">
                   <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                    {/* <CalendarDaysIcon
+                    <CalendarDaysIcon
                       aria-hidden="true"
                       className="size-6 text-blue-500"
-                    /> */}
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-blue-500 size-6">
+                    />
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-blue-500 size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-</svg>
-
+</svg> */}
                   </div>{" "}
                   Evaluación previa sin compromiso
                 </dt>
@@ -77,8 +76,11 @@ export default function PromoteSection() {
                 </dd>
               </div>
             </dl>
-            <hr className="hidden md:block"/>
-            <form onSubmit={handleEmailSubmit} className="mt-6 md:mt-3 flex flex-col md:flex-row max-w-md gap-4">
+            <hr className="hidden md:block" />
+            <form
+              onSubmit={handleEmailSubmit}
+              className="mt-6 md:mt-3 flex flex-col md:flex-row max-w-md gap-4"
+            >
               <label htmlFor="email-address" className="sr-only">
                 Email address
               </label>
@@ -101,7 +103,11 @@ export default function PromoteSection() {
                 {isSubmitting ? "Enviando..." : "Solicitar evaluación"}
               </button>
             </form>
-            {message && <p className="mt-2 text-center text-sm text-gray-600">{message}</p>}
+            {message && (
+              <p className="mt-2 text-center text-sm text-gray-600">
+                {message}
+              </p>
+            )}
           </div>
         </div>
         <div

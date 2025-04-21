@@ -249,6 +249,8 @@ function Index() {
             </div>
           </BlurFade>
         </div>
+        <div id="Sobre-nosotros" />
+        <div id="sobre-nosotros" />
       </section>
 
       <div className="grid gap-12 w-full bg-neutral-50 my-24 px-6">
@@ -385,8 +387,7 @@ function Index() {
             </BlurFade>
           </div>
         </div>
-        <div id="Sobre-nosotros" />
-        <div id="sobre-nosotros" />
+
       </div>
 
       {isModalOpen && (
