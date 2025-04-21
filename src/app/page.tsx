@@ -25,7 +25,7 @@ export default function Home() {
         <HeroSection />
         <AboutUs />
         <div id="Producto" />
-        <hr id="producto" />
+        <div id="producto" />
         <ProductAndServices />
         {/* <OurProduct /> */}
         <PromoteSection />

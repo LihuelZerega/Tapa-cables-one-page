@@ -82,18 +82,14 @@ function Index() {
                   Lo hacemos con una filosofía clara:
                   <ul className="space-y-3 pb-3 pt-2">
                     <li>
-                      <strong className="">
-                        Calidad ante todo:
-                      </strong>{" "}
-                      usamos materiales de alta gama y solo aceptamos trabajos
-                      donde el resultado será realmente excelente.
+                      <strong className="">Calidad ante todo:</strong> usamos
+                      materiales de alta gama y solo aceptamos trabajos donde el
+                      resultado será realmente excelente.
                     </li>
                     <li>
-                      <strong className="">
-                        Un trabajo al día:
-                      </strong>{" "}
-                      limitamos nuestras instalaciones para dedicar el tiempo y
-                      el cuidado que cada fachada merece.
+                      <strong className="">Un trabajo al día:</strong> limitamos
+                      nuestras instalaciones para dedicar el tiempo y el cuidado
+                      que cada fachada merece.
                     </li>
                     <li>
                       <strong className="">
@@ -109,6 +105,146 @@ function Index() {
                     Nace para ser la referencia en su sector.
                   </strong>
                 </p>
+              </div>
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+
+      <section>
+        <div className="max-w-[85rem] gap-12 mx-auto flex md:hidden flex-col-reverse lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-6 my-24">
+          <BlurFade inView className="mt-5 sm:mt-10 lg:mt-0 md:pl-12">
+            <div className="space-y-6 sm:space-y-8">
+              <div className="space-y-4">
+                <h2 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
+                  Tapacables y su nacimiento
+                </h2>
+                <p className="text-gray-500">
+                  Adrià Salamanca Barberà, fundador de Tapacables, con una
+                  sólida experiencia en el sector de telecomunicaciones, detectó
+                  la falta de soluciones eficientes para la ocultación de cables
+                  en fachadas. Este proyecto empresarial tiene como objetivo
+                  cubrir esta necesidad, ofreciendo productos y servicios de
+                  alta calidad que facilitan la organización y protección del
+                  cableado en exteriores.
+                </p>
+                <div className="flex flex-col items-center justify-center">
+                  <Image
+                    src={Adria}
+                    width={300}
+                    height={300}
+                    alt="image"
+                    className="rounded-md"
+                  />
+                  <p className="flex flex-row items-center justify-center gap-2 text-gray-500 mt-3 text-left">
+                    <span className="text-center hover:text-blue-500">
+                      <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
+                        <Image
+                          src={LinkedinLogo}
+                          className="h-11 w-11"
+                          alt=""
+                        />
+                      </a>
+                    </span>
+                    Adrià Salamanca Barberà, <br />
+                    Fundador de Tapacables
+                  </p>
+                </div>
+                <p className="text-center text-gray-500 mt-3">
+                  Durante su trayectoria como técnico de telecomunicaciones
+                  descubrió un problema que nadie estaba viendo, al que llamó{" "}
+                  <br />
+                  <strong>
+                    {"“"}El secreto{"”"}
+                  </strong>{" "}
+                  <br />
+                </p>
+
+                <div
+                  className="flex items-center justify-center mx-auto pt-4"
+                  onClick={openTerms}
+                >
+                  <button className="bg-blue-500 hover:bg-blue-600 transition px-3 py-2 rounded-md text-white">
+                    Quiero descubrir el secreto
+                  </button>
+                </div>
+
+                <div className="text-center mt-2">
+                  <span className="text-black font-bold italic">
+                    Presiona el
+                  </span>{" "}
+                  <span className="text-blue-500 font-bold italic">
+                    BOTÓN AZUL
+                  </span>{" "}
+                  <span className="text-black font-bold italic">
+                    para descubrirlo
+                  </span>
+                </div>
+              </div>
+            </div>
+          </BlurFade>
+        </div>
+
+        <div className="max-w-[85rem] gap-12 mx-auto hidden md:flex flex-col-reverse lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-6 my-24">
+          <BlurFade
+            inView
+            className="lg:w-1/2 flex flex-col items-center justify-center"
+          >
+            <Image
+              src={Adria}
+              width={320}
+              height={320}
+              alt="image"
+              className="rounded-md"
+            />
+            <p className="flex flex-row items-center gap-2 text-gray-500 text-sm mt-3 text-center">
+              <span className="hover:text-blue-500">
+                <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
+                  <Image src={LinkedinLogo} className="h-8 w-8" alt="" />
+                </a>
+              </span>
+              Adrià Salamanca Barberà, Fundador de Tapacables
+            </p>
+          </BlurFade>
+
+          <BlurFade inView className="lg:w-1/2 mt-5 sm:mt-10 lg:mt-0 md:pl-12">
+            <div className="space-y-6 sm:space-y-8">
+              <div className="space-y-2 md:space-y-4">
+                <h2 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
+                  Tapacables y su nacimiento
+                </h2>
+                <p className="text-gray-500">
+                  Adrià Salamanca Barberà, fundador de Tapacables, con una
+                  sólida experiencia en el sector de telecomunicaciones, detectó
+                  la falta de soluciones eficientes para la ocultación de cables
+                  en fachadas.
+                </p>
+                <p id="el-secreto" className="text-gray-500 mt-3">
+                  Durante su trayectoria como técnico de telecomunicaciones
+                  descubrió un problema que nadie estaba viendo, al que llamó{" "}
+                  <br />
+                  <strong>
+                    {"“"}El secreto{"”"}
+                  </strong>{" "}
+                </p>
+
+                <div onClick={openTerms}>
+                  <button className="bg-blue-500 hover:bg-blue-600 transition px-3 py-2 rounded-md text-white">
+                    Quiero descubrir el secreto
+                  </button>
+                </div>
+
+                <div className="mt-2">
+                  <span className="text-black font-bold italic">
+                    Presiona el
+                  </span>{" "}
+                  <span className="text-blue-500 font-bold italic">
+                    BOTÓN AZUL
+                  </span>{" "}
+                  <span className="text-black font-bold italic">
+                    para descubrirlo
+                  </span>
+                </div>
               </div>
             </div>
           </BlurFade>
@@ -252,146 +388,6 @@ function Index() {
         <div id="Sobre-nosotros" />
         <div id="sobre-nosotros" />
       </div>
-
-      <section>
-        <div className="max-w-[85rem] gap-12 mx-auto flex md:hidden flex-col-reverse lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-6 my-12">
-          <BlurFade inView className="mt-5 sm:mt-10 lg:mt-0 md:pl-12">
-            <div className="space-y-6 sm:space-y-8">
-              <div className="space-y-4">
-                <h2 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
-                  Tapacables y su nacimiento
-                </h2>
-                <p className="text-gray-500">
-                  Adrià Salamanca Barberà, fundador de Tapacables, con una
-                  sólida experiencia en el sector de telecomunicaciones, detectó
-                  la falta de soluciones eficientes para la ocultación de cables
-                  en fachadas. Este proyecto empresarial tiene como objetivo
-                  cubrir esta necesidad, ofreciendo productos y servicios de
-                  alta calidad que facilitan la organización y protección del
-                  cableado en exteriores.
-                </p>
-                <div className="flex flex-col items-center justify-center">
-                  <Image
-                    src={Adria}
-                    width={300}
-                    height={300}
-                    alt="image"
-                    className="rounded-md"
-                  />
-                  <p className="flex flex-row items-center justify-center gap-2 text-gray-500 mt-3 text-left">
-                    <span className="text-center hover:text-blue-500">
-                      <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
-                        <Image
-                          src={LinkedinLogo}
-                          className="h-11 w-11"
-                          alt=""
-                        />
-                      </a>
-                    </span>
-                    Adrià Salamanca Barberà, <br />
-                    Fundador de Tapacables
-                  </p>
-                </div>
-                <p className="text-center text-gray-500 mt-3">
-                  Durante su trayectoria como técnico de telecomunicaciones
-                  descubrió un problema que nadie estaba viendo, al que llamó{" "}
-                  <br />
-                  <strong>
-                    {"“"}El secreto{"”"}
-                  </strong>{" "}
-                  <br />
-                </p>
-
-                <div
-                  className="flex items-center justify-center mx-auto pt-4"
-                  onClick={openTerms}
-                >
-                  <button className="bg-blue-500 hover:bg-blue-600 transition px-3 py-2 rounded-md text-white">
-                    Quiero descubrir el secreto
-                  </button>
-                </div>
-
-                <div className="text-center mt-2">
-                  <span className="text-black font-bold italic">
-                    Presiona el
-                  </span>{" "}
-                  <span className="text-blue-500 font-bold italic">
-                    BOTÓN AZUL
-                  </span>{" "}
-                  <span className="text-black font-bold italic">
-                    para descubrirlo
-                  </span>
-                </div>
-              </div>
-            </div>
-          </BlurFade>
-        </div>
-
-        <div className="max-w-[85rem] gap-12 mx-auto hidden md:flex flex-col-reverse lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-6 my-12">
-          <BlurFade
-            inView
-            className="lg:w-1/2 flex flex-col items-center justify-center"
-          >
-            <Image
-              src={Adria}
-              width={320}
-              height={320}
-              alt="image"
-              className="rounded-md"
-            />
-            <p className="flex flex-row items-center gap-2 text-gray-500 text-sm mt-3 text-center">
-              <span className="hover:text-blue-500">
-                <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
-                  <Image src={LinkedinLogo} className="h-8 w-8" alt="" />
-                </a>
-              </span>
-              Adrià Salamanca Barberà, Fundador de Tapacables
-            </p>
-          </BlurFade>
-
-          <BlurFade inView className="lg:w-1/2 mt-5 sm:mt-10 lg:mt-0 md:pl-12">
-            <div className="space-y-6 sm:space-y-8">
-              <div className="space-y-2 md:space-y-4">
-                <h2 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
-                  Tapacables y su nacimiento
-                </h2>
-                <p className="text-gray-500">
-                  Adrià Salamanca Barberà, fundador de Tapacables, con una
-                  sólida experiencia en el sector de telecomunicaciones, detectó
-                  la falta de soluciones eficientes para la ocultación de cables
-                  en fachadas.
-                </p>
-                <p id="el-secreto" className="text-gray-500 mt-3">
-                  Durante su trayectoria como técnico de telecomunicaciones
-                  descubrió un problema que nadie estaba viendo, al que llamó{" "}
-                  <br />
-                  <strong>
-                    {"“"}El secreto{"”"}
-                  </strong>{" "}
-                </p>
-
-                <div onClick={openTerms}>
-                  <button className="bg-blue-500 hover:bg-blue-600 transition px-3 py-2 rounded-md text-white">
-                    Quiero descubrir el secreto
-                  </button>
-                </div>
-
-                <div className="mt-2">
-                  <span className="text-black font-bold italic">
-                    Presiona el
-                  </span>{" "}
-                  <span className="text-blue-500 font-bold italic">
-                    BOTÓN AZUL
-                  </span>{" "}
-                  <span className="text-black font-bold italic">
-                    para descubrirlo
-                  </span>
-                </div>
-              </div>
-            </div>
-          </BlurFade>
-        </div>
-      </section>
 
       {isModalOpen && (
         <div
