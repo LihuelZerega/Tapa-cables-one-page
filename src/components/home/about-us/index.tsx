@@ -73,7 +73,7 @@ function Index() {
                 </div>
                 <p className="text-gray-500 mt-3">
                   Nuestra misión es simple pero ambiciosa:{" "}
-                  <strong className="text-blue-500">
+                  <strong className="">
                     profesionalizar un servicio que hasta ahora nadie estaba
                     ofreciendo.
                   </strong>
@@ -82,21 +82,21 @@ function Index() {
                   Lo hacemos con una filosofía clara:
                   <ul className="space-y-3 pb-3">
                     <li>
-                      <strong className="text-blue-500">
+                      <strong className="">
                         Calidad ante todo:
                       </strong>{" "}
                       usamos materiales de alta gama y solo aceptamos trabajos
                       donde el resultado será realmente excelente.
                     </li>
                     <li>
-                      <strong className="text-blue-500">
+                      <strong className="">
                         Un trabajo al día:
                       </strong>{" "}
                       limitamos nuestras instalaciones para dedicar el tiempo y
                       el cuidado que cada fachada merece.
                     </li>
                     <li>
-                      <strong className="text-blue-500">
+                      <strong className="">
                         Trato transparente y cercano:
                       </strong>{" "}
                       acompañamos al cliente con honestidad desde el primer
@@ -121,7 +121,7 @@ function Index() {
             inView
             className="text-2xl font-semibold text-gray-800 text-center mb-12"
           >
-            Nuestro compromiso es un reflejo de nuestros valores.
+            Nuestro compromiso es el reflejo de nuestra experiencia
           </BlurFade>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-12 gap-x-32">
             <BlurFade inView className="text-center">
