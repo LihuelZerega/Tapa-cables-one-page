@@ -16,12 +16,12 @@ export default function PromoteSection() {
       </div>
 
       <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-12 lg:my-24 border border-neutral-300 rounded-md px-6 lg:px-0 z-10">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-0 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-1">
             <div className="">
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-800">
-                Promoción especial para comunidades de vecinos: <br />
-                Tapacables ofrece una mejora 100% gratuita.
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+                Formas parte de una comunidad de vecinos? <br />
+                <span className="text-blue-500">Tapacables ofrece una alternativa 100% Gratuita</span>
               </h2>
               <p className="mt-4 text-lg text-gray-600">
                 Transformamos fachadas sin que vuestra comunidad tenga que
@@ -61,16 +61,19 @@ export default function PromoteSection() {
                 </dd>
               </div>
             </dl>
-            <BlurFade inView className="flex flex-col items-center justify-between">
-          <div className="mt-10">
-            <a
-              href="#contacto"
-              className="bg-blue-500 hover:bg-blue-600 transition text-white p-3 rounded-md mt-6"
+            <BlurFade
+              inView
+              className="flex flex-col items-center justify-between"
             >
-              Solicitar evaluación
-            </a>
-          </div>
-        </BlurFade>
+              <div className="mt-10">
+                <a
+                  href="#contacto"
+                  className="bg-blue-500 hover:bg-blue-600 transition text-white p-3 rounded-md mt-6"
+                >
+                  Solicitar evaluación
+                </a>
+              </div>
+            </BlurFade>
           </div>
         </div>
         <div
