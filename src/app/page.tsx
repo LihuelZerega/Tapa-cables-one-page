@@ -13,19 +13,22 @@ import ContactForm from "@/components/home/contact-form";
 import Footer from "@/components/home/footer";
 import LoadingPage from "@/components/ui/loading-page";
 import WhatsAppButton from "@/components/home/whatsapp-button";
+import PromoteBanner from "@/components/home/promote-banner";
+import PromoteSection from "@/components/home/promote-section";
 
 export default function Home() {
   return (
     <main>
       <Suspense fallback={<LoadingPage />}>
         <WhatsAppButton />
+        {/* <PromoteBanner /> */}
         <HeroSection />
         <AboutUs />
         <div id="Producto" />
         <hr id="producto" />
         <ProductAndServices />
         {/* <OurProduct /> */}
-        <hr />
+        <PromoteSection />
         {/* <ComparationTable /> */}
         <Benefits />
         <hr className="my-12" />

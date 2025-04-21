@@ -32,72 +32,18 @@ function Index() {
   return (
     <div className="mx-auto mt-16 md:mt-32">
       <section>
-        <div className="max-w-[85rem] gap-12 mx-auto flex md:hidden flex-col-reverse lg:flex-row md:items-center md:gap-12 xl:gap-32 px-6 my-10">
+        <div className="max-w-[85rem] gap-12 mx-auto flex flex-col-reverse lg:flex-row md:items-center md:gap-12 xl:gap-32 px-6 my-10">
           <BlurFade
             inView
-            className="lg:w-1/2 flex flex-col items-center justify-center mt-5 sm:mt-10 lg:mt-0"
-          >
-            <div className="space-y-6 sm:space-y-8">
-              <div className="flex flex-col items-center justify-center space-y-4">
-                <h3 className="text-center sm:text-left font-bold text-3xl lg:text-4xl text-gray-800 mb-6">
-                  Nuestra Misión
-                </h3>
-                <p className="text-gray-500">
-                  Tapacables surge con el objetivo de ofrecer soluciones
-                  eficientes a un mercado con escasas alternativas para la
-                  ocultación de cableado en fachadas. Impulsados por nuestra
-                  ambición de brindar la mejor solución posible.
-                </p>
-
-                <div className="flex items-center justify-center my-3">
-                  {/* <Compare
-                    firstImage={ComparationProduct1.src}
-                    secondImage={ComparationProduct2.src}
-                    firstImageClassName="object-cover object-left-top"
-                    secondImageClassname="object-cover object-left-top"
-                    className="w-full h-[350px] lg:w-[500px] lg:h-[550px]"
-                    slideMode="hover"
-                  /> */}
-                  <img
-                    src={QueEsTapacables.src}
-                    alt=""
-                    className="w-full rounded-md my-3"
-                  />
-                </div>
-
-                <p className="text-gray-500 mt-3">
-                  Nuestro enfoque se centra en dos objetivos fundamentales:
-                  ofrecer un servicio de instalación integral que nadie más está
-                  proporcionando y utilizar materiales de la más alta calidad
-                  para garantizar un resultado impecable.
-                </p>
-              </div>
-            </div>
-          </BlurFade>
-        </div>
-
-        <div className="max-w-[85rem] gap-12 mx-auto hidden md:flex flex-col-reverse lg:flex-row md:items-center md:gap-12 xl:gap-32 px-6 my-10">
-          <BlurFade
-            inView
-            className="lg:w-1/2 flex flex-col items-center justify-center"
+            className="lg:w-1/2 hidden md:flex flex-col items-center justify-center"
           >
             <div className="flex items-center justify-center">
               <div className="md:mb-0 sm:px-6">
-                {/* <Compare
-                  firstImage={ComparationProduct1.src}
-                  secondImage={ComparationProduct2.src}
-                  firstImageClassName="object-cover object-left-top"
-                  secondImageClassname="object-cover object-left-top"
-                  className="w-full h-[350px] lg:w-[500px] lg:h-[550px]"
-                  slideMode="hover"
-                /> */}
                 <img
                   src={QueEsTapacables.src}
                   alt=""
                   className="w-full rounded-md"
                 />
-
-                {/* <div className="absolute bottom-0 start-0 -z-[1] translate-y-10 -translate-x-14"></div> */}
               </div>
             </div>
           </BlurFade>
@@ -112,25 +58,57 @@ function Index() {
                   Nuestra Misión
                 </h3>
                 <p className="text-gray-500">
-                  Tapacables surge con el objetivo de ofrecer soluciones
-                  eficientes a un mercado con escasas alternativas para la
-                  ocultación de cableado en fachadas.
+                  En Tapacables no solo tapamos cables: elevamos el valor
+                  estético y funcional de las fachadas, transformando la imagen
+                  de cada trabajo realizado.
                 </p>
+                <div className="flex md:hidden items-center justify-center">
+                  <div className="md:mb-0 sm:px-6 py-3">
+                    <img
+                      src={QueEsTapacables.src}
+                      alt=""
+                      className="w-full rounded-md"
+                    />
+                  </div>
+                </div>
                 <p className="text-gray-500 mt-3">
-                  Nuestro enfoque se centra en dos objetivos fundamentales:
-                  ofrecer un servicio de instalación integral que nadie más está
-                  proporcionando y utilizar materiales de la más alta calidad
-                  para garantizar un resultado impecable.
+                  Nuestra misión es simple pero ambiciosa:{" "}
+                  <strong className="text-blue-500">
+                    profesionalizar un servicio que hasta ahora nadie estaba
+                    ofreciendo.
+                  </strong>
                 </p>
-                {/* <p className="text-gray-500 mt-3">
-                  <strong>Nuestros productos</strong> se componen de perfiles de
-                  aluminio y soportes de hierro con un acabado en zinc,
-                  garantizando durabilidad y resistencia a las inclemencias del
-                  tiempo. Comenzamos nuestras operaciones en Valencia, donde ya
-                  hemos realizado pruebas piloto con éxito, y planeamos
-                  expandirnos a otros mercados nacionales, apoyados en alianzas
-                  estratégicas con profesionales locales.
-                </p> */}
+                <p className="text-gray-500">
+                  Lo hacemos con una filosofía clara:
+                  <ul className="space-y-3 pb-3">
+                    <li>
+                      <strong className="text-blue-500">
+                        Calidad ante todo:
+                      </strong>{" "}
+                      usamos materiales de alta gama y solo aceptamos trabajos
+                      donde el resultado será realmente excelente.
+                    </li>
+                    <li>
+                      <strong className="text-blue-500">
+                        Un trabajo al día:
+                      </strong>{" "}
+                      limitamos nuestras instalaciones para dedicar el tiempo y
+                      el cuidado que cada fachada merece.
+                    </li>
+                    <li>
+                      <strong className="text-blue-500">
+                        Trato transparente y cercano:
+                      </strong>{" "}
+                      acompañamos al cliente con honestidad desde el primer
+                      contacto hasta el cierre del proyecto.
+                    </li>
+                  </ul>
+                  Tapacables no nace para ser una empresa más.
+                  <br />
+                  <strong className="text-blue-500">
+                    Nace para ser la referencia en su sector.
+                  </strong>
+                </p>
               </div>
             </div>
           </BlurFade>
@@ -293,14 +271,24 @@ function Index() {
                   cableado en exteriores.
                 </p>
                 <div className="flex flex-col items-center justify-center">
-                    <Image src={Adria} width={300} height={300} alt="image" className="rounded-md"/>
+                  <Image
+                    src={Adria}
+                    width={300}
+                    height={300}
+                    alt="image"
+                    className="rounded-md"
+                  />
                   <p className="flex flex-row items-center justify-center gap-2 text-gray-500 mt-3 text-left">
                     <span className="text-center hover:text-blue-500">
                       <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
-                        <Image src={LinkedinLogo} className="h-11 w-11" alt="" />
+                        <Image
+                          src={LinkedinLogo}
+                          className="h-11 w-11"
+                          alt=""
+                        />
                       </a>
                     </span>
-                    Adrià Salamanca Barbera, <br />
+                    Adrià Salamanca Barberà, <br />
                     Fundador de Tapacables
                   </p>
                 </div>
@@ -344,14 +332,20 @@ function Index() {
             inView
             className="lg:w-1/2 flex flex-col items-center justify-center"
           >
-              <Image src={Adria} width={320} height={320} alt="image" className="rounded-md" />
+            <Image
+              src={Adria}
+              width={320}
+              height={320}
+              alt="image"
+              className="rounded-md"
+            />
             <p className="flex flex-row items-center gap-2 text-gray-500 text-sm mt-3 text-center">
               <span className="hover:text-blue-500">
                 <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
                   <Image src={LinkedinLogo} className="h-8 w-8" alt="" />
                 </a>
               </span>
-              Adrià Salamanca Barbera, Fundador de Tapacables
+              Adrià Salamanca Barberà, Fundador de Tapacables
             </p>
           </BlurFade>
 

@@ -36,7 +36,7 @@ const WhatsAppButton = () => {
         onClick={openModal}
         style={{
           position: "fixed",
-          bottom: "200px",
+          bottom: "150px",
           right: "20px",
           borderRadius: "50%",
           padding: "6px",
