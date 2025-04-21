@@ -38,8 +38,7 @@ export default function PromoteSection() {
                 </dt>
                 <dd className="mt-2 text-base/7 text-gray-400">
                   ¿Quieres saber si puedes beneficiarte de la oferta? Déjanos tu
-                  email y te lo confirmamos tras un análisis previo, sin
-                  compromiso.
+                  email y te lo confirmamos.
                 </dd>
               </div>
             </dl>
@@ -55,7 +54,7 @@ export default function PromoteSection() {
                 required
                 placeholder="Introduce tu correo electrónico"
                 autoComplete="email"
-                className="min-w-0 flex-auto border rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-500 sm:text-sm/6"
+                className="min-w-0 flex-auto border rounded-md bg-white/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-500 sm:text-sm/6"
               />
               <button
                 type="submit"
