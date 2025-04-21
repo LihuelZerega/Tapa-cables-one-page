@@ -21,7 +21,9 @@ export default function PromoteSection() {
             <div className="">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                 Formas parte de una comunidad de vecinos? <br />
-                <span className="text-blue-500">Tapacables ofrece una alternativa 100% Gratuita</span>
+                <span className="text-blue-500">
+                  Tapacables ofrece una alternativa 100% Gratuita
+                </span>
               </h2>
               <p className="mt-4 text-lg text-gray-600">
                 Transformamos fachadas sin que vuestra comunidad tenga que
@@ -31,33 +33,19 @@ export default function PromoteSection() {
             </div>
             <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
               <div className="flex flex-col items-start">
-                <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                  <CalendarDaysIcon
-                    aria-hidden="true"
-                    className="size-6 text-blue-500"
-                  />
-                </div>
-                <dt className="mt-4 text-base font-semibold text-gray-800">
-                  Evaluación Previa
+                <dt className="flex flex-row items-center space-x-2 text-base font-semibold text-gray-800">
+                  <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                    <CalendarDaysIcon
+                      aria-hidden="true"
+                      className="size-6 text-blue-500"
+                    />
+                  </div>{" "}
+                  Evaluación previa sin compromiso
                 </dt>
                 <dd className="mt-2 text-base/7 text-gray-400">
-                  Non laboris consequat cupidatat laborum magna. Eiusmod non
-                  irure cupidatat duis commodo amet.
-                </dd>
-              </div>
-              <div className="flex flex-col items-start">
-                <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                  <HandRaisedIcon
-                    aria-hidden="true"
-                    className="size-6 text-blue-500"
-                  />
-                </div>
-                <dt className="mt-4 text-base font-semibold text-gray-800">
-                  Sin compromiso
-                </dt>
-                <dd className="mt-2 text-base/7 text-gray-400">
-                  Déjanos tu e-mail y nos pondremos en contacto para realizar
-                  una evaluación previa sin compromiso.
+                  ¿Quieres saber si puedes beneficiarte de la oferta? Déjanos tu
+                  email y te lo confirmamos tras un análisis previo, sin
+                  compromiso.
                 </dd>
               </div>
             </dl>
