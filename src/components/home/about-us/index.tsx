@@ -80,7 +80,7 @@ function Index() {
                 </p>
                 <p className="text-gray-500">
                   Lo hacemos con una filosofía clara:
-                  <ul className="space-y-3 pb-3">
+                  <ul className="space-y-3 pb-3 pt-2">
                     <li>
                       <strong className="">
                         Calidad ante todo:

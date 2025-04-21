@@ -1,14 +1,9 @@
 import BlurFade from "@/components/magicui/blur-fade";
-import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
+import { CalendarDaysIcon } from "@heroicons/react/24/outline";
 
 export default function PromoteSection() {
   return (
     <div className="relative max-w-6xl mx-6 md:mx-auto">
-      {/* <div className="absolute top-[72px] right-[72px] transform -translate-y-1/2 translate-x-1/2 z-20">
-        <div className="bg-blue-500 text-white font-bold py-1 px-4 transform rotate-45 rounded-md">
-          OFERTA ESPECIAL
-        </div>
-      </div> */}
       <div className="absolute top-0 right-0 transform z-20">
         <div className="bg-blue-500 text-white font-bold py-1 px-4 transform rounded-tr-md">
           OFERTA ESPECIAL
@@ -28,7 +23,6 @@ export default function PromoteSection() {
               <p className="mt-4 text-lg text-gray-600">
                 Transformamos fachadas sin que vuestra comunidad tenga que
                 asumir ningún coste, siempre que cumpla con los requisitos.
-                ¿Queréis saber si podéis acceder a esta oportunidad?
               </p>
             </div>
             <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
@@ -49,19 +43,27 @@ export default function PromoteSection() {
                 </dd>
               </div>
             </dl>
-            <BlurFade
-              inView
-              className="flex flex-col items-center justify-between"
-            >
-              <div className="mt-10">
-                <a
-                  href="#contacto"
-                  className="bg-blue-500 hover:bg-blue-600 transition text-white p-3 rounded-md mt-6"
-                >
-                  Solicitar evaluación
-                </a>
-              </div>
-            </BlurFade>
+            <hr className="hidden md:block"/>
+            <div className="mt-6 md:mt-3 flex flex-col md:flex-row max-w-md gap-4">
+              <label htmlFor="email-address" className="sr-only">
+                Email address
+              </label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                required
+                placeholder="Introduce tu correo electrónico"
+                autoComplete="email"
+                className="min-w-0 flex-auto border rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-500 sm:text-sm/6"
+              />
+              <button
+                type="submit"
+                className="flex-none rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+              >
+                Solicitar evaluación
+              </button>
+            </div>
           </div>
         </div>
         <div
