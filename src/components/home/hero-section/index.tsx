@@ -170,7 +170,7 @@ function Index() {
         </div>
       </div> */}
 
-      <section className="overflow-hidden bg-neutral-50 pt-32">
+      <section className="overflow-hidden bg-neutral-50 pt-16">
         <div className="relative mx-auto max-w-5xl px-6 py-24">
           <div className="relative z-10 mx-auto max-w-3xl text-center">
             <h1 className="font-bold tracking-tight text-5xl md:text-5xl lg:text-6xl text-gray-800">

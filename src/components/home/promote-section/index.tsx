@@ -60,10 +60,14 @@ export default function PromoteSection() {
               <div className="flex flex-col items-start">
                 <dt className="flex flex-row items-center space-x-2 text-base font-semibold text-gray-800">
                   <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                    <CalendarDaysIcon
+                    {/* <CalendarDaysIcon
                       aria-hidden="true"
                       className="size-6 text-blue-500"
-                    />
+                    /> */}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-blue-500 size-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+</svg>
+
                   </div>{" "}
                   Evaluación previa sin compromiso
                 </dt>
