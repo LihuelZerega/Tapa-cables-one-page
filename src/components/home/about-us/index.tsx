@@ -112,6 +112,8 @@ function Index() {
       </section>
 
       <section>
+      <div id="Sobre-nosotros" />
+      <div id="sobre-nosotros" />
         <div className="max-w-[85rem] gap-12 mx-auto flex md:hidden flex-col-reverse lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-6 my-24">
           <BlurFade inView className="mt-5 sm:mt-10 lg:mt-0 md:pl-12">
             <div className="space-y-6 sm:space-y-8">
@@ -249,8 +251,6 @@ function Index() {
             </div>
           </BlurFade>
         </div>
-        <div id="Sobre-nosotros" />
-        <div id="sobre-nosotros" />
       </section>
 
       <div className="grid gap-12 w-full bg-neutral-50 my-24 px-6">
