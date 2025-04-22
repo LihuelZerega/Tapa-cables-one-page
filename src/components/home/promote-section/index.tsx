@@ -87,7 +87,6 @@ export default function PromoteSection() {
                 </dd>
               </div>
             </dl>
-            <hr className="hidden md:block" />
             <form
               onSubmit={handleEmailSubmit}
               className="mt-6 md:mt-3 flex flex-col md:flex-row max-w-md gap-4"

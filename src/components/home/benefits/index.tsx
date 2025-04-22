@@ -15,7 +15,7 @@ function index() {
       </div>
       <div className="flex flex-col md:flex-row items-start justify-center gap-6 md:gap-12 pt-12">
         <div className="lg:w-1/2 grid grid-cols-1 max-w-md gap-6">
-          <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
+          {/* <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
               1. Una fachada más moderna
             </h4>
@@ -25,7 +25,6 @@ function index() {
               tener.
             </p>
           </div>
-
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
               2. Que lo que tenemos dure más
@@ -36,7 +35,6 @@ function index() {
               útil.
             </p>
           </div>
-
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
             <h4 className="text-blue-500 font-semibold text-xl">
               3. Y lo más importante
@@ -45,7 +43,67 @@ function index() {
               Al eliminar la posibilidad de cables sueltos, reduce el riesgo de
               accidentes y evita posibles problemas legales.
             </p>
-          </div>
+          </div> */}
+
+          <ul className="max-w-md mx-auto space-y-12">
+            <li className="relative flex items-start">
+              <div
+                className="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full"
+                aria-hidden="true"
+              ></div>
+
+              <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-blue-500 rounded-full shadow text-lg">
+                1
+              </div>
+              <div className="ml-6">
+                <h3 className="text-base font-semibold text-blue-500">
+                  Una fachada más moderna
+                </h3>
+                <p className="mt-4 text-sm text-gray-600">
+                  {" "}
+                  Al ocultar los cables, eliminas ese aspecto descuidado y
+                  antiguo, y le das la oportunidad a tu casa de tener el aspecto
+                  que merece tener.
+                </p>
+              </div>
+            </li>
+
+            <li className="relative flex items-start">
+              <div
+                className="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full"
+                aria-hidden="true"
+              ></div>
+
+              <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-blue-500 rounded-full shadow text-lg">
+                2
+              </div>
+              <div className="ml-6">
+                <h3 className="text-base font-semibold text-blue-500">
+                  Que lo que tenemos dure más
+                </h3>
+                <p className="mt-4 text-sm text-gray-600">
+                Al estar dentro de una canaleta, el cableado queda protegido de
+              tirones, desgaste y mal tiempo, lo que ayuda a prolongar su vida
+              útil.
+                </p>
+              </div>
+            </li>
+
+            <li className="relative flex items-start">
+              <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-blue-500 rounded-full shadow text-lg">
+                3
+              </div>
+              <div className="ml-6">
+                <h3 className="text-base font-semibold text-blue-500">
+                  Y lo más importante...
+                </h3>
+                <p className="mt-4 text-sm text-gray-600">
+                Al eliminar la posibilidad de cables sueltos, reduce el riesgo de
+                accidentes y evita posibles problemas legales.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
         <div className="flex flex-col lg:w-1/2 space-y-6">
           <h4 className="text-gray-700">

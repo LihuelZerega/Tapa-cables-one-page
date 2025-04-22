@@ -253,7 +253,7 @@ function Index() {
         </div>
       </section>
 
-      <div className="grid gap-12 w-full bg-neutral-50 my-0 px-6">
+      {/* <div className="grid gap-12 w-full bg-neutral-50 my-0 px-6">
         <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-12 mx-auto">
           <BlurFade
             inView
@@ -388,7 +388,7 @@ function Index() {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
       {isModalOpen && (
         <div
