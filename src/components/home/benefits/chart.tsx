@@ -51,7 +51,7 @@ export function Chart() {
             ¿Por qué instalaron las canaletas?
           </h3>
           <p className="text-center md:text-left text-gray-600">
-            Estos fueron los resultados
+            Estos fueron los resultados:
           </p>
         </div>
         <div className="space-y-3">

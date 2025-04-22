@@ -6,7 +6,7 @@ function index() {
   return (
     <BlurFade
       inView
-      className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
+      className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-12"
     >
       <div className="text-center">
         <h2 className="text-gray-800 font-bold text-3xl md:text-4xl md:leading-tight">
@@ -21,7 +21,7 @@ function index() {
             </h4>
             <p className="text-gray-600 text-sm">
               Al ocultar los cables, eliminas ese aspecto descuidado y antiguo,
-              y dale la oportunidad a tu casa de tener el aspecto que merece
+              y le das la oportunidad a tu casa de tener el aspecto que merece
               tener.
             </p>
           </div>
@@ -50,7 +50,7 @@ function index() {
         <div className="flex flex-col lg:w-1/2 space-y-6">
           <h4 className="text-gray-700">
             Además, en base a estos beneficios realizamos un estudio a 300
-            personas que ya se habían instalado canaletas en su fachada y le
+            personas que ya tenían instaladas canaletas en su fachada y le
             realizamos la siguiente pregunta:
           </h4>
           <Chart />

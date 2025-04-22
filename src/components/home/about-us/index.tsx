@@ -93,7 +93,7 @@ function Index() {
                     </li>
                     <li>
                       <strong className="">
-                        Trato transparente y cercano:
+                        Trato cercano:
                       </strong>{" "}
                       acompañamos al cliente con honestidad desde el primer
                       contacto hasta el cierre del proyecto.
@@ -253,7 +253,7 @@ function Index() {
         </div>
       </section>
 
-      <div className="grid gap-12 w-full bg-neutral-50 my-24 px-6">
+      <div className="grid gap-12 w-full bg-neutral-50 my-0 px-6">
         <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-12 mx-auto">
           <BlurFade
             inView
@@ -459,7 +459,7 @@ function Index() {
                   <p>
                     Cada año, muchos cambiamos de proveedor de internet, y no
                     todos los cables son compatibles con todas las compañías.
-                    Aunque no siempre es tu caso, ocurre con frecuencia en la
+                    Aunque no siempre es el caso, ocurre con frecuencia en la
                     mayoría de los hogares. Este cambio continuo de cableado es
                     parte del problema.
                   </p>
@@ -469,7 +469,7 @@ function Index() {
                     largo, compuestas por una base y una tapa. Su precio puede
                     parecer atractivo, entre 10 y 20 € el metro, pero su
                     instalación y durabilidad dejan mucho que desear y se puede
-                    convertir muy fácilmente en una de sus peores inversiones.
+                    convertir muy fácilmente en una de tus peores inversiones.
                   </p>
                   <p>
                     Ponte en mi lugar: eres un técnico a tres metros de altura
@@ -509,7 +509,7 @@ function Index() {
                       className="hidden md:block rounded-md"
                     />
                     <p className="pt-1 text-gray-600 text-sm">
-                      Canaleta que no debería de usarse para cubrir el cableado
+                      Canaleta que no debería usarse para cubrir el cableado
                     </p>
                   </div>
                 </div>
@@ -519,7 +519,7 @@ function Index() {
                 <p className="text-gray-600">
                   Te invito a observar las canaletas de tu zona antes de
                   contactarnos y comprobar por ti mismo lo que describo. Te
-                  adjunto unas fotos para que veas lo que enfrentamos día a día.
+                  adjunto unas fotos para que veas a lo que nos enfrentamos día a día.
                 </p>
               </div>
 

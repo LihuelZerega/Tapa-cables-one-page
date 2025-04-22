@@ -170,7 +170,7 @@ function Index() {
         </div>
       </div> */}
 
-      <section className="overflow-hidden bg-neutral-50 pt-16">
+      <section className="overflow-hidden bg-neutral-50 pt-16 lg:pt-32">
         <div className="relative mx-auto max-w-5xl px-6 py-24">
           <div className="relative z-10 mx-auto max-w-3xl text-center">
             <h1 className="font-bold tracking-tight text-5xl md:text-5xl lg:text-6xl text-gray-800">
@@ -180,7 +180,7 @@ function Index() {
             </h1>
             <p className="mx-auto mt-8 max-w-2xl text-xl text-gray-600">
               Empresa especializada en la ocultación de cableado en fachadas. <br />
-              <p className="mt-3">Descubre, gracias a “El Secreto”, cómo lo hacemos.</p>
+              <p className="mt-3 text-gray-800">Descubre, gracias a “El Secreto”, cómo lo hacemos.</p>
             </p>
             <div className="mt-10 flex items-center lg:items-center justify-center lg:justify-center gap-x-6">
               <a
