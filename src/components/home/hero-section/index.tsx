@@ -180,9 +180,9 @@ function Index() {
             </h1>
             <p className="mx-auto mt-8 max-w-2xl text-xl text-gray-600">
               Empresa especializada en la ocultación de cableado en fachadas. <br />
-              <p className="text-gray-800 italic text-base mt-6">Descubre, gracias a “El Secreto”, cómo lo hacemos.</p>
+              <p className="text-gray-800 italic text-base mt-10">Descubre, gracias a “El Secreto”, cómo lo hacemos.</p>
             </p>
-            <div className="mt-6 flex items-center lg:items-center justify-center lg:justify-center gap-x-6">
+            <div className="mt-2 flex items-center lg:items-center justify-center lg:justify-center gap-x-6">
               <a
                 href="#Sobre-nosotros"
                 className="block lg:hidden rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
