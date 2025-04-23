@@ -68,7 +68,7 @@ function index() {
     //     </BlurFade>
     //   </div>
     // </div>
-    <BlurFade inView className="py-12 mb-12 lg:mt-12">
+    <BlurFade inView className="bg-neutral-50 py-12 mb-12 lg:mt-12">
       <div className="mx-auto max-w-5xl px-6">
         <div className="text-center">
           <h2 className="text-gray-800 text-3xl md:text-4xl md:leading-tight font-bold">

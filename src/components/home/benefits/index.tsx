@@ -10,7 +10,7 @@ function index() {
     >
       <div className="text-center">
         <h2 className="text-gray-800 font-bold text-3xl md:text-4xl md:leading-tight">
-          Beneficios de tapar el cableado de su fachada
+          <span className="text-blue-500">Beneficios</span> de tapar el cableado de su fachada
         </h2>
       </div>
       <div className="flex flex-col md:flex-row items-start justify-center gap-6 md:gap-12 pt-12">
@@ -55,8 +55,8 @@ function index() {
               <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-blue-500 rounded-full shadow text-lg">
                 1
               </div>
-              <div className="ml-6">
-                <h3 className="text-base font-semibold text-blue-500">
+              <div className="mt-5 ml-6">
+                <h3 className="text-base font-semibold text-gray-800">
                   Una fachada más moderna
                 </h3>
                 <p className="mt-4 text-sm text-gray-600">
@@ -77,8 +77,8 @@ function index() {
               <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-blue-500 rounded-full shadow text-lg">
                 2
               </div>
-              <div className="ml-6">
-                <h3 className="text-base font-semibold text-blue-500">
+              <div className="mt-5 ml-6">
+                <h3 className="text-base font-semibold text-gray-800">
                   Que lo que tenemos dure más
                 </h3>
                 <p className="mt-4 text-sm text-gray-600">
@@ -93,8 +93,8 @@ function index() {
               <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-blue-500 rounded-full shadow text-lg">
                 3
               </div>
-              <div className="ml-6">
-                <h3 className="text-base font-semibold text-blue-500">
+              <div className="mt-5 ml-6">
+                <h3 className="text-base font-semibold text-gray-800">
                   Y lo más importante...
                 </h3>
                 <p className="mt-4 text-sm text-gray-600">
@@ -105,7 +105,7 @@ function index() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col lg:w-1/2 space-y-6">
+        <div className="flex flex-col lg:w-1/2 space-y-6 mt-6 lg:mt-4">
           <h4 className="text-gray-700">
             Además, en base a estos beneficios realizamos un estudio a 300
             personas que ya tenían instaladas canaletas en su fachada y le
