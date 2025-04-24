@@ -59,7 +59,7 @@ function index() {
                 <h3 className="text-base font-semibold text-gray-800">
                   Una fachada más moderna
                 </h3>
-                <p className="mt-4 text-sm text-gray-600">
+                <p className="text-sm text-gray-600">
                   {" "}
                   Al ocultar los cables, eliminas ese aspecto descuidado y
                   antiguo, y le das la oportunidad a tu casa de tener el aspecto
@@ -81,7 +81,7 @@ function index() {
                 <h3 className="text-base font-semibold text-gray-800">
                   Que lo que tenemos dure más
                 </h3>
-                <p className="mt-4 text-sm text-gray-600">
+                <p className="text-sm text-gray-600">
                 Al estar dentro de una canaleta, el cableado queda protegido de
               tirones, desgaste y mal tiempo, lo que ayuda a prolongar su vida
               útil.
@@ -97,7 +97,7 @@ function index() {
                 <h3 className="text-base font-semibold text-gray-800">
                   Y lo más importante...
                 </h3>
-                <p className="mt-4 text-sm text-gray-600">
+                <p className="text-sm text-gray-600">
                 Al eliminar la posibilidad de cables sueltos, reduce el riesgo de
                 accidentes y evita posibles problemas legales.
                 </p>
