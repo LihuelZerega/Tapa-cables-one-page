@@ -173,7 +173,7 @@ function Index() {
       <section className="overflow-hidden bg-neutral-50 pt-16 lg:pt-32">
         <div className="relative mx-auto max-w-5xl px-6 py-24">
           <div className="relative z-10 mx-auto max-w-3xl text-center">
-            <h1 className="font-bold tracking-tight text-4xl md:text-5xl lg:text-6xl text-gray-800">
+            <h1 className="font-bold tracking-tight text-[40px] md:text-5xl lg:text-6xl text-gray-800">
               Transformamos fachadas,{" "}
               <br className="block lg:hidden"/>
               <span className="text-blue-500">Tapa</span>ndo{" "}
