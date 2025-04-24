@@ -175,6 +175,7 @@ function Index() {
           <div className="relative z-10 mx-auto max-w-3xl text-center">
             <h1 className="font-bold tracking-tight text-4xl md:text-5xl lg:text-6xl text-gray-800">
               Transformamos fachadas,{" "}
+              <br className="block lg:hidden"/>
               <span className="text-blue-500">Tapa</span>ndo{" "}
               <span className="text-blue-500">cables</span>.
             </h1>
