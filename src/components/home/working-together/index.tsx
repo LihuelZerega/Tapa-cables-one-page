@@ -95,7 +95,7 @@ function index() {
 
           <BlurFade
             inView
-            className="flex items-center justify-center w-[330px] h-[330px] md:w-[430px] md:h-[430px] xl:w-[500px] xl:h-[500px] bg-gray-100 rounded-md xl:ml-12 mx-auto"
+            className="flex items-center justify-center w-[250px] h-[250px] md:w-[430px] md:h-[430px] xl:w-[500px] xl:h-[500px] bg-gray-100 rounded-md xl:ml-12 mx-auto"
           >
             <Image
               src={EstrechamientoDeManos}
