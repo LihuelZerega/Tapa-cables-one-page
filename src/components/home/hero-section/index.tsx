@@ -174,7 +174,7 @@ function Index() {
         <div className="relative mx-auto max-w-5xl px-6 py-24">
           <div className="relative z-10 mx-auto max-w-3xl text-center">
             <h1 className="font-bold tracking-tight text-[42px] leading-tight md:text-5xl lg:text-6xl text-gray-800">
-              <span className="text-[38px] md:text-5xl lg:text-6xl">Transformamos</span> fachadas,{" "}
+              <span className="text-[33px] md:text-5xl lg:text-6xl">Transformamos</span> fachadas,{" "}
               <br className="block lg:hidden"/>
               <span className="text-blue-500">Tapa</span>ndo{" "}
               <span className="text-blue-500">cables</span>.
