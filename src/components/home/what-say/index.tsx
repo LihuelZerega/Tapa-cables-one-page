@@ -6,44 +6,61 @@ import OkDiarioLogo from "@/images/OkDiarioLogo.png";
 import ElMundioFinancieroLogo from "@/images/ElMundoFinancieroLogo.png";
 import LaSextaLogo from "@/images/LaSextaLogo.png";
 
+import DiarioFinanciero from "@/images/DiarioFinanciero.png";
+import SomosEconomia from "@/images/SomosEconomia.png";
+import CiudadEmprendedores from "@/images/CiudadEmprendedores.png";
+import ElBoletin from "@/images/ElBoletin.webp";
+
 function index() {
   return (
     <div className="max-w-[85rem] py-10 px-6 lg:px-8 lg:py-14 mx-auto">
       <div className="pb-10 text-center mx-auto">
-        <BlurFade inView className="text-3xl font-bold md:text-4xl md:leading-tight text-gray-800">
+        <BlurFade
+          inView
+          className="text-3xl font-bold md:text-4xl md:leading-tight text-gray-800"
+        >
           ¿Qué dicen de nosotros?
         </BlurFade>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 max-w-5xl mt-8 mx-auto select-none">
           <BlurFade inView className="flex items-center justify-center mx-auto">
-            <Image
-              src={RadioYaLogo}
-              alt="RadioYaLogo"
-              width={120}
-              height={120}
-            />
+            <a href="https://diariofinanciero.com/crece-la-demanda-de-canaletas-fachada-exterior-tapacables-lidera-la-ocultacion-de-cableado-en-edificios/">
+              <Image
+                src={DiarioFinanciero}
+                alt="DiarioFinanciero"
+                width={200}
+                height={200}
+              />
+            </a>
           </BlurFade>
 
           <BlurFade inView className="flex items-center justify-center mx-auto">
-            <Image
-              src={OkDiarioLogo}
-              alt="RadioYaLogo"
-              width={110}
-              height={110}
-            />
+            <a href="https://somoseconomia.com/featured/tapacables-advierte-la-eleccion-de-la-canaleta-adecuada-determina-el-resultado-estetico-y-funcional-de-una-fachada/">
+              <Image
+                src={SomosEconomia}
+                alt="SomosEconomia"
+                width={150}
+                height={150}
+              />
+            </a>
           </BlurFade>
 
           <BlurFade inView className="flex items-center justify-center mx-auto">
-            <Image
-              src={ElMundioFinancieroLogo}
-              alt="RadioYaLogo"
-              width={130}
-              height={130}
-            />
+            <a href="https://ciudademprendedores.com/noticias-de-internet/el-impacto-silencioso-de-los-cables-en-la-fachada-un-elemento-que-genera-rechazo/">
+              <Image
+                src={CiudadEmprendedores}
+                alt="CiudadEmprendedores"
+                width={150}
+                height={150}
+                className="grayscale"
+              />
+            </a>
           </BlurFade>
 
           <BlurFade inView className="flex items-center justify-center mx-auto">
-            <Image src={LaSextaLogo} alt="RadioYaLogo" width={30} height={30} />
+            <a href="https://www.elboletin.com/notas-empresas/6957-el-futuro-de-las-fachadas-en-espana-pasa-por-eliminar-el-cableado-visible/">
+              <Image src={ElBoletin} alt="ElBoletin" width={130} height={130} />
+            </a>
           </BlurFade>
         </div>
       </div>
