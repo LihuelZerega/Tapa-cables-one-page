@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import BlurFade from "@/components/magicui/blur-fade";
-import RadioYaLogo from "@/images/RadioYaLogo.png";
-import OkDiarioLogo from "@/images/OkDiarioLogo.png";
-import ElMundioFinancieroLogo from "@/images/ElMundoFinancieroLogo.png";
-import LaSextaLogo from "@/images/LaSextaLogo.png";
+// import RadioYaLogo from "@/images/RadioYaLogo.png";
+// import OkDiarioLogo from "@/images/OkDiarioLogo.png";
+// import ElMundioFinancieroLogo from "@/images/ElMundoFinancieroLogo.png";
+// import LaSextaLogo from "@/images/LaSextaLogo.png";
 
 import DiarioFinanciero from "@/images/DiarioFinanciero.png";
 import SomosEconomia from "@/images/SomosEconomia.png";
