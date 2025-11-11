@@ -46,13 +46,13 @@ function index() {
           </BlurFade>
 
           <BlurFade inView className="flex items-center justify-center mx-auto">
-            <a href="https://ciudademprendedores.com/noticias-de-internet/el-impacto-silencioso-de-los-cables-en-la-fachada-un-elemento-que-genera-rechazo/">
+            <a href="https://digitalfinanzas.com/nacional/como-una-empresa-especializada-en-ocultar-cables-de-fachada-esta-cambiando-el-aspecto-de-los-barrios/">
               <Image
                 src={CiudadEmprendedores}
-                alt="CiudadEmprendedores"
+                alt="DigitalFinanzas"
                 width={150}
                 height={150}
-                className="grayscale"
+                className=""
               />
             </a>
           </BlurFade>
