@@ -29,6 +29,11 @@ const FAQ: React.FC = () => {
         "En cuanto a la instalación, todos nuestros trabajos cumplen con los más altos estándares de calidad, verificándose minuciosamente al finalizar, con la aprobación del cliente, quien confirma que el trabajo ha sido concluido a la perfección. En lo que respecta a nuestros productos, todas las canaletas cuentan con una garantía de 10 años, siempre que los daños no sean causados por factores externos o terceros.",
     },
     {
+      question: "¿En qué zonas ofrece Tapacables su servicio de instalación?",
+      answer:
+        "Damos cobertura a todo el territorio español, llevando nuestras soluciones de ocultación profesional de cableado a cualquier localidad del país.",
+    },
+    {
       question: "¿Puedo comprar solo el material e instalarlo yo mismo?",
       answer:
         "No, no vendemos el material por separado. Ofrecemos un servicio completo que incluye tanto el material como la instalación profesional para garantizar siempre el  mejor resultado.",
@@ -36,7 +41,7 @@ const FAQ: React.FC = () => {
     {
       question: "¿Qué gastos se incluyen en el servicio de instalación?",
       answer:
-        "La mano de obra, recursos técnicos, plus de peligrosidad por trabajos en altura, seguro de responsabilidad civil, y los costos de desplazamiento.",
+        "La mano de obra, recursos técnicos, plus de peligrosidad por trabajos en altura, costos de desplazamiento y materiales.",
     },
     // {
     //   question: "¿De qué material están hechas las canaletas y los soportes?",
