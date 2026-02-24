@@ -59,7 +59,7 @@ function Index() {
             <div className="flex lg:flex-1">
               <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <h1 className="text-2xl font-bold text-blue-600">TAPACABLES</h1>
+                <h1 className="text-2xl font-bold text-[#330099]">TAPACABLES</h1>
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -86,7 +86,7 @@ function Index() {
               </div>
               <a
                 href="#contacto"
-                className="w-fit rounded-sm bg-blue-600 px-3 py-3 text-base text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
+                className="w-fit rounded-sm bg-[#330099] px-3 py-3 text-base text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#330099] transition-colors"
               >
                 Solicitar Presupuesto <span aria-hidden="true">&rarr;</span>
               </a>
@@ -103,7 +103,7 @@ function Index() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="/" className="-m-1.5 p-1.5">
-                <h1 className="text-2xl font-bold text-blue-600">TAPACABLES</h1>
+                <h1 className="text-2xl font-bold text-[#330099]">TAPACABLES</h1>
               </a>
               <button
                 type="button"
@@ -132,7 +132,7 @@ function Index() {
                   <a
                     href="#contacto"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="w-fit rounded-sm bg-blue-600 px-3 py-3 text-base text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-colors"
+                    className="w-fit rounded-sm bg-[#330099] px-3 py-3 text-base text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#330099] transition-colors"
                   >
                     Solicitar Presupuesto <span aria-hidden="true">&rarr;</span>
                   </a>
@@ -155,13 +155,13 @@ function Index() {
             <div className="mt-10 flex items-center lg:items-start justify-center lg:justify-start gap-x-6">
               <a
                 href="#Producto"
-                className="block lg:hidden rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
+                className="block lg:hidden rounded-sm bg-[#330099] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#330099] transition"
               >
                 Descubre cómo
               </a>
               <a
                 href="#producto"
-                className="hidden lg:block rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
+                className="hidden lg:block rounded-sm bg-[#330099] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#330099] transition"
               >
                 Descubre cómo
               </a>
@@ -176,8 +176,8 @@ function Index() {
             <h1 className="font-bold tracking-tight text-[33px] leading-tight md:text-5xl lg:text-6xl text-gray-800">
               <span className="text-[33px] md:text-5xl lg:text-6xl">Transformamos</span> fachadas,{" "}
               <br className="block lg:hidden"/>
-              <span className="text-blue-500">Tapa</span>ndo{" "}
-              <span className="text-blue-500">cables</span>.
+              <span className="text-[#330099]">Tapa</span>ndo{" "}
+              <span className="text-[#330099]">cables</span>.
             </h1>
             <p className="mx-auto mt-8 max-w-2xl text-xl text-gray-600">
               Empresa especializada en la ocultación de cableado en fachadas. <br />
@@ -186,13 +186,13 @@ function Index() {
             <div className="mt-2 flex items-center lg:items-center justify-center lg:justify-center gap-x-6">
               <a
                 href="#Sobre-nosotros"
-                className="block lg:hidden rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
+                className="block lg:hidden rounded-sm bg-[#330099] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#330099] transition"
               >
                 El Secreto
               </a>
               <a
                 href="#sobre-nosotros"
-                className="hidden lg:block rounded-sm bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition"
+                className="hidden lg:block rounded-sm bg-[#330099] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#330099] transition"
               >
                 El Secreto
               </a>
