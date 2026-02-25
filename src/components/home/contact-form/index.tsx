@@ -86,7 +86,7 @@ export default function ContactForm() {
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <BlurFade inView className="mx-auto max-w-5xl lg:max-w-3xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-blue-500 sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">
           Creemos que te podemos ayudar
         </h2>
         <p className="mt-2 text-base leading-8 text-gray-600">
@@ -120,7 +120,7 @@ export default function ContactForm() {
                   }
                   required
                   autoComplete="given-name"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function ContactForm() {
                   }
                   required
                   autoComplete="email"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -176,13 +176,13 @@ export default function ContactForm() {
               type="checkbox"
               checked={isTermsChecked}
               onChange={(e) => setIsTermsChecked(e.target.checked)}
-              className="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500"
+              className="shrink-0 mt-0.5 border-gray-200 rounded text-brand-primary focus:ring-brand-primary"
             />
             <label htmlFor="terms-checkbox" className="ml-3 text-base">
               Acepto los{" "}
               <button
                 type="button"
-                className="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium"
+                className="text-brand-primary decoration-2 hover:underline focus:outline-none focus:underline font-medium"
                 onClick={openTerms}
               >
                 Términos y Condiciones
@@ -193,7 +193,7 @@ export default function ContactForm() {
           <div className="mt-4">
             <button
               type="submit"
-              className="block w-full rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              className="block w-full rounded-md bg-brand-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-brand-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary"
             >
               Enviar
             </button>
@@ -211,7 +211,7 @@ export default function ContactForm() {
           <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-neutral-50 z-50">
             <div className="text-center">
               <svg
-                className="animate-spin h-5 w-5 text-blue-500"
+                className="animate-spin h-5 w-5 text-brand-primary"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -449,7 +449,7 @@ export default function ContactForm() {
                 </button>
                 <button
                   type="button"
-                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-brand-primary text-white hover:bg-brand-hover focus:outline-none focus:bg-brand-hover disabled:opacity-50 disabled:pointer-events-none"
                   onClick={closeTerms}
                 >
                   Aceptar

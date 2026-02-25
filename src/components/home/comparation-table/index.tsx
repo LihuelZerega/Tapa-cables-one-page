@@ -7,8 +7,8 @@ function index() {
       <section>
         <BlurFade inView className="text-center mb-12 max-w-5xl mx-auto px-3">
           <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">
-            <span className="text-blue-500">Comparativa</span> con{" "}
-            <span className="text-blue-500">Marca similar </span>
+            <span className="text-brand-primary">Comparativa</span> con{" "}
+            <span className="text-brand-primary">Marca similar </span>
           </h3>
           <p className="mt-2 text-base text-gray-600 max-w-4xl text-center mx-auto">
             La comparativa se ha realizado con otra marca que, al igual que
@@ -46,7 +46,7 @@ function index() {
               </tr>
             </thead>
             <tbody className="border-t border-gray-200 divide-y divide-gray-200">
-              <tr className="bg-blue-50">
+              <tr className="bg-brand-primary/5">
                 <th
                   className="py-5 ps-2 pe-2 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                   scope="row"
@@ -89,7 +89,7 @@ function index() {
                 </td>
               </tr>
 
-              <tr className="bg-blue-50">
+              <tr className="bg-brand-primary/5">
                 <th
                   className="py-5 ps-2 pe-2 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                   scope="row"
@@ -134,7 +134,7 @@ function index() {
                 </td>
               </tr>
 
-              <tr className="bg-blue-50">
+              <tr className="bg-brand-primary/5">
                 <th
                   className="py-5 ps-2 pe-2 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                   scope="row"
@@ -179,7 +179,7 @@ function index() {
                 </td>
               </tr>
 
-              <tr className="bg-blue-50">
+              <tr className="bg-brand-primary/5">
                 <th
                   className="py-5 ps-2 pe-2 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                   scope="row"
@@ -189,7 +189,7 @@ function index() {
                 </th>
 
                 <td className="py-5 lg:px-6">
-                  <div className="flex items-center justify-center ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-blue-500 text-center whitespace-nowrap">
+                  <div className="flex items-center justify-center ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-brand-primary text-center whitespace-nowrap">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -210,7 +210,7 @@ function index() {
                 </td>
 
                 <td className="py-5 lg:px-6">
-                  <div className="flex items-center justify-center ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-blue-500 text-center whitespace-nowrap">
+                  <div className="flex items-center justify-center ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-brand-primary text-center whitespace-nowrap">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -242,7 +242,7 @@ function index() {
                 </th>
 
                 <td className="py-5 lg:px-6">
-                  <div className="flex items-center justify-center ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-blue-500 text-center whitespace-nowrap">
+                  <div className="flex items-center justify-center ps-1.5 pe-1.5 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-brand-primary text-center whitespace-nowrap">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -339,7 +339,7 @@ function index() {
               </tr>
             </thead>
             <tbody className="border-t border-gray-200 divide-y divide-gray-200">
-              <tr className="bg-blue-50">
+              <tr className="bg-brand-primary/5">
                 <th
                   className="py-5 ps-2 pe-2 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                   scope="row"
@@ -381,7 +381,7 @@ function index() {
                 </td>
               </tr>
 
-              <tr className="bg-blue-50">
+              <tr className="bg-brand-primary/5">
                 <th
                   className="py-5 ps-2 pe-2 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                   scope="row"
@@ -423,7 +423,7 @@ function index() {
                 </td>
               </tr>
 
-              <tr className="bg-blue-50">
+              <tr className="bg-brand-primary/5">
                 <th
                   className="py-5 ps-2 pe-2 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                   scope="row"
@@ -484,7 +484,7 @@ function index() {
           </h3>
           <p className="mt-2 text-base text-gray-600 max-w-4xl text-center mx-auto">
             Se aplica un{" "}
-            <span className="underline decoration-2 decoration-solid decoration-blue-500">
+            <span className="underline decoration-2 decoration-solid decoration-brand-primary">
               descuento del 20%
             </span>{" "}
             en material por contratar servicio de instalación.
@@ -519,7 +519,7 @@ function index() {
               </tr>
             </thead>
             <tbody className="border-t border-gray-200 divide-y divide-gray-200">
-              <tr className="bg-blue-50">
+              <tr className="bg-brand-primary/5">
                 <th
                   className="py-5 ps-2 pe-2 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                   scope="row"
@@ -561,7 +561,7 @@ function index() {
                 </td>
               </tr>
 
-              <tr className="bg-blue-50">
+              <tr className="bg-brand-primary/5">
                 <th
                   className="py-5 ps-2 pe-2 lg:ps-6 lg:pe-6 text-xs lg:text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                   scope="row"

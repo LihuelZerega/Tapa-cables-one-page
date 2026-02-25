@@ -41,7 +41,7 @@ function index() {
                 src={OurProduct2}
                 alt="Features Image"
               />
-                <p className="pt-1 text-gray-600 text-sm">Unión entre el soporte y la canaleta</p>
+              <p className="pt-1 text-gray-600 text-sm">Unión entre el soporte y la canaleta</p>
 
             </BlurFade>
 
@@ -51,7 +51,7 @@ function index() {
                 src={OurProduct3}
                 alt="Features Image"
               />
-                <p className="pt-1 text-gray-600 text-sm">Vista a pie de calle</p>
+              <p className="pt-1 text-gray-600 text-sm">Vista a pie de calle</p>
 
             </BlurFade>
           </div>
@@ -99,7 +99,7 @@ function index() {
                   viewBox="0 0 24 24"
                   width="32"
                   height="32"
-                  color="#3b82f6"
+                  color="#3847a9"
                   fill="none"
                 >
                   <path
@@ -159,7 +159,7 @@ function index() {
                   viewBox="0 0 24 24"
                   width="32"
                   height="32"
-                  color="#3b82f6"
+                  color="#3847a9"
                   fill="none"
                 >
                   <path
@@ -202,7 +202,7 @@ function index() {
                   viewBox="0 0 24 24"
                   width="32"
                   height="32"
-                  color="#3b82f6"
+                  color="#3847a9"
                   fill="none"
                 >
                   <path

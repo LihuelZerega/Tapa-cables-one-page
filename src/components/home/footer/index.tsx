@@ -1,4 +1,5 @@
 import React from "react";
+// import TapacablesLogo from "@/images/TapaCablesLogo.png";
 
 function index() {
   return (
@@ -6,13 +7,11 @@ function index() {
       <footer className="mt-auto w-full max-w-[85rem] py-6 px-4 sm:px-6 lg:px-8 mx-auto border-t">
         <div className="flex justify-center items-center gap-5">
           <div>
-            <a
-              className="flex-none text-xl font-semibold text-black focus:outline-none"
-              href="/"
-              aria-label="Brand"
-            >
-              <h1 className="text-center sm:text-left text-2xl font-bold text-blue-600">TAPACABLES</h1>
-            </a>
+              <a href="/" className="flex flex-row items-center gap-2 -m-1.5 p-1.5">
+                <span className="sr-only">Your Company</span>
+                <h1 className="text-3xl font-rounded font-bold text-brand-primary">Tapacables</h1>
+                {/* <img src={TapacablesLogo.src} alt="Tapacables Logo" className="w-10 h-10" /> */}
+              </a>
           </div>
 
           {/* <ul className="text-center sm:text-right">

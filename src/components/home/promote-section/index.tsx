@@ -36,7 +36,7 @@ export default function PromoteSection() {
   return (
     <div className="relative max-w-6xl mx-6 md:mx-auto">
       <div className="absolute top-0 right-0 transform z-20">
-        <div className="bg-blue-500 text-white font-bold py-1 px-4 transform rounded-tr-md">
+        <div className="bg-brand-primary text-white font-bold py-1 px-4 transform rounded-tr-md">
           OFERTA ESPECIAL
         </div>
       </div>
@@ -47,7 +47,7 @@ export default function PromoteSection() {
             <div className="">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                 Formas parte de una comunidad de vecinos? <br />
-                <span className="text-blue-500">
+                <span className="text-brand-primary">
                   Tapacables ofrece una alternativa 100% Gratuita
                 </span>
               </h2>
@@ -62,7 +62,7 @@ export default function PromoteSection() {
                   <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                     {/* <CalendarDaysIcon
                       aria-hidden="true"
-                      className="size-6 text-blue-500"
+                      className="size-6 text-brand-primary"
                     /> */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function PromoteSection() {
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      className="text-blue-500 size-6"
+                      className="text-brand-primary size-6"
                     >
                       <path
                         stroke-linecap="round"
@@ -103,12 +103,12 @@ export default function PromoteSection() {
                 autoComplete="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="min-w-0 flex-auto border rounded-md bg-white/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-500 sm:text-sm/6"
+                className="min-w-0 flex-auto border rounded-md bg-white/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-brand-primary sm:text-sm/6"
               />
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="flex-none rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+                className="flex-none rounded-md bg-brand-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-brand-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary"
               >
                 {isSubmitting ? "Enviando..." : "Solicitar evaluación"}
               </button>
@@ -129,7 +129,7 @@ export default function PromoteSection() {
               clipPath:
                 "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
             }}
-            className="aspect-1155/678 w-[72.1875rem] bg-linear-to-tr from-blue-500 to-blue-500 opacity-30"
+            className="aspect-1155/678 w-[72.1875rem] bg-linear-to-tr from-brand-primary/50 to-brand-primary/50 opacity-30"
           />
         </div>
       </div>

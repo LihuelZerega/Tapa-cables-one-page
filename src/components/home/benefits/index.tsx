@@ -10,13 +10,13 @@ function index() {
     >
       <div className="text-center">
         <h2 className="text-gray-800 font-bold text-3xl md:text-4xl md:leading-tight">
-          <span className="text-blue-500">Beneficios</span> de tapar el cableado de su fachada
+          <span className="text-brand-primary">Beneficios</span> de tapar el cableado de su fachada
         </h2>
       </div>
       <div className="flex flex-col md:flex-row items-start justify-center gap-6 md:gap-12 pt-12">
         <div className="lg:w-1/2 grid grid-cols-1 max-w-md gap-6">
           {/* <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
-            <h4 className="text-blue-500 font-semibold text-xl">
+            <h4 className="text-brand-primary font-semibold text-xl">
               1. Una fachada más moderna
             </h4>
             <p className="text-gray-600 text-sm">
@@ -26,7 +26,7 @@ function index() {
             </p>
           </div>
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
-            <h4 className="text-blue-500 font-semibold text-xl">
+            <h4 className="text-brand-primary font-semibold text-xl">
               2. Que lo que tenemos dure más
             </h4>
             <p className="text-gray-600 text-sm">
@@ -36,7 +36,7 @@ function index() {
             </p>
           </div>
           <div className="space-y-1 p-3 border-2 border-blue-400 rounded-md">
-            <h4 className="text-blue-500 font-semibold text-xl">
+            <h4 className="text-brand-primary font-semibold text-xl">
               3. Y lo más importante
             </h4>
             <p className="text-gray-600 text-sm">
@@ -52,7 +52,7 @@ function index() {
                 aria-hidden="true"
               ></div>
 
-              <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-blue-500 rounded-full shadow text-lg">
+              <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-brand-primary rounded-full shadow text-lg">
                 1
               </div>
               <div className="mt-5 ml-6">
@@ -74,7 +74,7 @@ function index() {
                 aria-hidden="true"
               ></div>
 
-              <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-blue-500 rounded-full shadow text-lg">
+              <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-brand-primary rounded-full shadow text-lg">
                 2
               </div>
               <div className="mt-5 ml-6">
@@ -82,15 +82,15 @@ function index() {
                   Que lo que tenemos dure más
                 </h3>
                 <p className="text-sm text-gray-600">
-                Al estar dentro de una canaleta, el cableado queda protegido de
-              tirones, desgaste y mal tiempo, lo que ayuda a prolongar su vida
-              útil.
+                  Al estar dentro de una canaleta, el cableado queda protegido de
+                  tirones, desgaste y mal tiempo, lo que ayuda a prolongar su vida
+                  útil.
                 </p>
               </div>
             </li>
 
             <li className="relative flex items-start">
-              <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-blue-500 rounded-full shadow text-lg">
+              <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white text-brand-primary rounded-full shadow text-lg">
                 3
               </div>
               <div className="mt-5 ml-6">
@@ -98,8 +98,8 @@ function index() {
                   Y lo más importante...
                 </h3>
                 <p className="text-sm text-gray-600">
-                Al eliminar la posibilidad de cables sueltos, reduce el riesgo de
-                accidentes y evita posibles problemas legales.
+                  Al eliminar la posibilidad de cables sueltos, reduce el riesgo de
+                  accidentes y evita posibles problemas legales.
                 </p>
               </div>
             </li>

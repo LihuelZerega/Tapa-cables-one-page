@@ -134,7 +134,7 @@ function Carousel() {
                 </svg>
 
                 <div className="relative z-10">
-                  <p className="text-xs font-semibold text-blue-500 tracking-wide uppercase mb-3">
+                  <p className="text-xs font-semibold text-brand-primary tracking-wide uppercase mb-3">
                     Trabajos Realizados
                   </p>
 
@@ -161,13 +161,13 @@ function Carousel() {
                 <div className="space-x-4 mt-8 lg:mt-14">
                   <button
                     onClick={handlePrev}
-                    className="px-4 py-2 bg-blue-500 rounded-md hover:bg-blue-600 text-white transition"
+                    className="px-4 py-2 bg-brand-primary rounded-md hover:bg-brand-hover text-white transition"
                   >
                     Anterior
                   </button>
                   <button
                     onClick={handleNext}
-                    className="px-4 py-2 bg-blue-500 rounded-md hover:bg-blue-600 text-white transition"
+                    className="px-4 py-2 bg-brand-primary rounded-md hover:bg-brand-hover text-white transition"
                   >
                     Siguiente
                   </button>

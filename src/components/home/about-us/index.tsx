@@ -101,7 +101,7 @@ function Index() {
                   </ul>
                   Tapacables no nace para ser una empresa más.
                   <br />
-                  <strong className="text-blue-500">
+                  <strong className="text-[#3847a9]">
                     Nace para ser la referencia en su sector.
                   </strong>
                 </p>
@@ -112,8 +112,8 @@ function Index() {
       </section>
 
       <section>
-      <div id="Sobre-nosotros" />
-      <div id="sobre-nosotros" />
+        <div id="Sobre-nosotros" />
+        <div id="sobre-nosotros" />
         <div className="max-w-[85rem] gap-12 mx-auto flex md:hidden flex-col-reverse lg:flex-row-reverse md:items-center md:gap-12 xl:gap-32 px-6 my-24">
           <BlurFade inView className="mt-5 sm:mt-10 lg:mt-0 md:pl-12">
             <div className="space-y-6 sm:space-y-8">
@@ -139,7 +139,7 @@ function Index() {
                     className="rounded-md"
                   />
                   <p className="flex flex-row items-center justify-center gap-2 text-gray-500 mt-3 text-left">
-                    <span className="text-center hover:text-blue-500">
+                    <span className="text-center hover:text-brand-hover">
                       <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
                         <Image
                           src={LinkedinLogo}
@@ -166,7 +166,7 @@ function Index() {
                   className="flex items-center justify-center mx-auto pt-4"
                   onClick={openTerms}
                 >
-                  <button className="bg-blue-500 hover:bg-blue-600 transition px-3 py-2 rounded-md text-white">
+                  <button className="bg-brand-primary hover:bg-brand-hover transition px-3 py-2 rounded-md text-white">
                     Quiero descubrir el secreto
                   </button>
                 </div>
@@ -175,7 +175,7 @@ function Index() {
                   <span className="text-black font-bold italic">
                     Presiona el
                   </span>{" "}
-                  <span className="text-blue-500 font-bold italic">
+                  <span className="text-brand-primary font-bold italic">
                     BOTÓN AZUL
                   </span>{" "}
                   <span className="text-black font-bold italic">
@@ -200,7 +200,7 @@ function Index() {
               className="rounded-md"
             />
             <p className="flex flex-row items-center gap-2 text-gray-500 text-sm mt-3 text-center">
-              <span className="hover:text-blue-500">
+              <span className="hover:text-brand-hover">
                 <a href="https://www.linkedin.com/in/adri%C3%A0-salamanca-864171183">
                   <Image src={LinkedinLogo} className="h-8 w-8" alt="" />
                 </a>
@@ -231,7 +231,7 @@ function Index() {
                 </p>
 
                 <div onClick={openTerms}>
-                  <button className="bg-blue-500 hover:bg-blue-600 transition px-3 py-2 rounded-md text-white">
+                  <button className="bg-brand-primary hover:bg-brand-hover transition px-3 py-2 rounded-md text-white">
                     Quiero descubrir el secreto
                   </button>
                 </div>
@@ -240,7 +240,7 @@ function Index() {
                   <span className="text-black font-bold italic">
                     Presiona el
                   </span>{" "}
-                  <span className="text-blue-500 font-bold italic">
+                  <span className="text-brand-primary font-bold italic">
                     BOTÓN AZUL
                   </span>{" "}
                   <span className="text-black font-bold italic">
@@ -269,7 +269,7 @@ function Index() {
                   viewBox="0 0 24 24"
                   width="24"
                   height="24"
-                  color="#3b82f6"
+                  color="#3847a9"
                   fill="none"
                 >
                   <path
@@ -306,7 +306,7 @@ function Index() {
                   viewBox="0 0 24 24"
                   width="24"
                   height="24"
-                  color="#3b82f6"
+                  color="#3847a9"
                   fill="none"
                 >
                   <circle
@@ -354,7 +354,7 @@ function Index() {
                   viewBox="0 0 24 24"
                   width="24"
                   height="24"
-                  color="#3b82f6"
+                  color="#3847a9"
                   fill="none"
                 >
                   <path
@@ -445,7 +445,7 @@ function Index() {
                     al que llamé {"“"}El secreto{"”"}:
                   </p>
                 </div>
-                <div className="bg-gray-100 p-6 sm:py-12 w-full text-center rounded-md text-blue-600 my-5">
+                <div className="bg-gray-100 p-6 sm:py-12 w-full text-center rounded-md text-brand-primary my-5">
                   <strong className="italic text-lg">
                     {"“"}La mayoría de las personas no son conscientes de la
                     cantidad de técnicos que manipulan sus fachadas a diario.
@@ -587,7 +587,7 @@ function Index() {
               <div className="flex w-full mx-auto">
                 <button
                   type="button"
-                  className="bg-blue-500 hover:bg-blue-600 transition text-white rounded-md px-3 py-2 mx-auto"
+                  className="bg-brand-primary hover:bg-brand-hover transition text-white rounded-md px-3 py-2 mx-auto"
                   onClick={closeTerms}
                 >
                   Ocultar Secreto

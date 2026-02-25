@@ -18,7 +18,14 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        rounded: ["var(--font-varela)", "sans-serif"],
+      },
       colors: {
+        brand: {
+          primary: "#3847a9",
+          hover: "#2a3680",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

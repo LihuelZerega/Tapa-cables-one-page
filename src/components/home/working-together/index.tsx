@@ -13,7 +13,7 @@ function index() {
         >
           <h2 className="text-gray-800 font-semibold text-3xl md:text-4xl md:leading-tight mb-6 md:mb-0">
             ¿Cómo es{" "}
-            <span className="underline decoration-solid decoration-blue-500">
+            <span className="underline decoration-solid decoration-brand-primary">
               Trabajar con nosotros
             </span>
             ?
@@ -23,7 +23,7 @@ function index() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center justify-center max-w-5xl mx-auto">
           <BlurFade inView>
             <div className="mb-4">
-              <h3 className="text-blue-500 text-xs font-medium uppercase">
+              <h3 className="text-brand-primary text-xs font-medium uppercase">
                 PASOS
               </h3>
             </div>
@@ -31,7 +31,7 @@ function index() {
             <div className="flex gap-x-5 ms-1">
               <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
                 <div className="relative z-10 size-8 flex justify-center items-center">
-                  <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-blue-500 font-semibold text-xs uppercase rounded-full">
+                  <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-brand-primary font-semibold text-xs uppercase rounded-full">
                     1
                   </span>
                 </div>
@@ -39,10 +39,10 @@ function index() {
 
               <div className="grow pt-0.5 pb-8 sm:pb-12">
                 <span className="text-gray-800 text-base font-medium">
-                Completa el Formulario
+                  Completa el Formulario
                 </span>
                 <p className="text-sm text-gray-600">
-                Rellena el formulario al final de esta página web para iniciar el proceso. Con esto creamos tu ficha y podemos gestionar tu solicitud de manera más efectiva.
+                  Rellena el formulario al final de esta página web para iniciar el proceso. Con esto creamos tu ficha y podemos gestionar tu solicitud de manera más efectiva.
                 </p>
               </div>
             </div>
@@ -50,7 +50,7 @@ function index() {
             <div className="flex gap-x-5 ms-1">
               <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
                 <div className="relative z-10 size-8 flex justify-center items-center">
-                  <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-blue-500 font-semibold text-xs uppercase rounded-full">
+                  <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-brand-primary font-semibold text-xs uppercase rounded-full">
                     2
                   </span>
                 </div>
@@ -58,10 +58,10 @@ function index() {
 
               <div className="grow pt-0.5 pb-8 sm:pb-12">
                 <span className="text-gray-800 text-base font-medium">
-                Contacto y Evaluación
+                  Contacto y Evaluación
                 </span>
                 <p className="text-sm text-gray-600">
-                Nos pondremos en contacto para solicitar más detalles sobre tu fachada. Analizaremos si nuestra solución es adecuada para ti, si lo es, te enviaremos un presupuesto personalizado.
+                  Nos pondremos en contacto para solicitar más detalles sobre tu fachada. Analizaremos si nuestra solución es adecuada para ti, si lo es, te enviaremos un presupuesto personalizado.
                 </p>
               </div>
             </div>
@@ -69,7 +69,7 @@ function index() {
             <div className="flex gap-x-5 ms-1">
               <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
                 <div className="relative z-10 size-8 flex justify-center items-center">
-                  <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-blue-500 font-semibold text-xs uppercase rounded-full">
+                  <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-brand-primary font-semibold text-xs uppercase rounded-full">
                     3
                   </span>
                 </div>
@@ -77,16 +77,16 @@ function index() {
 
               <div className="grow pt-0.5 pb-8 sm:pb-12">
                 <span className="text-gray-800 font-medium">
-                Presupuesto y Siguientes Pasos
+                  Presupuesto y Siguientes Pasos
                 </span>
                 <p className="text-sm text-gray-600">
-                Si aceptas el presupuesto, coordinaremos los detalles para comenzar el trabajo, así de simple. 
+                  Si aceptas el presupuesto, coordinaremos los detalles para comenzar el trabajo, así de simple.
                 </p>
               </div>
             </div>
 
             <a
-              className="group inline-flex items-center gap-x-2 py-2 px-3 bg-blue-500 hover:bg-blue-600 font-medium text-sm text-neutral-200 rounded-md focus:outline-none"
+              className="group inline-flex items-center gap-x-2 py-2 px-3 bg-brand-primary hover:bg-brand-hover font-medium text-sm text-neutral-200 rounded-md focus:outline-none"
               href="#contacto"
             >
               ¡Contáctanos!

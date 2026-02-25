@@ -7,7 +7,7 @@ function index() {
     // <div className="max-w-[85rem] mx-auto px-6 lg:px-0 py-12 mt-12">
     //   <div className="flex flex-col items-center justify-center">
     //     <BlurFade inView className="text-center mb-10">
-    //       <h2 className="text-blue-500 font-bold text-3xl md:text-4xl md:leading-tight">
+    //       <h2 className="text-[#3847a9] font-bold text-3xl md:text-4xl md:leading-tight">
     //       Servicio integral <span className="text-gray-800">de</span> instalación
     //       </h2>
     //     </BlurFade>
@@ -19,7 +19,7 @@ function index() {
     //       >
     //         <div>
     //           <h3 className="uppercase text-left font-semibold text-xl lg:text-3xl text-gray-800">
-    //             <span className="text-blue-500">1. Análisis</span>
+    //             <span className="text-[#3847a9]">1. Análisis</span>
     //           </h3>
     //           <p className="mt-3 text-gray-600">
     //           Evaluamos tu fachada y necesidades para confirmar si nuestra solución es adecuada.
@@ -33,7 +33,7 @@ function index() {
     //       >
     //         <div>
     //           <h3 className="uppercase text-left font-semibold text-xl lg:text-3xl text-gray-800">
-    //             <span className="text-blue-500">2. Instalación</span>
+    //             <span className="text-[#3847a9]">2. Instalación</span>
     //           </h3>
     //           <p className="mt-3 text-gray-600">
     //           Nos encargamos de todo, asegurando un resultado funcional y estéticamente impecable.
@@ -47,7 +47,7 @@ function index() {
     //       >
     //         <div>
     //           <h3 className="uppercase text-left font-semibold text-xl lg:text-3xl text-gray-800">
-    //             <span className="text-blue-500">3. Garantía</span>
+    //             <span className="text-[#3847a9]">3. Garantía</span>
     //           </h3>
     //           <p className="mt-3 text-gray-600">
     //           Ofrecemos garantía en materiales e instalación, y estamos disponibles para cualquier duda o eventualidad.
@@ -60,7 +60,7 @@ function index() {
     //       <div className="mt-10">
     //         <a
     //           href="#contacto"
-    //           className="bg-blue-500 hover:bg-blue-600 transition text-white p-3 rounded-md mt-6"
+    //           className="bg-[#3847a9] hover:bg-blue-600 transition text-white p-3 rounded-md mt-6"
     //         >
     //           Solicitar Presupuesto
     //         </a>
@@ -86,7 +86,7 @@ function index() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="size-8 text-blue-500"
+                  className="size-8 text-[#3847a9]"
                 >
                   <path
                     strokeLinecap="round"
@@ -112,7 +112,7 @@ function index() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="size-8 text-blue-500"
+                  className="size-8 text-[#3847a9]"
                 >
                   <path
                     strokeLinecap="round"
@@ -137,7 +137,7 @@ function index() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="size-8 text-blue-500"
+                  className="size-8 text-[#3847a9]"
                 >
                   <path
                     strokeLinecap="round"

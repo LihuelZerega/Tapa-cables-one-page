@@ -100,7 +100,7 @@ const WhatsAppButton = () => {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
                   />
                 </div>
                 <div className="sm:col-span-2">
@@ -109,18 +109,16 @@ const WhatsAppButton = () => {
                     <button
                       type="button"
                       onClick={() => setSelectedOption("consulta")}
-                      className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
-                        selectedOption === "consulta" ? "bg-blue-100" : ""
-                      }`}
+                      className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-brand-primary ${selectedOption === "consulta" ? "bg-brand-primary/10" : ""
+                        }`}
                     >
                       <span>Realizar una consulta</span>
                     </button>
                     <button
                       type="button"
                       onClick={() => setSelectedOption("presupuesto")}
-                      className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 ${
-                        selectedOption === "presupuesto" ? "bg-blue-100" : ""
-                      }`}
+                      className={`flex flex-row space-x-2 items-center justify-center shadow-sm hover:shadow-md transition px-3.5 py-2 text-gray-900 w-full rounded-md text-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-brand-primary ${selectedOption === "presupuesto" ? "bg-brand-primary/10" : ""
+                        }`}
                     >
                       <span>Solicitar un presupuesto</span>
                     </button>
@@ -134,8 +132,8 @@ const WhatsAppButton = () => {
 
               <div className="text-center text-sm">
                 Si quieres contactarnos de otra manera, puedes enviarnos un{" "}
-                <a href="mailto:tapacables@outlook.es" className="text-blue-600 underline underline-offset-2">Email</a> a{" "}
-                <span className="text-blue-600">
+                <a href="mailto:tapacables@outlook.es" className="text-brand-primary underline underline-offset-2">Email</a> a{" "}
+                <span className="text-brand-primary">
                   tapacables@outlook.es
                 </span>
               </div>
@@ -143,7 +141,7 @@ const WhatsAppButton = () => {
               <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <button
                   type="submit"
-                  className="block w-full rounded-md bg-blue-600 py-2 px-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                  className="block w-full rounded-md bg-brand-primary py-2 px-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-brand-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary"
                 >
                   Enviar
                 </button>
