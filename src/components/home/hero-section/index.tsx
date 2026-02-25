@@ -56,7 +56,7 @@ function Index() {
             <div className="flex lg:flex-1">
               <a href="/" className="flex flex-row items-center gap-2 -m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <h1 className="text-3xl font-rounded font-bold text-brand-primary">Tapacables</h1>
+                <h1 className="text-4xl font-rounded font-bold text-brand-primary">Tapacables</h1>
                 {/* <img src={TapacablesLogo.src} alt="Tapacables Logo" className="w-10 h-10" /> */}
               </a>
             </div>
