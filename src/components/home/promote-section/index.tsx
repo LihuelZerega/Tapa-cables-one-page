@@ -92,15 +92,15 @@ export default function PromoteSection() {
               className="mt-6 md:mt-3 flex flex-col md:flex-row max-w-md gap-4"
             >
               <label htmlFor="email-address" className="sr-only">
-                Email address
+                numero de telefono
               </label>
               <input
                 id="email-address"
-                name="email"
-                type="email"
+                name="numero de telefono"
+                type="text"
                 required
-                placeholder="Introduce tu correo electrónico"
-                autoComplete="email"
+                placeholder="Introduce tu número de teléfono"
+                autoComplete="numero de telefono"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="min-w-0 flex-auto border rounded-md bg-white/5 px-3.5 py-2 text-base text-black outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-brand-primary sm:text-sm/6"
