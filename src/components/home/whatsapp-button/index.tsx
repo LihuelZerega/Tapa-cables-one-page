@@ -5,6 +5,7 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 const WhatsAppButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [name, setName] = useState("");
+  const [postalCode, setPostalCode] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
 
   const openModal = () => {
@@ -17,7 +18,7 @@ const WhatsAppButton = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    let message = `Hola, mi nombre es ${name}. Me gustaría `;
+    let message = `Hola, mi nombre es ${name} y mi código postal es ${postalCode}. Me gustaría `;
     if (selectedOption === "consulta") {
       message += "realizar una consulta.";
     } else if (selectedOption === "presupuesto") {
@@ -85,10 +86,10 @@ const WhatsAppButton = () => {
                 id="hs-modal-signup-label"
                 className="block text-3xl font-bold text-gray-800"
               >
-                Contactenos
+                ¿Hablamos por Whatsapp?
               </h3>
               <p className="mt-2 text-sm text-gray-600">
-                Contáctanos para información adicional o solicitar presupuesto
+                Contáctenos para realizar una consulta o solicitar presupuesto
               </p>
             </div>
             <form onSubmit={handleSubmit}>
@@ -99,6 +100,17 @@ const WhatsAppButton = () => {
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
+                    required
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
+                  />
+                </div>
+                <div className="sm:col-span-2">
+                  <label className="text-sm">Código postal:</label>
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    value={postalCode}
+                    onChange={(e) => setPostalCode(e.target.value)}
                     required
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
                   />
@@ -134,7 +146,7 @@ const WhatsAppButton = () => {
                 Si quieres contactarnos de otra manera, puedes enviarnos un{" "}
                 <a href="mailto:tapacables@outlook.es" className="text-brand-primary underline underline-offset-2">Email</a> a{" "}
                 <span className="text-brand-primary">
-                  tapacables@outlook.es
+                  Infotapacables@gmail.com
                 </span>
               </div>
 

@@ -28,7 +28,7 @@ export default function Home() {
         <div id="producto" />
         <ProductAndServices />
         {/* <OurProduct /> */}
-        <PromoteSection />
+        {/* <PromoteSection /> */}
         {/* <ComparationTable /> */}
         <Benefits />
         <hr className="my-12" />

@@ -7,14 +7,11 @@ import { motion } from "framer-motion";
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
+    phone: "",
+    postalCode: "",
     message: "",
-    contactMethod: "",
-    interests: "",
   });
 
-  const [selectedInterests, setSelectedInterests] = useState("");
-  const [selectedMethod, setSelectedMethod] = useState("");
   const [isTermsChecked, setIsTermsChecked] = useState(false);
   const [modalContent, setModalContent] = useState({ title: "", message: "" });
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -41,11 +38,7 @@ export default function ContactForm() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        ...formData,
-        contactMethod: selectedMethod,
-        interests: selectedInterests,
-      }),
+      body: JSON.stringify(formData),
     });
 
     if (res.ok) {
@@ -56,13 +49,10 @@ export default function ContactForm() {
       });
       setFormData({
         name: "",
-        email: "",
+        phone: "",
+        postalCode: "",
         message: "",
-        contactMethod: "",
-        interests: "",
       });
-      setSelectedInterests("");
-      setSelectedMethod("");
       setIsTermsChecked(false);
       setUserName(formData.name);
     } else {
@@ -87,12 +77,11 @@ export default function ContactForm() {
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <BlurFade inView className="mx-auto max-w-5xl lg:max-w-3xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-brand-primary sm:text-4xl">
-          Creemos que te podemos ayudar
+          Formulario para solicitar presupuesto
         </h2>
         <p className="mt-2 text-base leading-8 text-gray-600">
-          Si tienes alguna duda, necesitas información adicional o solicitar
-          presupuesto déjanos tus datos y nos pondremos en contacto en la máxima
-          brevedad posible.
+          Para solicitar presupuesto, rellene el formulario y nos pondremos en
+          contacto lo antes posible.
         </p>
       </BlurFade>
 
@@ -101,8 +90,8 @@ export default function ContactForm() {
           onSubmit={handleSubmit}
           className="mx-auto mt-16 max-w-5xl lg:max-w-3xl sm:mt-20"
         >
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-            <div className="sm:col-span-2">
+          <div className="space-y-6">
+            <div>
               <label
                 htmlFor="first-name"
                 className="block text-sm font-semibold leading-6 text-gray-900"
@@ -124,29 +113,52 @@ export default function ContactForm() {
                 />
               </div>
             </div>
-            <div className="sm:col-span-2">
+            <div>
               <label
-                htmlFor="numero de telefono"
+                htmlFor="phone"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
                 Número de teléfono
               </label>
               <div className="mt-2.5">
                 <input
-                  id="numero de telefono"
-                  name="numero de telefono"
-                  type="text"
-                  value={formData.email}
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  value={formData.phone}
                   onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
+                    setFormData({ ...formData, phone: e.target.value })
                   }
                   required
-                  autoComplete="numero de telefono"
+                  autoComplete="tel"
                   className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
-            <div className="sm:col-span-2">
+            <div>
+              <label
+                htmlFor="postal-code"
+                className="block text-sm font-semibold leading-6 text-gray-900"
+              >
+                Código postal
+              </label>
+              <div className="mt-2.5">
+                <input
+                  id="postal-code"
+                  name="postalCode"
+                  type="text"
+                  inputMode="numeric"
+                  value={formData.postalCode}
+                  onChange={(e) =>
+                    setFormData({ ...formData, postalCode: e.target.value })
+                  }
+                  required
+                  autoComplete="postal-code"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+            <div>
               <label
                 htmlFor="message"
                 className="block text-sm font-semibold leading-6 text-gray-900"
